@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="64bf80b3-4d72-496e-a2e9-0903a0306558" name="Default" comment="fisrt commit">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/css/bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/css/bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/data/blog-test.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/data/blog-test.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/data/blog.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/data/blog.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/hangman/assets/empty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/hangman/protected/runtime/empty" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/mertric_cms.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/protected/data/phonebook.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/flex/bin/phonebook.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/flex/bin/playerProductInstall.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/flex/html-template/playerProductInstall.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/flex/.actionScriptProperties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/flex/.flexProperties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/themes/classic/views/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/hangman/protected/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/helloworld/protected/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/protected/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/themes/classic/views/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/flex/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/flex/bin/AC_OETags.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/flex/html-template/AC_OETags.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/models/Comment.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/models/Comment.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/controllers/CommentController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/controllers/CommentController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/tests/functional/CommentTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/tests/unit/CommentTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/tests/functional/CommentTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/tests/unit/CommentTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/protected/models/Contact.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/models/ContactForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/models/ContactForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/components/Controller.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/components/Controller.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/hangman/protected/controllers/GameController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/models/LoginForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/models/LoginForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/models/Lookup.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/models/Lookup.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/tests/unit/LookupTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/tests/unit/LookupTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/models/Post.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/models/Post.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/controllers/PostController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/controllers/PostController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/tests/functional/PostTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/tests/unit/PostTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/tests/functional/PostTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/tests/unit/PostTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/components/RecentComments.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/components/RecentComments.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/controllers/SiteController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/helloworld/protected/controllers/SiteController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/protected/controllers/SiteController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/controllers/SiteController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/tests/functional/SiteTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/tests/functional/SiteTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/models/Tag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/models/Tag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/components/TagCloud.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/components/TagCloud.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/tests/unit/TagTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/tests/unit/TagTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/models/User.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/models/User.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/components/UserIdentity.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/protected/components/UserIdentity.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/components/UserIdentity.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/components/UserMenu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/components/UserMenu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/tests/unit/UserTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/tests/unit/UserTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/tests/WebTestCase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/tests/WebTestCase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/views/post/_comments.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/post/_comments.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/views/comment/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/views/post/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/comment/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/post/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/views/comment/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/views/post/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/comment/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/post/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/views/site/pages/about.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/site/pages/about.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/views/post/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/post/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/tests/bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/tests/bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/views/layouts/column1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/layouts/column1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/views/layouts/column2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/layouts/column2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/flex/.settings/com.adobe.flexbuilder.project.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/config/console.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/config/console.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/views/site/contact.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/site/contact.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/views/post/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/post/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/data/dbgen.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/data/dbgen.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/views/site/error.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/site/error.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/css/form.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/css/form.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/hangman/protected/views/game/guess.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/flex/bin/history/history.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/flex/html-template/history/history.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/flex/bin/history/history.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/flex/html-template/history/history.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/flex/bin/history/historyFrame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/flex/html-template/history/historyFrame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/css/ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/css/ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/index-test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/index-test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/views/comment/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/views/post/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/hangman/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/helloworld/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/protected/views/site/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/comment/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/post/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/flex/html-template/index.template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/views/site/login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/site/login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/hangman/protected/views/game/lose.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/config/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/views/layouts/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/hangman/protected/config/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/hangman/protected/views/layouts/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/protected/config/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/config/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/layouts/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/flex/.settings/org.eclipse.core.resources.prefs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/config/params.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/config/params.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/flex/bin/phonebook.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/flex/phonebook.mxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/tests/phpunit.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/tests/phpunit.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/hangman/protected/views/game/play.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/css/print.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/css/print.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/tests/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/tests/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/components/views/recentComments.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/components/views/recentComments.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/data/schema.cubrid.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/data/schema.cubrid.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/data/schema.mysql.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/data/schema.mysql.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/phonebook/protected/data/schema.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/data/schema.sqlite.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/data/schema.sqlite.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/css/screen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/css/screen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/tests/fixtures/tbl_comment.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/tests/fixtures/tbl_comment.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/tests/fixtures/tbl_lookup.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/tests/fixtures/tbl_lookup.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/tests/fixtures/tbl_post.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/tests/fixtures/tbl_post.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/tests/fixtures/tbl_tag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/tests/fixtures/tbl_tag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/tests/fixtures/tbl_user.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/tests/fixtures/tbl_user.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/config/test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/config/test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/views/comment/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/views/post/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/comment/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/post/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/components/views/userMenu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/components/views/userMenu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/views/post/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/post/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/hangman/protected/views/game/win.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/hangman/protected/controllers/words.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/yiic.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/yiic.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/yiic.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/yiic.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/blog/protected/yiic" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/yiic" />
+    </list>
+    <ignored path="mertric_cms.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="mertric_cms" />
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1448" />
+    <option name="height" value="878" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mertric_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mertric_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mertric_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mertric_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mertric_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="64bf80b3-4d72-496e-a2e9-0903a0306558" name="Default" comment="" />
+      <created>1404372786250</created>
+      <updated>1404372786250</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-4" y="-4" width="1448" height="878" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24892704" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="fisrt commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="fisrt commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+</project>
+
