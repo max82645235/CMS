@@ -201,6 +201,7 @@ hr{ border-top-color:#dadada;}
 	position: relative;
 	min-height:100%;
 	width: auto;
+    margin-top: -38px;
 }
 #content-header {
 	position: abslute;
