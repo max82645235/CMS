@@ -5,7 +5,10 @@
 <?php $this->endContent(); ?>
 
 <!--main-container-part-->
-<?=$content?>
+<div id="content">
+    <?=$content?>
+</div>
+
 <!--end-main-container-part-->
 
 <?php $this->beginContent('/layouts/cms/foot'); ?>
