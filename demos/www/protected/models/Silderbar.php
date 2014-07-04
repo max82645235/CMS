@@ -1,5 +1,5 @@
 <?php
-class Tag extends CActiveRecord
+class Silderbar extends CActiveRecord
 {
     /**
      * Returns the static model of the specified AR class.

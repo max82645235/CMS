@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <!--CSS文件引入-->
 <?php $this->beginContent('/layouts/cms/css'); ?>
 <?php $this->endContent(); ?>
