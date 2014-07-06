@@ -118,7 +118,7 @@ div.selector.disabled span {
 
 div.checker {
   width: 19px;
-  height: 19px;
+  height: 23px;
 }
 
 div.checker input {
@@ -186,7 +186,7 @@ div.checker.disabled.active span.checked {
 
 div.radio {
   width: 18px;
-  height: 18px;
+  height: 23px;
 }
 
 div.radio input {

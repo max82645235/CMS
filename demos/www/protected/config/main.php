@@ -44,7 +44,10 @@ return array(
 
 		'urlManager'=>array(
             'urlFormat' => 'path',
-            'showScriptName'=>false
+            'showScriptName'=>false,
+            'rules'=>array(
+                '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+            )
         ),
 		'log'=>array(
 			'class'=>'CLogRouter',

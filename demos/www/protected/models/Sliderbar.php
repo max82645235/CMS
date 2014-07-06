@@ -1,5 +1,5 @@
 <?php
-class Silderbar extends CActiveRecord
+class Sliderbar extends CActiveRecord
 {
     /**
      * Returns the static model of the specified AR class.
@@ -15,7 +15,7 @@ class Silderbar extends CActiveRecord
      */
     public function tableName()
     {
-        return '{{silderbar}}';
+        return '{{sliderbar}}';
     }
 
     /**
@@ -23,7 +23,9 @@ class Silderbar extends CActiveRecord
      */
     public function rules()
     {
-
+        return array(
+            array('title,top,icon,sort,url','required')
+        );
     }
 
     /**
@@ -44,7 +46,11 @@ class Silderbar extends CActiveRecord
     public function attributeLabels()
     {
         return array(
-
+            'title'=>'标题',
+            'top'=>'顶级栏目',
+            'icon'=>'图标',
+            'sort'=>'排序',
+            'url'=>'url地址'
         );
     }
 
@@ -60,7 +66,9 @@ class Silderbar extends CActiveRecord
         if(parent::beforeSave())
         {
             if($this->isNewRecord)
-                $this->create_time=time();
+                $this->create_time= date('Y-m-d H:i:s');
+            else
+                $this->update_time = date('Y-m-d H:i:s');
             return true;
         }
         else
