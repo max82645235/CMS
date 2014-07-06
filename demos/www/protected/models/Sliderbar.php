@@ -24,7 +24,7 @@ class Sliderbar extends CActiveRecord
     public function rules()
     {
         return array(
-            array('title,top,icon,sort,url','required')
+            array('title,top,icon,sort','required')
         );
     }
 
@@ -73,5 +73,11 @@ class Sliderbar extends CActiveRecord
         }
         else
             return false;
+    }
+
+    /*获取顶级列表数组*/
+    static function getTopRecordList(){
+        $record = self::model()->findAll('top=1');
+
     }
 }

@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64bf80b3-4d72-496e-a2e9-0903a0306558" name="Default" comment="功能栏点击 右侧frame CSS问题&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/controllers/SliderbarController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/components/Util.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/runtime/application.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/sliderbar/firstMenu.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/views/sliderbar/secondMenu.php" />
-      <change type="DELETED" beforePath="E:\work\www\CMS\demos\www\protected\controllers\SilderbarController.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\work\www\CMS\demos\www\protected\views\silderbar\firstMenu.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\work\www\CMS\demos\www\protected\views\silderbar\secondMenu.php" afterPath="" />
+    <list default="true" id="64bf80b3-4d72-496e-a2e9-0903a0306558" name="Default" comment="Save firstMenu and  CHTML  test&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demos/www/protected/components/Controller.php" afterPath="$PROJECT_DIR$/demos/www/protected/components/Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demos/www/protected/views/layouts/cms/css.php" afterPath="$PROJECT_DIR$/demos/www/protected/views/layouts/cms/css.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demos/www/protected/views/site/error.php" afterPath="$PROJECT_DIR$/demos/www/protected/views/site/error.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demos/www/index.php" afterPath="$PROJECT_DIR$/demos/www/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demos/www/protected/config/main.php" afterPath="$PROJECT_DIR$/demos/www/protected/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demos/www/css/cms/css/matrix-style.css" afterPath="$PROJECT_DIR$/demos/www/css/cms/css/matrix-style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/mertric_cms.iml" afterPath="$PROJECT_DIR$/.idea/mertric_cms.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demos/www/css/cms/css/uniform.css" afterPath="$PROJECT_DIR$/demos/www/css/cms/css/uniform.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demos/www/protected/models/Sliderbar.php" afterPath="$PROJECT_DIR$/demos/www/protected/models/Sliderbar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demos/www/protected/runtime/application.log" afterPath="$PROJECT_DIR$/demos/www/protected/runtime/application.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\work\www\CMS\demos\www\protected\models\Silderbar.php" afterPath="$PROJECT_DIR$/demos/www/protected/models/Sliderbar.php" />
     </list>
     <ignored path="mertric_cms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,7 +31,7 @@
       <file leaf-file-name="SliderbarController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demos/www/protected/controllers/SliderbarController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="24" selection-start="205" selection-end="205" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="840">
+            <state line="11" column="38" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="840">
               <folding />
             </state>
           </provider>
@@ -57,7 +40,7 @@
       <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demos/www/protected/config/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="32" selection-start="1016" selection-end="1016" vertical-scroll-proportion="-6.3" vertical-offset="651" max-vertical-offset="1617">
+            <state line="40" column="32" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="1617">
               <folding />
             </state>
           </provider>
@@ -66,7 +49,7 @@
       <file leaf-file-name="SiteController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demos/www/protected/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="5" selection-start="152" selection-end="152" vertical-scroll-proportion="-7.0" vertical-offset="0" max-vertical-offset="840">
+            <state line="10" column="5" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="840">
               <folding />
             </state>
           </provider>
@@ -75,7 +58,7 @@
       <file leaf-file-name="Controller.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demos/www/protected/components/Controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="10" selection-start="616" selection-end="933" vertical-scroll-proportion="-12.6" vertical-offset="0" max-vertical-offset="714">
+            <state line="18" column="10" selection-start="616" selection-end="933" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="714">
               <folding />
             </state>
           </provider>
@@ -84,7 +67,7 @@
       <file leaf-file-name="Util.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demos/www/protected/components/Util.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="7" selection-start="294" selection-end="294" vertical-scroll-proportion="-7.0" vertical-offset="0" max-vertical-offset="567">
+            <state line="10" column="7" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="567">
               <folding>
                 <marker date="1404638857304" expanded="true" signature="409:500" placeholder="..." />
                 <marker date="1404638857304" expanded="true" signature="462:500" placeholder="..." />
@@ -96,16 +79,25 @@
       <file leaf-file-name="firstMenu.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demos/www/protected/views/sliderbar/firstMenu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="63" selection-start="1804" selection-end="1804" vertical-scroll-proportion="-17.5" vertical-offset="252" max-vertical-offset="1323">
+            <state line="37" column="63" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="1323">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sliderbar.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Sliderbar.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demos/www/protected/models/Sliderbar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="5" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.87931037" vertical-offset="810" max-vertical-offset="1722">
+            <state line="58" column="0" selection-start="1205" selection-end="1205" vertical-scroll-proportion="-10.8" vertical-offset="894" max-vertical-offset="1848">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="7" selection-start="24" selection-end="24" vertical-scroll-proportion="0.047890536" vertical-offset="0" max-vertical-offset="877">
               <folding />
             </state>
           </provider>
@@ -114,7 +106,7 @@
       <file leaf-file-name="CActiveRecord.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../framework/db/ar/CActiveRecord.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1304" column="44" selection-start="46900" selection-end="46900" vertical-scroll-proportion="-8.77193" vertical-offset="26737" max-vertical-offset="51576">
+            <state line="1304" column="44" selection-start="46900" selection-end="46900" vertical-scroll-proportion="0.0" vertical-offset="27384" max-vertical-offset="51723">
               <folding />
             </state>
           </provider>
@@ -175,6 +167,7 @@
         <option value="$PROJECT_DIR$/demos/www/protected/components/Util.php" />
         <option value="$PROJECT_DIR$/demos/www/protected/controllers/SliderbarController.php" />
         <option value="$PROJECT_DIR$/demos/www/protected/models/Sliderbar.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -264,24 +257,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mertric_cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -394,7 +369,11 @@
       <created>1404466552484</created>
       <updated>1404466552484</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Save firstMenu and  CHTML  test &#10;">
+      <created>1404639720403</created>
+      <updated>1404639720403</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -403,24 +382,24 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32909784" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23323824" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13578275" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24387646" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24653888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23323824" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32909784" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -439,7 +418,8 @@
     <MESSAGE value="cms layout  1&#10;" />
     <MESSAGE value="功能栏点击 右侧frame跳转 &#10;" />
     <MESSAGE value="form &#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="form &#10;" />
+    <MESSAGE value="Save firstMenu and  CHTML  test &#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Save firstMenu and  CHTML  test &#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -483,11 +463,6 @@
     <entry file="file://$PROJECT_DIR$/demos/www/protected/views/layouts/column1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="29" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="276" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="726" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/www/protected/config/params.php">
@@ -572,161 +547,120 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/www/protected/views/layouts/cms/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="158" selection-end="158" vertical-scroll-proportion="-2.8" vertical-offset="84" max-vertical-offset="1134">
-          <folding />
-        </state>
+        <state line="8" column="18" selection-start="158" selection-end="158" vertical-scroll-proportion="-2.8" vertical-offset="84" max-vertical-offset="1134" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/www/js/cms/matrix.interface.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="18" selection-start="942" selection-end="942" vertical-scroll-proportion="0.18333334" vertical-offset="780" max-vertical-offset="1680">
-          <folding />
-        </state>
+        <state line="45" column="18" selection-start="942" selection-end="942" vertical-scroll-proportion="0.18333334" vertical-offset="780" max-vertical-offset="1680" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/www/css/cms/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="108063" selection-start="108063" selection-end="108063" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="887">
-          <folding />
-        </state>
+        <state line="0" column="108063" selection-start="108063" selection-end="108063" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="887" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/www/protected/views/sliderbar/secondMenu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="376" column="6" selection-start="20221" selection-end="20221" vertical-scroll-proportion="1.294049" vertical-offset="6787" max-vertical-offset="8022">
-          <folding />
-        </state>
+        <state line="376" column="6" selection-start="20221" selection-end="20221" vertical-scroll-proportion="1.294049" vertical-offset="6787" max-vertical-offset="8022" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/www/protected/components/Form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0" vertical-offset="819" max-vertical-offset="1806">
-          <folding />
-        </state>
+        <state line="39" column="0" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0" vertical-offset="819" max-vertical-offset="1806" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/www/protected/views/layouts/cms/js.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="58" selection-start="1557" selection-end="1557" vertical-scroll-proportion="0.6034483" vertical-offset="0" max-vertical-offset="1260">
-          <folding />
-        </state>
+        <state line="25" column="58" selection-start="1557" selection-end="1557" vertical-scroll-proportion="0.6034483" vertical-offset="0" max-vertical-offset="1260" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/www/protected/views/layouts/cms/css.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="83" selection-end="83" vertical-scroll-proportion="0.096551724" vertical-offset="0" max-vertical-offset="870">
-          <folding />
-        </state>
+        <state line="4" column="6" selection-start="83" selection-end="83" vertical-scroll-proportion="0.096551724" vertical-offset="0" max-vertical-offset="870" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/www/css/cms/css/uniform.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="188" column="12" selection-start="3353" selection-end="3353" vertical-scroll-proportion="-2.2522223" vertical-offset="5975" max-vertical-offset="12453">
-          <folding />
-        </state>
+        <state line="188" column="12" selection-start="3353" selection-end="3353" vertical-scroll-proportion="-2.2522223" vertical-offset="5975" max-vertical-offset="12453" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/www/protected/views/site/error.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="39" selection-start="350" selection-end="350" vertical-scroll-proportion="0.19603267" vertical-offset="0" max-vertical-offset="8022">
-          <folding />
-        </state>
+        <state line="8" column="39" selection-start="350" selection-end="350" vertical-scroll-proportion="0.19603267" vertical-offset="0" max-vertical-offset="8022" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/www/protected/views/layouts/cms/content.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="20" selection-start="645" selection-end="645" vertical-scroll-proportion="-16.1" vertical-offset="0" max-vertical-offset="693">
-          <folding />
-        </state>
+        <state line="23" column="20" selection-start="645" selection-end="645" vertical-scroll-proportion="-16.1" vertical-offset="0" max-vertical-offset="693" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../framework/web/helpers/CHtml.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2184" column="32" selection-start="91133" selection-end="91133" vertical-scroll-proportion="-18.233334" vertical-offset="45170" max-vertical-offset="59136">
-          <folding />
-        </state>
+        <state line="2184" column="32" selection-start="91133" selection-end="91133" vertical-scroll-proportion="-18.233334" vertical-offset="45170" max-vertical-offset="59136" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../framework/web/CHttpRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="862" column="0" selection-start="30061" selection-end="30061" vertical-scroll-proportion="-15.433333" vertical-offset="17492" max-vertical-offset="30912">
-          <folding />
-        </state>
+        <state line="862" column="0" selection-start="30061" selection-end="30061" vertical-scroll-proportion="-15.433333" vertical-offset="17492" max-vertical-offset="30912" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/blog/protected/components/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="158" selection-end="158" vertical-scroll-proportion="0.12382075" vertical-offset="0" max-vertical-offset="848">
-          <folding />
-        </state>
+        <state line="5" column="6" selection-start="158" selection-end="158" vertical-scroll-proportion="0.12382075" vertical-offset="0" max-vertical-offset="848" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/www/protected/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="5" selection-start="152" selection-end="152" vertical-scroll-proportion="-7.0" vertical-offset="0" max-vertical-offset="840">
+        <state line="10" column="5" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="840">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../framework/web/CController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1022" column="20" selection-start="39143" selection-end="39143" vertical-scroll-proportion="0.3329208" vertical-offset="21046" max-vertical-offset="25830">
-          <folding />
-        </state>
+        <state line="1022" column="20" selection-start="39143" selection-end="39143" vertical-scroll-proportion="0.3329208" vertical-offset="21046" max-vertical-offset="25830" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_4.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="622" column="9" selection-start="20986" selection-end="20986" vertical-scroll-proportion="0.3443396" vertical-offset="12770" max-vertical-offset="22848">
-          <folding />
-        </state>
+        <state line="622" column="9" selection-start="20986" selection-end="20986" vertical-scroll-proportion="0.3443396" vertical-offset="12770" max-vertical-offset="22848" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/www/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="49" selection-start="99" selection-end="99" vertical-scroll-proportion="-2.1" vertical-offset="0" max-vertical-offset="399">
-          <folding />
-        </state>
+        <state line="3" column="49" selection-start="99" selection-end="99" vertical-scroll-proportion="-2.1" vertical-offset="0" max-vertical-offset="399" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../framework/db/ar/CActiveRecord.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1304" column="44" selection-start="46900" selection-end="46900" vertical-scroll-proportion="-8.77193" vertical-offset="26737" max-vertical-offset="51576">
+        <state line="1304" column="44" selection-start="46900" selection-end="46900" vertical-scroll-proportion="0.0" vertical-offset="27384" max-vertical-offset="51723">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/www/protected/models/Tag.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="20" selection-start="401" selection-end="401" vertical-scroll-proportion="0.42099056" vertical-offset="0" max-vertical-offset="1554">
-          <folding />
-        </state>
+        <state line="17" column="20" selection-start="401" selection-end="401" vertical-scroll-proportion="0.42099056" vertical-offset="0" max-vertical-offset="1554" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/www/protected/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="32" selection-start="1016" selection-end="1016" vertical-scroll-proportion="-6.3" vertical-offset="651" max-vertical-offset="1617">
+        <state line="40" column="32" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="1617">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/www/protected/components/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="10" selection-start="616" selection-end="933" vertical-scroll-proportion="-12.6" vertical-offset="0" max-vertical-offset="714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/views/sliderbar/firstMenu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="63" selection-start="1804" selection-end="1804" vertical-scroll-proportion="-17.5" vertical-offset="252" max-vertical-offset="1323">
+        <state line="18" column="10" selection-start="616" selection-end="933" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/www/protected/components/Util.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="7" selection-start="294" selection-end="294" vertical-scroll-proportion="-7.0" vertical-offset="0" max-vertical-offset="567">
+        <state line="10" column="7" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="567">
           <folding>
             <marker date="1404638857304" expanded="true" signature="409:500" placeholder="..." />
             <marker date="1404638857304" expanded="true" signature="462:500" placeholder="..." />
@@ -741,16 +675,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demos/www/protected/views/sliderbar/firstMenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="63" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="1323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demos/www/protected/controllers/SliderbarController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="24" selection-start="205" selection-end="205" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="840">
+        <state line="11" column="38" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="840">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/www/protected/models/Sliderbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="5" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.87931037" vertical-offset="810" max-vertical-offset="1722">
+        <state line="58" column="0" selection-start="1205" selection-end="1205" vertical-scroll-proportion="-10.8" vertical-offset="894" max-vertical-offset="1848">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="7" selection-start="24" selection-end="24" vertical-scroll-proportion="0.047890536" vertical-offset="0" max-vertical-offset="877">
           <folding />
         </state>
       </provider>
