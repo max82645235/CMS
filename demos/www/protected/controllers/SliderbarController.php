@@ -21,44 +21,15 @@ class SliderbarController extends Controller
     public function actionFirstMenu(){
         $actionType = 'actionType';
         $recordId = 'id';
-        $curdObj = new CurdAction($actionType,$recordId);
+        $className = 'Sliderbar';
+        $redirectUrl = '/sliderbar/tableList';
+        $curdObj = new CurdAction($actionType,$recordId,$className,$redirectUrl);
+        $model = $curdObj->getMod();
+        $curdObj->DataHandler();
         $topList = Sliderbar::getTopRecordList();
-        if($curdObj->isAdd()){
-            $model = new Sliderbar();
-            if(isset($_POST['Sliderbar'])){
-                $model->setAttributes($_POST['Sliderbar']);
-                if($model->save()){
-                    Util::alertJs(CurdAction::SAVE_SUCCESS,'/sliderbar/tableList');
-                }else{
-                    Util::alertJs(CurdAction::SAVE_FAIL);
-                }
-            }
-            $this->render('firstMenu',
-                array('model'=>$model,'curdObj'=>$curdObj,'topList'=>$topList)
-            );
-        }elseif($curdObj->isEdit()){
-            $model = Sliderbar::model()->findByPk($curdObj->$recordId);
-            if(isset($_POST['Sliderbar'])){
-                $model->setAttributes($_POST['Sliderbar']);
-                if($model->save()){
-                    Util::alertJs(CurdAction::UPDATE_SUCCESS,'/sliderbar/tableList');
-                }else{
-                    Util::alertJs(CurdAction::UPDATE_FAIL);
-                }
-            }
-            $this->render('firstMenu',
-                array('model'=>$model,'curdObj'=>$curdObj,'topList'=>$topList)
-            );
-        }elseif($curdObj->isDel()){
-            $res = Sliderbar::model()->deleteByPk($curdObj->$recordId);
-            if($res){
-                Util::alertJs(CurdAction::DEL_SUCCESS,'/sliderbar/tableList');
-            }else{
-                Util::alertJs(CurdAction::DEL_FALI);
-            }
-        }else{
-            Util::alertJs('','/sliderbar/tableList');
-        }
+        $this->render('firstMenu',
+            array('model'=>$model,'curdObj'=>$curdObj,'topList'=>$topList)
+        );
     }
 
 }

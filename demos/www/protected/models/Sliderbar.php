@@ -31,6 +31,15 @@ class Sliderbar extends CActiveRecord
         );
     }
 
+    public function scopes()
+    {
+        return array(
+            'orderBy'=>array(
+                'order'=>'fid ASC,sort ASC',
+            )
+        );
+    }
+
     /**
      * @return array relational rules.
      */
@@ -83,12 +92,10 @@ class Sliderbar extends CActiveRecord
     public function checkSameUrl($attribute,$params){
         if($this->top==0){
             $oldUrl = $this->findByAttributes(array('url'=>$this->url));
-            if($oldUrl){
+            if($oldUrl && $oldUrl->id!=$this->id){
                 $this->addError($attribute, '该url地址已经存在!');
                 return false;
             }
-        }elseif($this->top == 1){
-            unset($this->url);
         }
     }
 
@@ -132,5 +139,21 @@ class Sliderbar extends CActiveRecord
             }
         }
         return $tableList;
+    }
+
+    static function getSliderbarList(){
+        $recordList = self::model()->orderBy()->findAll();
+        $tmpList = array();
+        if($recordList){
+            foreach($recordList as $val){
+                $aList = $val->getAttributes();
+                if($val->fid){
+                    $id = $val->fid;
+                }
+                $id = ($val->fid)?$val->fid:$val->id;
+                $tmpList[$id][] = $aList;
+            }
+        }
+        return $tmpList;
     }
 }

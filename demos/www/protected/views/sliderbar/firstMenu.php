@@ -54,7 +54,7 @@
                     <?php echo $curdObj->getActionHidden();?>
                     <?php echo $curdObj->getRecordIdHidden();?>
                     <?php echo CHtml::submitButton('Save',array('class'=>'btn btn-success btn_margin')); ?>
-                    <?php echo CHtml::button('Reset',array('class'=>'btn btn-primary btn_margin','type'=>'reset'))?>
+                    <?php echo CHtml::button('Back',array('class'=>'btn btn-primary btn_margin','type'=>'reset','onclick'=>'history.go(-1);'))?>
                 </div>
             </form>
             <?php echo CHtml::errorSummary($model); ?>

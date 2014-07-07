@@ -3,6 +3,7 @@
 class SiteController extends Controller
 {
 	public $layout='cmsLayout';
+    public $sliderList;
 
 	/**
 	 * Declares class-based actions.
@@ -24,6 +25,8 @@ class SiteController extends Controller
 	}
 
     public function actionIndex(){
+        $listData = Sliderbar::getSliderbarList();
+        $this->sliderList = $listData;
         $this->render('index');
     }
 
