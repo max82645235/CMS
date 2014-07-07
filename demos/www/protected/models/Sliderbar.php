@@ -106,4 +106,31 @@ class Sliderbar extends CActiveRecord
         $record = self::model()->findAll('top=1');
         return CHtml::listData($record,'id','title');
     }
+
+    public function getTableList(){
+        $tableList = array();
+        $recordList = $this->model()->findAll();
+        $tmpList = array();
+        if($recordList){
+            foreach($recordList as $val){
+                $aList = $val->getAttributes();
+                if($val->fid){
+                    $id = $val->fid;
+                }else{
+                    $id = $val->id;
+                    $tableList['fidInfo'][$id] = $aList;
+                }
+                $id = ($val->fid)?$val->fid:$val->id;
+                $tmpList[$id][] = $aList;
+            }
+            if($tmpList){
+                $resultList = array();
+                foreach($tmpList as $val){
+                    $resultList = array_merge($resultList,$val);
+                }
+                $tableList['tableInfo'] = $resultList;
+            }
+        }
+        return $tableList;
+    }
 }

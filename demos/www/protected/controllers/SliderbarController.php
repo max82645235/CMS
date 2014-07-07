@@ -9,8 +9,10 @@ class SliderbarController extends Controller
     /*
      *  功能TABLE列表
      */
-    public function actionFirstTableList(){
-
+    public function actionTableList(){
+        $model = new Sliderbar();
+        $listData = $model->getTableList();
+        $this->render('tableList',array('listData'=>$listData));
     }
 
     /*
@@ -26,7 +28,7 @@ class SliderbarController extends Controller
             if(isset($_POST['Sliderbar'])){
                 $model->setAttributes($_POST['Sliderbar']);
                 if($model->save()){
-                    Util::alertJs(CurdAction::SAVE_SUCCESS,'/Sliderbar/FirstTableList');
+                    Util::alertJs(CurdAction::SAVE_SUCCESS,'/sliderbar/tableList');
                 }else{
                     Util::alertJs(CurdAction::SAVE_FAIL);
                 }
@@ -39,7 +41,7 @@ class SliderbarController extends Controller
             if(isset($_POST['Sliderbar'])){
                 $model->setAttributes($_POST['Sliderbar']);
                 if($model->save()){
-                    Util::alertJs(CurdAction::UPDATE_SUCCESS,'/Sliderbar/FirstTableList');
+                    Util::alertJs(CurdAction::UPDATE_SUCCESS,'/sliderbar/tableList');
                 }else{
                     Util::alertJs(CurdAction::UPDATE_FAIL);
                 }
@@ -50,12 +52,12 @@ class SliderbarController extends Controller
         }elseif($curdObj->isDel()){
             $res = Sliderbar::model()->deleteByPk($curdObj->$recordId);
             if($res){
-                Util::alertJs(CurdAction::DEL_SUCCESS,'/Sliderbar/FirstTableList');
+                Util::alertJs(CurdAction::DEL_SUCCESS,'/sliderbar/tableList');
             }else{
                 Util::alertJs(CurdAction::DEL_FALI);
             }
         }else{
-            Util::alertJs('','/sliderbar/firstTableList');
+            Util::alertJs('','/sliderbar/tableList');
         }
     }
 

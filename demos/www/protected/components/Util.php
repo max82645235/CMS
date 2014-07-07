@@ -15,7 +15,7 @@ class Util{
         if(is_array($arr)){
             echo '<pre>';
             print_r($arr);
-            echo '<pre>';
+            echo '</pre>';
             die();
         }
     }

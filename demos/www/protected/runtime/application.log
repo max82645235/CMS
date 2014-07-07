@@ -1680,3 +1680,586 @@ Stack trace:
 REQUEST_URI=/sliderbar/firstMenu/actionType/add/
 HTTP_REFERER=http://localhost/sliderbar/firstMenu/actionType/add/
 ---
+2014/07/07 10:59:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "FirstTableList".' in E:\www\mertric_cms\framework\web\CController.php:483
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(270): CController->missingAction('FirstTableList')
+#1 E:\www\mertric_cms\framework\web\CWebApplication.php(282): CController->run('FirstTableList')
+#2 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController('Sliderbar/First...')
+#3 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 E:\www\mertric_cms\demos\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Sliderbar/FirstTableList
+HTTP_REFERER=http://localhost/sliderbar/firstMenu/actionType/add/
+---
+2014/07/07 12:16:09 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:24)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:17:12 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:24)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:17:13 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:24)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:18:12 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:24)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:18:19 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:24)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:18:19 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:24)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:19:06 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:25)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:20:52 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:24)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(16): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:20:58 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:24)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(16): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:20:59 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:24)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(16): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:21:35 [error] [php] Undefined offset: 20 (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:24)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(16): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:21:46 [error] [php] Undefined offset: 21 (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:24)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(16): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:21:51 [error] [php] Undefined offset: 20 (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:24)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(16): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:21:57 [error] [php] Undefined offset: 20 (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:24)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(16): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:22:07 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:24)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(16): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:22:12 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:24)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(16): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:24:12 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:25)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:24:29 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:25)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:24:35 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:25)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:24:35 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:25)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:24:35 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:25)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:24:36 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:25)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:25:34 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:25)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:25:34 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:25)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:25:35 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:25)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:26:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "FirstTableList".' in E:\www\mertric_cms\framework\web\CController.php:483
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(270): CController->missingAction('FirstTableList')
+#1 E:\www\mertric_cms\framework\web\CWebApplication.php(282): CController->run('FirstTableList')
+#2 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController('Sliderbar/First...')
+#3 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 E:\www\mertric_cms\demos\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Sliderbar/FirstTableList
+HTTP_REFERER=http://localhost/sliderbar/firstMenu/actionType/add/
+---
+2014/07/07 12:26:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "FirstTableList".' in E:\www\mertric_cms\framework\web\CController.php:483
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(270): CController->missingAction('FirstTableList')
+#1 E:\www\mertric_cms\framework\web\CWebApplication.php(282): CController->run('FirstTableList')
+#2 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController('Sliderbar/First...')
+#3 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 E:\www\mertric_cms\demos\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Sliderbar/FirstTableList
+HTTP_REFERER=http://localhost/sliderbar/firstMenu/actionType/add/
+---
+2014/07/07 12:26:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "FirstTableList".' in E:\www\mertric_cms\framework\web\CController.php:483
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(270): CController->missingAction('FirstTableList')
+#1 E:\www\mertric_cms\framework\web\CWebApplication.php(282): CController->run('FirstTableList')
+#2 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController('Sliderbar/First...')
+#3 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 E:\www\mertric_cms\demos\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Sliderbar/FirstTableList
+HTTP_REFERER=http://localhost/sliderbar/firstMenu/actionType/add/
+---
+2014/07/07 12:26:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "FirstTableList".' in E:\www\mertric_cms\framework\web\CController.php:483
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(270): CController->missingAction('FirstTableList')
+#1 E:\www\mertric_cms\framework\web\CWebApplication.php(282): CController->run('FirstTableList')
+#2 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController('Sliderbar/First...')
+#3 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 E:\www\mertric_cms\demos\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Sliderbar/FirstTableList
+HTTP_REFERER=http://localhost/sliderbar/firstMenu/actionType/add/
+---
+2014/07/07 12:26:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "FirstTableList".' in E:\www\mertric_cms\framework\web\CController.php:483
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(270): CController->missingAction('FirstTableList')
+#1 E:\www\mertric_cms\framework\web\CWebApplication.php(282): CController->run('FirstTableList')
+#2 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController('Sliderbar/First...')
+#3 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 E:\www\mertric_cms\demos\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Sliderbar/FirstTableList
+HTTP_REFERER=http://localhost/sliderbar/firstMenu/actionType/add/
+---
+2014/07/07 12:26:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "FirstTableList".' in E:\www\mertric_cms\framework\web\CController.php:483
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(270): CController->missingAction('FirstTableList')
+#1 E:\www\mertric_cms\framework\web\CWebApplication.php(282): CController->run('FirstTableList')
+#2 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController('Sliderbar/First...')
+#3 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 E:\www\mertric_cms\demos\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Sliderbar/FirstTableList
+HTTP_REFERER=http://localhost/sliderbar/firstMenu/actionType/add/
+---
+2014/07/07 12:26:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "FirstTableList".' in E:\www\mertric_cms\framework\web\CController.php:483
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(270): CController->missingAction('FirstTableList')
+#1 E:\www\mertric_cms\framework\web\CWebApplication.php(282): CController->run('FirstTableList')
+#2 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController('Sliderbar/First...')
+#3 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 E:\www\mertric_cms\demos\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Sliderbar/FirstTableList
+HTTP_REFERER=http://localhost/sliderbar/firstMenu/actionType/add/
+---
+2014/07/07 12:26:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "FirstTableList".' in E:\www\mertric_cms\framework\web\CController.php:483
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(270): CController->missingAction('FirstTableList')
+#1 E:\www\mertric_cms\framework\web\CWebApplication.php(282): CController->run('FirstTableList')
+#2 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController('Sliderbar/First...')
+#3 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 E:\www\mertric_cms\demos\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Sliderbar/FirstTableList
+HTTP_REFERER=http://localhost/sliderbar/firstMenu/actionType/add/
+---
+2014/07/07 12:26:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "FirstTableList".' in E:\www\mertric_cms\framework\web\CController.php:483
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(270): CController->missingAction('FirstTableList')
+#1 E:\www\mertric_cms\framework\web\CWebApplication.php(282): CController->run('FirstTableList')
+#2 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController('Sliderbar/First...')
+#3 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 E:\www\mertric_cms\demos\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Sliderbar/FirstTableList
+HTTP_REFERER=http://localhost/sliderbar/firstMenu/actionType/add/
+---
+2014/07/07 12:26:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "FirstTableList".' in E:\www\mertric_cms\framework\web\CController.php:483
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(270): CController->missingAction('FirstTableList')
+#1 E:\www\mertric_cms\framework\web\CWebApplication.php(282): CController->run('FirstTableList')
+#2 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController('Sliderbar/First...')
+#3 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 E:\www\mertric_cms\demos\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Sliderbar/FirstTableList
+HTTP_REFERER=http://localhost/sliderbar/firstMenu/actionType/add/
+---
+2014/07/07 12:27:32 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:25)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:27:36 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:25)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:27:45 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:25)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:27:46 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:25)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:27:46 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:25)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:29:12 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:25)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:29:15 [error] [php] Array to string conversion (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:25)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
+2014/07/07 12:33:33 [error] [php] Trying to get property of non-object (E:\www\mertric_cms\demos\www\protected\views\sliderbar\tableList.php:19)
+Stack trace:
+#0 E:\www\mertric_cms\framework\web\CController.php(869): SliderbarController->renderFile()
+#1 E:\www\mertric_cms\framework\web\CController.php(782): SliderbarController->renderPartial()
+#2 E:\www\mertric_cms\demos\www\protected\controllers\SliderbarController.php(15): SliderbarController->render()
+#3 E:\www\mertric_cms\framework\web\actions\CInlineAction.php(49): SliderbarController->actionTableList()
+#4 E:\www\mertric_cms\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 E:\www\mertric_cms\framework\web\CController.php(286): SliderbarController->runAction()
+#6 E:\www\mertric_cms\framework\web\CController.php(265): SliderbarController->runActionWithFilters()
+#7 E:\www\mertric_cms\framework\web\CWebApplication.php(282): SliderbarController->run()
+#8 E:\www\mertric_cms\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 E:\www\mertric_cms\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 E:\www\mertric_cms\demos\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/sliderbar/tableList
