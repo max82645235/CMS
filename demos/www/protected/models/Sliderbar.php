@@ -24,7 +24,10 @@ class Sliderbar extends CActiveRecord
     public function rules()
     {
         return array(
-            array('title,top,icon,sort','required')
+            array('title,top,sort','required'),
+            array('url','checkSameUrl'),
+            array('fid','checkFid'),
+            array('icon','match','pattern'=>'/^[a-z A-Z]+$/','allowEmpty'=>true)
         );
     }
 
@@ -50,7 +53,8 @@ class Sliderbar extends CActiveRecord
             'top'=>'顶级栏目',
             'icon'=>'图标',
             'sort'=>'排序',
-            'url'=>'url地址'
+            'url'=>'url地址',
+            'fid'=>'父级id'
         );
     }
 
@@ -75,9 +79,31 @@ class Sliderbar extends CActiveRecord
             return false;
     }
 
+    /*自定义rules规则*/
+    public function checkSameUrl($attribute,$params){
+        if($this->top==0){
+            $oldUrl = $this->findByAttributes(array('url'=>$this->url));
+            if($oldUrl){
+                $this->addError($attribute, '该url地址已经存在!');
+                return false;
+            }
+        }elseif($this->top == 1){
+            unset($this->url);
+        }
+    }
+
+    public function checkFid($attribute,$params){
+        if($this->top==0){
+            $list = $this->findByAttributes(array('top'=>1,'id'=>$this->fid));
+            if(!$list){
+                $this->addError($attribute, 'Fid不存在');
+            }
+        }
+    }
+
     /*获取顶级列表数组*/
     static function getTopRecordList(){
         $record = self::model()->findAll('top=1');
-
+        return CHtml::listData($record,'id','title');
     }
 }

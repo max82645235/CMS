@@ -19,10 +19,10 @@
                     <?=CHtml::activeLabel($model,'top',array('class'=>'control-label'));?>
                     <div class="controls">
                         <label>
-                            <?=CHtml::activeRadioButton($model,'top',array('value'=>0,'checked'=>'checked'))?>
+                            <?=CHtml::activeRadioButton($model,'top',array('value'=>0,'checked'=>'checked','id'=>'radio1'))?>
                             否</label>
                         <label>
-                            <?=CHtml::activeRadioButton($model,'top',array('value'=>1))?>
+                            <?=CHtml::activeRadioButton($model,'top',array('value'=>1,'id'=>'radio2'))?>
                             是</label>
                     </div>
                 </div>
@@ -44,7 +44,15 @@
                         <?=CHtml::activeTextField($model,'url')?>
                     </div>
                 </div>
+                <div class="control-group dropdown">
+                    <?=CHtml::activeLabel($model,'fid',array('class'=>'control-label'));?>
+                    <div class="controls">
+                        <?=CHtml::activeDropDownList($model,'fid',$topList,array('empty'=>'请选择'))?>
+                    </div>
+                </div>
                 <div class="form-actions" id="action_btn" >
+                    <?php echo $curdObj->getActionHidden();?>
+                    <?php echo $curdObj->getRecordIdHidden();?>
                     <?php echo CHtml::submitButton('Save',array('class'=>'btn btn-success btn_margin')); ?>
                     <?php echo CHtml::button('Reset',array('class'=>'btn btn-primary btn_margin','type'=>'reset'))?>
                 </div>
@@ -53,5 +61,16 @@
         </div>
     </div>
 </div>
+<script>
+    $("#radio1,#radio2").click(function(){
+        var id = $(this).attr('id');
+        if(id == 'radio1'){
+            $('.dropdown').show();
+        }else if(id == 'radio2'){
+            $('.dropdown').hide();
+        }
+    });
+</script>
+
 
 
