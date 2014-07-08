@@ -1,13 +1,9 @@
 
 <?php
 /*js文件路径前缀*/
-$jsPathPrifix = Yii::app()->baseUrl."/js/cms/";;
+$jsPathPrifix = Yii::app()->baseUrl."/js/cms/";
 ?>
 <?php Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'excanvas.min.js');?>
-<?php Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'jquery.min.js');?>
-<?php Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'bootstrap.min.js');?>
-<?php Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'jquery.ui.custom.js');?>
-
 <?php Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'jquery.peity.min.js');?>
 <?php Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'fullcalendar.min.js');?>
 <?php Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'matrix.js');?>

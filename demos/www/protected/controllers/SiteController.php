@@ -30,13 +30,32 @@ class SiteController extends Controller
         $this->render('index');
     }
 
+    /*主页内容*/
     public function actionHome(){
         $this->layout = 'cms/content';
         $this->render('home');
     }
 
-    public function actionFrameA(){
-        $this->layout = 'cms/content';
-        $this->render('error',array('data'=>'frameA'));
+    /*用户登录*/
+    public function actionLogin(){
+        $model=new LoginForm;
+
+        // collect user input data
+        if(isset($_POST['LoginForm']))
+        {
+            $model->attributes=$_POST['LoginForm'];
+            // validate user input and redirect to the previous page if valid
+            if($model->validate() && $model->login())
+                Util::alertJs('登录成功','/site/index');
+        }
+
+        // display the login form
+        $this->layout = 'column0';
+        $this->render('login',array('model'=>$model));
+    }
+
+    /*用户登出*/
+    public function actionLoginOut(){
+
     }
 }

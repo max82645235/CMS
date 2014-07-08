@@ -9,7 +9,7 @@ class Controller extends CController
 	 * @var string the default layout for the controller view. Defaults to 'column1',
 	 * meaning using a single column layout. See 'protected/views/layouts/column1.php'.
 	 */
-	public $layout='column1';
+	public $layout='column0';
 	/**
 	 * @var array context menu items. This property will be assigned to {@link CMenu::items}.
 	 */
@@ -25,6 +25,17 @@ class Controller extends CController
         $class = $this->getId() ;
         $action  = $this->getAction()->id;
         return '/'.$class.'/'.$action;
+    }
+
+    public function init(){
+        $jsPathPrifix = Yii::app()->baseUrl."/js/cms/";
+        $cssPathPrifix = Yii::app()->baseUrl."/css/cms/css/";
+        Yii::app()->clientScript->registerCssFile($cssPathPrifix.'bootstrap.min.css');
+        Yii::app()->clientScript->registerCssFile($cssPathPrifix.'bootstrap-responsive.min.css');
+        Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/cms/font-awesome/css/font-awesome.css');
+        Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'jquery.min.js');
+        Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'jquery.ui.custom.js');
+        Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'bootstrap.min.js');
     }
 
 }
