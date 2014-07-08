@@ -6,7 +6,7 @@
 <?php $this->endContent(); ?>
 <style>
 .content_body{background: none repeat scroll 0 0 #eeeeee;overflow-x:hidden;margin-top:0px;}
-#breadcrumb {margin-top:0px;margin-top:38px; }
+
 </style>
 <body class="content_body">
 

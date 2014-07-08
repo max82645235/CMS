@@ -5,7 +5,7 @@
 <?php $this->endContent(); ?>
 
 <!--main-container-part-->
-<div id="content">
+<div id="content" style="margin-top: -38px;">
     <?=$content?>
 </div>
 

@@ -30,6 +30,11 @@ class SiteController extends Controller
         $this->render('index');
     }
 
+    public function actionHome(){
+        $this->layout = 'cms/content';
+        $this->render('home');
+    }
+
     public function actionFrameA(){
         $this->layout = 'cms/content';
         $this->render('error',array('data'=>'frameA'));

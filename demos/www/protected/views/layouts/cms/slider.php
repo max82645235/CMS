@@ -3,7 +3,7 @@
     <ul>
         <?php foreach($listData as $data){ ?>
             <?php
-                  $url = ($data[0]['url'])?$data[0]['url']:'';
+                  $url = ($data[0]['url'])?$data[0]['url']:'#';
                   $title = $data[0]['title'];
                   $count = count($data);
                   $icon = $data[0]['icon'];

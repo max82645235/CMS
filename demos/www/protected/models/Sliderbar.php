@@ -114,6 +114,7 @@ class Sliderbar extends CActiveRecord
         return CHtml::listData($record,'id','title');
     }
 
+    /*获取功能菜单列表TABLE数据*/
     public function getTableList(){
         $tableList = array();
         $recordList = $this->model()->findAll();
@@ -141,6 +142,7 @@ class Sliderbar extends CActiveRecord
         return $tableList;
     }
 
+    /*获取左侧菜单sliderbar数据*/
     static function getSliderbarList(){
         $recordList = self::model()->orderBy()->findAll();
         $tmpList = array();
