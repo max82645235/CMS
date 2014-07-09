@@ -79,5 +79,23 @@ class User extends CActiveRecord
             return false;
     }
 
+    /**
+     * Checks if the given password is correct.
+     * @param string the password to be validated
+     * @return boolean whether the password is valid
+     */
+    public function validatePassword($password)
+    {
+        return CPasswordHelper::verifyPassword($password,$this->password);
+    }
 
+    /**
+     * Generates the password hash.
+     * @param string password
+     * @return string hash
+     */
+    public function hashPassword($password)
+    {
+        return CPasswordHelper::hashPassword($password);
+    }
 }
