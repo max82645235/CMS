@@ -33,7 +33,7 @@ $jsPathPrifix = Yii::app()->baseUrl."/js/cms/";
             <div class="controls">
                 <div class="main_input_box">
                     <span class="add-on bg_ly"><i class="icon-lock"></i></span>
-                    <?php echo $form->textField($model,'password',array('placeholder'=>'密码','style'=>'margin-left:-7px;')); ?>
+                    <?php echo $form->passwordField($model,'password',array('placeholder'=>'密码','style'=>'margin-left:-7px;')); ?>
                     <?php echo $form->error($model,'password'); ?>
                 </div>
             </div>

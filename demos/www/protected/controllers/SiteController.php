@@ -25,6 +25,8 @@ class SiteController extends Controller
 	}
 
     public function actionIndex(){
+        if(!Yii::app()->user->id)
+            $this->redirect(Yii::app()->user->loginUrl);
         $listData = Sliderbar::getSliderbarList();
         $this->sliderList = $listData;
         $this->render('index');
@@ -38,8 +40,9 @@ class SiteController extends Controller
 
     /*用户登录*/
     public function actionLogin(){
+        if(Yii::app()->user->id)
+            $this->redirect(Yii::app()->homeUrl);
         $model=new LoginForm;
-
         // collect user input data
         if(isset($_POST['LoginForm']))
         {
@@ -56,6 +59,7 @@ class SiteController extends Controller
 
     /*用户登出*/
     public function actionLoginOut(){
-
+        Yii::app()->user->logout();
+        $this->redirect(Yii::app()->homeUrl);
     }
 }

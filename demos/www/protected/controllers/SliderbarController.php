@@ -24,12 +24,11 @@ class SliderbarController extends Controller
         $className = 'Sliderbar';
         $redirectUrl = '/sliderbar/tableList';
         $curdObj = new CurdAction($actionType,$recordId,$className,$redirectUrl);
-        $model = $curdObj->getMod();
         $curdObj->DataHandler();
+        $model = $curdObj->getMod();
         $topList = Sliderbar::getTopRecordList();
         $this->render('firstMenu',
             array('model'=>$model,'curdObj'=>$curdObj,'topList'=>$topList)
         );
     }
-
 }

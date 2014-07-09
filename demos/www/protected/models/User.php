@@ -24,7 +24,8 @@ class User extends CActiveRecord
     public function rules()
     {
         return array(
-            array('username,password','required'),
+            array('userName','required'),
+            array('password','required','on'=>'add'),
             array('realName','match','pattern'=>'/^.+$/','allowEmpty'=>true)
         );
     }
@@ -54,13 +55,17 @@ class User extends CActiveRecord
     public function attributeLabels()
     {
         return array(
-            'username'=>'ÓÃ»§ÕËºÅ',
-            'password'=>'µÇÂ¼ÃÜÂë',
-            'realName'=>'ÕæÊµĞÕÃû'
+            'userName'=>'è´¦å·å',
+            'password'=>'å¯†ç ',
+            'realName'=>'çœŸå®å§“å'
         );
     }
 
-
+    public function setAttribute($name,$value){
+        if($name=='password')
+            $value = $this->hashPassword($value);
+        parent::setAttribute($name,$value);
+    }
 
 
     /**
@@ -72,7 +77,7 @@ class User extends CActiveRecord
         if(parent::beforeSave())
         {
             if($this->isNewRecord)
-                $this->create_time= date('Y-m-d H:i:s');
+                $this->createTime= date('Y-m-d H:i:s');
             return true;
         }
         else

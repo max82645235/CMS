@@ -8,7 +8,7 @@
 class UserIdentity extends CUserIdentity
 {
 	private $_id;
-
+    private $_info;
 	/**
 	 * Authenticates a user.
 	 * @return boolean whether authentication succeeds.
@@ -23,7 +23,8 @@ class UserIdentity extends CUserIdentity
 		else
 		{
 			$this->_id=$user->id;
-			$this->username=$user->username;
+			$this->username=$user->userName;
+            $this->_info = $user->realName;
 			$this->errorCode=self::ERROR_NONE;
 		}
 		return $this->errorCode==self::ERROR_NONE;
@@ -36,4 +37,8 @@ class UserIdentity extends CUserIdentity
 	{
 		return $this->_id;
 	}
+
+    public function getUserInfo(){
+        return $this->_info;
+    }
 }

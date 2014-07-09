@@ -9,7 +9,7 @@ class CurdAction{
     protected  $action;
     protected $recordId;
     protected $model;
-    protected $status;
+    protected $status=0;
     protected $className;
     protected $redirectUrl;
     const EDIT = 'edit';
@@ -63,6 +63,11 @@ class CurdAction{
 
     public function getMod(){
         return $this->model;
+    }
+
+    public function setScenario($scenario=''){
+        $scenario = ($scenario)?$scenario:$this->getRequestValue($this->action);
+        $this->model->setScenario($scenario);
     }
 
     public function DataHandler(){
