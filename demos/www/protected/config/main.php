@@ -25,7 +25,7 @@ return array(
 	'components'=>array(
 		'user'=>array(
 			// enable cookie-based authentication
-            'class'=>'CWebUser',
+            'class'=>'WebUser',
 			'allowAutoLogin'=>true,
 		),
 		/*'db'=>array(
@@ -42,8 +42,9 @@ return array(
 			'charset' => 'utf8',
 			'tablePrefix' => 'cms_',
 		),
-
-		'urlManager'=>array(
+        'enableProfiling'=>YII_DEBUG,
+        'enableParamLogging'=>YII_DEBUG,
+        'urlManager'=>array(
             'urlFormat' => 'path',
             'showScriptName'=>false,
             'rules'=>array(
@@ -58,11 +59,11 @@ return array(
 					'levels'=>'error, warning',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
+
 				array(
 					'class'=>'CWebLogRoute',
 				),
-				*/
+
 			),
 		),
 	),

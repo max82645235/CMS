@@ -1,6 +1,7 @@
 <?php
 class User extends CActiveRecord
 {
+    public $passwordFix;
     /**
      * Returns the static model of the specified AR class.
      * @return static the static model class
@@ -24,8 +25,7 @@ class User extends CActiveRecord
     public function rules()
     {
         return array(
-            array('userName','required'),
-            array('password','required','on'=>'add'),
+            array('userName,password','required'),
             array('realName','match','pattern'=>'/^.+$/','allowEmpty'=>true)
         );
     }
@@ -57,13 +57,16 @@ class User extends CActiveRecord
         return array(
             'userName'=>'账号名',
             'password'=>'密码',
-            'realName'=>'真实姓名'
+            'realName'=>'真实姓名',
+            'passwordFix'=>'密码不变更'
         );
     }
 
     public function setAttribute($name,$value){
-        if($name=='password')
-            $value = $this->hashPassword($value);
+        if($name=='password'){
+            //如果密码不变更选项为true，说明更新是未更改密码，否则需要对表单密码值加密入库
+            $value = ($this->passwordFix)?$this->password:$this->hashPassword($value);
+        }
         parent::setAttribute($name,$value);
     }
 
@@ -82,6 +85,13 @@ class User extends CActiveRecord
         }
         else
             return false;
+    }
+
+    protected function afterSave(){
+        parent::afterSave();
+        //数据库更新完后需要更新SESSION
+        $info = $this->getAttributes();
+        Yii::app()->user->setUserInfo($info);
     }
 
     /**

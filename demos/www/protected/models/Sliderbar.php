@@ -109,8 +109,8 @@ class Sliderbar extends CActiveRecord
     }
 
     /*获取顶级列表数组*/
-    static function getTopRecordList(){
-        $record = self::model()->findAll('top=1');
+    static function getTopRecordList($id){
+        $record = self::model()->findAll('top=1 and id!=:id',array(':id'=>$id));
         return CHtml::listData($record,'id','title');
     }
 

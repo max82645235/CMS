@@ -18,11 +18,20 @@
                 <div class="control-group">
                     <?=CHtml::activeLabel($model,'top',array('class'=>'control-label'));?>
                     <div class="controls">
+                        <?php
+                            $fArr = array('value'=>0,'id'=>'radio1');
+                            $sArr = array('value'=>1,'id'=>'radio2');
+                            if($model->top==1){
+                                $sArr['checked']='checked';
+                            }else{
+                                $fArr['checked']='checked';
+                            }
+                        ?>
                         <label>
-                            <?=CHtml::activeRadioButton($model,'top',array('value'=>0,'checked'=>'checked','id'=>'radio1'))?>
+                            <?=CHtml::activeRadioButton($model,'top',$fArr)?>
                             否</label>
                         <label>
-                            <?=CHtml::activeRadioButton($model,'top',array('value'=>1,'id'=>'radio2'))?>
+                            <?=CHtml::activeRadioButton($model,'top',$sArr)?>
                             是</label>
                     </div>
                 </div>
@@ -44,7 +53,7 @@
                         <?=CHtml::activeTextField($model,'url')?>
                     </div>
                 </div>
-                <div class="control-group dropdown">
+                <div class="control-group dropdown" <?php if($model->top==1){?> <?='style="display:none;"';}?>>
                     <?=CHtml::activeLabel($model,'fid',array('class'=>'control-label'));?>
                     <div class="controls">
                         <?=CHtml::activeDropDownList($model,'fid',$topList,array('empty'=>'请选择'))?>

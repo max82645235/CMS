@@ -36,10 +36,10 @@ class CurdAction{
         $this->recordId = $recordId;
         $this->redirectUrl = $redirectUrl;
         $this->className = $className;
-        $this->setMod();
+        $this->initMod();
     }
 
-    protected  function setMod(){
+    protected  function initMod(){
         $className = $this->className;
         $id = $this->getRequestValue($this->recordId);
         switch($this->getRequestValue($this->action)){
@@ -63,6 +63,10 @@ class CurdAction{
 
     public function getMod(){
         return $this->model;
+    }
+
+    public function setMod(CActiveRecord $model){
+        $this->model = $model;
     }
 
     public function setScenario($scenario=''){

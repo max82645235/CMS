@@ -12,6 +12,7 @@ class SliderbarController extends Controller
     public function actionTableList(){
         $model = new Sliderbar();
         $listData = $model->getTableList();
+        Util::dumpArr($listData);exit;
         $this->render('tableList',array('listData'=>$listData));
     }
 
@@ -26,7 +27,7 @@ class SliderbarController extends Controller
         $curdObj = new CurdAction($actionType,$recordId,$className,$redirectUrl);
         $curdObj->DataHandler();
         $model = $curdObj->getMod();
-        $topList = Sliderbar::getTopRecordList();
+        $topList = Sliderbar::getTopRecordList($model->id);
         $this->render('firstMenu',
             array('model'=>$model,'curdObj'=>$curdObj,'topList'=>$topList)
         );
