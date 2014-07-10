@@ -109,9 +109,12 @@ class Sliderbar extends CActiveRecord
     }
 
     /*获取顶级列表数组*/
-    static function getTopRecordList($id){
-        $record = self::model()->findAll('top=1 and id!=:id',array(':id'=>$id));
-        return CHtml::listData($record,'id','title');
+    public function getTopRecordList(){
+        $record = $this->model()->findAll('top=1');
+        $listData =  CHtml::listData($record,'id','title');
+        if($this->id)
+            unset($listData[$this->id]);
+        return $listData;
     }
 
     /*获取功能菜单列表TABLE数据*/
@@ -123,18 +126,22 @@ class Sliderbar extends CActiveRecord
             foreach($recordList as $val){
                 $aList = $val->getAttributes();
                 if($val->fid){
+                    //子节点
                     $id = $val->fid;
                 }else{
                     $id = $val->id;
                     $tableList['fidInfo'][$id] = $aList;
+                    $tableList['fatherList'][] = $id;
                 }
                 $id = ($val->fid)?$val->fid:$val->id;
                 $tmpList[$id][] = $aList;
             }
             if($tmpList){
                 $resultList = array();
-                foreach($tmpList as $val){
-                    $resultList = array_merge($resultList,$val);
+                foreach($tmpList as $key=>$val){
+                    if(in_array($key,$tableList['fatherList'])){
+                        $resultList = array_merge($resultList,$val);
+                    }
                 }
                 $tableList['tableInfo'] = $resultList;
             }

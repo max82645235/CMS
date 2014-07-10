@@ -19,14 +19,15 @@ class SliderbarController extends Controller
      *  一级菜单
      */
     public function actionFirstMenu(){
-        $actionType = 'actionType';
-        $recordId = 'id';
+        $actionType = CurdAction::getRequestValue('actionType');
+        $recordId = CurdAction::getRequestValue('id');
         $className = 'Sliderbar';
         $redirectUrl = '/sliderbar/tableList';
         $curdObj = new CurdAction($actionType,$recordId,$className,$redirectUrl);
+        $curdObj->initMod();
         $curdObj->DataHandler();
         $model = $curdObj->getMod();
-        $topList = Sliderbar::getTopRecordList($model->id);
+        $topList = $model->getTopRecordList();
         $this->render('firstMenu',
             array('model'=>$model,'curdObj'=>$curdObj,'topList'=>$topList)
         );

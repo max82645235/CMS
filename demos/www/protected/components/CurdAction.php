@@ -36,23 +36,21 @@ class CurdAction{
         $this->recordId = $recordId;
         $this->redirectUrl = $redirectUrl;
         $this->className = $className;
-        $this->initMod();
     }
 
-    protected  function initMod(){
+    public function initMod(){
         $className = $this->className;
-        $id = $this->getRequestValue($this->recordId);
-        switch($this->getRequestValue($this->action)){
+        switch($this->action){
             case self::ADD:
                             $this->model = new $className();
                 break;
 
             case self::EDIT:
-                            $this->model = $className::model()->findByPk($id);
+                            $this->model = $className::model()->findByPk($this->recordId);
                 break;
 
             case self::DEL:
-                            $this->model = $className::model()->deleteByPk($id);
+                            $this->model = $className::model()->deleteByPk($this->recordId);
                 break;
 
             default:
@@ -70,14 +68,14 @@ class CurdAction{
     }
 
     public function setScenario($scenario=''){
-        $scenario = ($scenario)?$scenario:$this->getRequestValue($this->action);
+        $scenario = ($scenario)?$scenario:$this->action;
         $this->model->setScenario($scenario);
     }
 
     public function DataHandler(){
         if($this->isDel() && $this->model){
             $this->status = self::SUCCESS;
-        }elseif($post = $this->getRequestValue($this->className)){
+        }elseif($post = self::getRequestValue($this->className)){
             $this->model->setAttributes($post);
             if($this->model->save())
                 $this->status = self::SUCCESS;
@@ -88,50 +86,36 @@ class CurdAction{
     }
 
     protected function alertMsg(){
-        $action = $this->getRequestValue($this->action);
+        $action = $this->action;
         $msg = $this->resultMsg[$action][$this->status];
         $url = ($this->status == self::SUCCESS)?$this->redirectUrl:'';
         Util::alertJs($msg,$url);
     }
 
     protected function isDel(){
-        return ($this->getRequestValue($this->action) == self::DEL)?true:false;
+        return ($this->action == self::DEL)?true:false;
     }
 
-    protected function getRequestValue($key){
-        if(isset($this->$key)){
-            return $this->$key;
+    static $requestValues = array();
+    static function getRequestValue($key){
+        if(isset(self::$requestValues[$key])){
+            return self::$requestValues[$key];
         }elseif(isset($_GET[$key])){
-            $this->$key = $_GET[$key];
+            self::$requestValues[$key] = $_GET[$key];
             return $_GET[$key];
         }elseif(isset($_POST[$key])){
-            $this->$key = $_POST[$key];
+            self::$requestValues[$key] = $_POST[$key];
             return $_POST[$key];
         }else{}
     }
 
-    public function __set($name,$val){
-        $this->$name = $val;
-    }
-
-    public  function __get($name){
-        return $this->$name;
-    }
-
-    public function __isset($name){
-        return isset($this->$name)?true:false;
-    }
-
-    public function getActionHidden(){
-        $key = $this->action;
-        $val = $this->getRequestValue($key);
+    public function getActionHidden($key='actionType'){
+        $val = $this->action;
         return CHtml::hiddenField($key,$val);
     }
 
-    public function getRecordIdHidden(){
-        $key = $this->recordId;
-        $val = $this->getRequestValue($key);
-        return CHtml::activeHiddenField($this->model,$this->recordId);
+    public function getRecordIdHidden($key='id'){
+        return CHtml::activeHiddenField($this->model,$key);
     }
 
     public function actionError($msg){

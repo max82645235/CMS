@@ -33,7 +33,9 @@ class User extends CActiveRecord
     public function scopes()
     {
         return array(
-
+            'orderBy'=>array(
+                'order'=>'id desc',
+            )
         );
     }
 
@@ -58,7 +60,8 @@ class User extends CActiveRecord
             'userName'=>'账号名',
             'password'=>'密码',
             'realName'=>'真实姓名',
-            'passwordFix'=>'密码不变更'
+            'passwordFix'=>'密码不变更',
+            'status'=>'用户冻结状态'
         );
     }
 
@@ -92,6 +95,12 @@ class User extends CActiveRecord
         //数据库更新完后需要更新SESSION
         $info = $this->getAttributes();
         Yii::app()->user->setUserInfo($info);
+    }
+
+    protected function beforeDelete(){
+        if(parent::beforeDelete()){
+            //用户删除前做权限验证
+        }
     }
 
     /**

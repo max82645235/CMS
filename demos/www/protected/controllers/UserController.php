@@ -44,25 +44,44 @@ class UserController extends Controller
     }
 
     public function actionTableList(){
-        $tableList = array();
         $recordList = User::model()->orderBy()->findAll();
-        if($recordList)
-            $recordList->getAttributes();
-        return $tableList;
+        $this->render('tableList',
+            array('recordList'=>$recordList)
+        );
     }
 
     /*用户增删改查*/
     public function actionUserCurd(){
-        $actionType = 'actionType';
-        $recordId = 'id';
+        $actionType = CurdAction::getRequestValue('actionType');
+        $recordId = Yii::app()->user->id;
         $className = 'User';
         $redirectUrl = '/user/tableList';
         $curdObj = new CurdAction($actionType,$recordId,$className,$redirectUrl);
+        $curdObj->initMod();
         $curdObj->setScenario();
         $model = $curdObj->getMod();
         $curdObj->DataHandler();
         $this->render('userCurd',
             array('model'=>$model,'curdObj'=>$curdObj)
         );
+    }
+
+    /*用户冻结*/
+    public function actionUserFreeze(){
+        $userId = Yii::app()->request->getParam('userId');
+        $model = User::model()->findByPk($userId);
+        if($model){
+            if($model->status == 1){
+                $model->status =0;
+                if($model->save()){
+                    Util::alertJs('冻结成功','/user/tableList');
+                }
+            }else{
+                $model->status =1;
+                if($model->save()){
+                    Util::alertJs('解冻成功','/user/tableList');
+                }
+            }
+        }
     }
 }
