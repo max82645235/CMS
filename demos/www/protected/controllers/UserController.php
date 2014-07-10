@@ -34,8 +34,21 @@ class UserController extends Controller
         );*/
     }
 
-    public function actionTableList(){
+    public function scopes()
+    {
+        return array(
+            'orderBy'=>array(
+                'order'=>'id ASC',
+            )
+        );
+    }
 
+    public function actionTableList(){
+        $tableList = array();
+        $recordList = User::model()->orderBy()->findAll();
+        if($recordList)
+            $recordList->getAttributes();
+        return $tableList;
     }
 
     /*用户增删改查*/

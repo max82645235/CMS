@@ -19,6 +19,9 @@
             </tr>
             </thead>
             <tbody>
+            <?php
+            //Util::dumpArr($listData);exit;
+            ?>
             <?php $fidInfo = $listData['fidInfo'];?>
             <?php foreach($listData['tableInfo'] as $val){?>
                 <tr class="grade">

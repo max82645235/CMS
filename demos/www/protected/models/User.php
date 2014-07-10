@@ -113,4 +113,8 @@ class User extends CActiveRecord
     {
         return CPasswordHelper::hashPassword($password);
     }
+
+    public function getTableList(){
+
+    }
 }
