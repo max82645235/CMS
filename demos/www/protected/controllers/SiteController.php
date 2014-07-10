@@ -27,6 +27,7 @@ class SiteController extends Controller
     public function actionIndex(){
         if(!Yii::app()->user->id)
             $this->redirect(Yii::app()->user->loginUrl);
+
         $listData = Sliderbar::getSliderbarList();
         $this->sliderList = $listData;
         $this->render('index');

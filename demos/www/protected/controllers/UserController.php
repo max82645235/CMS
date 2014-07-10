@@ -56,7 +56,7 @@ class UserController extends Controller
         $recordId = Yii::app()->user->id;
         $className = 'User';
         $redirectUrl = '/user/tableList';
-        $curdObj = new CurdAction($actionType,$recordId,$className,$redirectUrl);
+        $curdObj = new CurdAction($actionType,1,$className,$redirectUrl);
         $curdObj->initMod();
         $curdObj->setScenario();
         $model = $curdObj->getMod();
