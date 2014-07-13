@@ -25,11 +25,11 @@
     $("#sidebar li a").click(function(e){
         var frameHref = $(this).attr('href');
         if(frameHref != '#'){
-            frameJump(frameHref);
+            frameJump(frameHref,e);
         }
     });
 
-    function frameJump(frameHref){
+    function frameJump(frameHref,e){
         frame.location= frameHref;
         e.preventDefault();
     }

@@ -33,9 +33,9 @@ class Controller extends CController
         Yii::app()->clientScript->registerCssFile($cssPathPrifix.'bootstrap.min.css');
         Yii::app()->clientScript->registerCssFile($cssPathPrifix.'bootstrap-responsive.min.css');
         Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/cms/font-awesome/css/font-awesome.css');
-        Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'jquery.min.js');
         Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'jquery.ui.custom.js');
         Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'bootstrap.min.js');
+        Yii::app()->clientScript->registerCoreScript('jquery');
     }
 
 }

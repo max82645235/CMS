@@ -21,6 +21,16 @@ return array(
 
 	'defaultController'=>'site',
 
+    'modules'=>array(
+        'gii'=>array(
+            'class'=>'system.gii.GiiModule',
+            'password'=>'123456',
+            // 'ipFilters'=>array(...IP 列表...),
+            // 'newFileMode'=>0666,
+            // 'newDirMode'=>0777,
+        ),
+    ),
+
 	// application components
 	'components'=>array(
 		'user'=>array(
