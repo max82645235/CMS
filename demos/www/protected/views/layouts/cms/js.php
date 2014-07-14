@@ -7,8 +7,6 @@ $jsPathPrifix = Yii::app()->baseUrl."/js/cms/";
 <?php Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'jquery.peity.min.js');?>
 <?php Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'fullcalendar.min.js');?>
 <?php Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'matrix.js');?>
-
-
 <?php Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'matrix.chat.js');?>
 <?php Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'jquery.validate.js');?>
 <?php Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'matrix.form_validation.js');?>
@@ -18,6 +16,10 @@ $jsPathPrifix = Yii::app()->baseUrl."/js/cms/";
 <?php Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'matrix.popover.js');?>
 <?php Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'jquery.dataTables.min.js');?>
 <?php Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'matrix.tables.js');?>
+<?php  Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'bootstrap-colorpicker.js');?>
+<?php  Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'bootstrap-datepicker.js');?>
+<?php  Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'masked.js');?>
+<?php  Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'matrix.form_common.js');?>
 
 <?php // Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'jquery.flot.min.js');?>
 <?php // Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'jquery.flot.resize.min.js');?>

@@ -37,13 +37,13 @@ class Controller extends CController
         Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/cms/font-awesome/css/font-awesome.css');
         Yii::app()->clientScript->registerCssFile($cssPathPrifix.'matrix-style.css');
         /*JS*/
+        Yii::app()->clientScript->registerCoreScript('jquery');
+        Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'jquery.min.js');
         Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'jquery.ui.custom.js');
         Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'bootstrap.min.js');
         Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'jquery.ui.custom.js');
         Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'jquery.uniform.js');
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/common.js');
-
-        Yii::app()->clientScript->registerCoreScript('jquery');
     }
 
 }
