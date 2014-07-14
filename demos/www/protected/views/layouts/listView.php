@@ -4,18 +4,21 @@
         'itemView'=>$itemView,
         'emptyText'=>'暂时没有数据',
         'ajaxUpdate'=>false,
-        'id'=>'table_listView'
-    ));
+        'id'=>'table_listView',
+        'template'=>"<div class='dataTables_wrapper'>{items}\n<div class='fg-toolbar ui-toolbar ui-widget-header ui-corner-bl ui-corner-br ui-helper-clearfix'><div class='dataTables_paginate '>{pager}</div></div></div>",
+         'viewData'=>array(
+             'itemCount'=>$dp->getItemCount()
+         ),
+        'pager'=>array(
+            'class'=>'CmsLinkPager',//定义要调用的分页器类，默认是CLinkPager，需要完全自定义，还可以重写一个，参考我的另一篇博文：http://blog.sina.com.cn/s/blog_71d4414d0100yu6k.html
+            'cssFile'=>false,//定义分页器的要调用的css文件，false为不调用，不调用则需要亲自己css文件里写这些样式
+            'header'=>'',//定义的文字将显示在pager的最前面
+            'footer'=>'',//定义的文字将显示在pager的最后面
+            'firstPageLabel'=>'首页',//定义首页按钮的显示文字
+            'lastPageLabel'=>'尾页',//定义末页按钮的显示文字
+            'nextPageLabel'=>'下一页',//定义下一页按钮的显示文字
+            'prevPageLabel'=>'前一页',//定义上一页按钮的显示文字
+    ),
+        )
+    );
 ?>
-<script>
-    $('.pager .yiiPager a').live('click',function(){
-        $.ajax({
-            url:$(this).attr('href'),
-            success:function(html){
-                alert(html);
-                $('.list-view').html(html);
-            }
-        });
-        return false;
-    });
-</script>

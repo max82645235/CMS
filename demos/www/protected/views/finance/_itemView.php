@@ -6,6 +6,7 @@
     $this->renderPartial('/layouts/itemView',array(
         'index'=>$index,
         'data'=>$data,
+        'itemCount'=>$itemCount,
         'itemView'=>$itemView,
         'action'=>$action
     ));
