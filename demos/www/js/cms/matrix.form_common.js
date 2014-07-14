@@ -6,6 +6,9 @@ $(document).ready(function(){
 	$('select').select2();
     $('.colorpicker').colorpicker();
     $('.datepicker').datepicker();
+    $('.datepicker').on('changeDate',function(ev){
+        $('.datepicker').datepicker("hide");
+    });
 });
 
 $(document).ready(function() { 	

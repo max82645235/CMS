@@ -11,6 +11,7 @@ $cssPathPrifix = Yii::app()->baseUrl."/css/cms/css/";
     <?php Yii::app()->clientScript->registerCssFile($cssPathPrifix.'matrix-media.css');?>
     <?php Yii::app()->clientScript->registerCssFile($cssPathPrifix.'uniform.css');?>
     <?php Yii::app()->clientScript->registerCssFile($cssPathPrifix.'select2.css');?>
+    <?php Yii::app()->clientScript->registerCssFile($cssPathPrifix.'datepicker.css');?>
     <?php Yii::app()->clientScript->registerCssFile($cssPathPrifix.'bootstrap-wysihtml5.css');?>
     <?php //Yii::app()->clientScript->registerCssFile($cssPathPrifix.'jquery.gritter.css');?>
 </head>

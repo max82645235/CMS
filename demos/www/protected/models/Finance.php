@@ -13,6 +13,8 @@
  */
 class Finance extends CActiveRecord
 {
+    static $typeList = array(
+    );
 	/**
 	 * @return string the associated database table name
 	 */
@@ -62,6 +64,8 @@ class Finance extends CActiveRecord
 			'price' => '金额',
 			'dayTime' => '进出帐日期',
 			'createTime' => '记录时间',
+            'type' =>'收支类型',
+            'payIncome'=>'收入支出'
 		);
 	}
 

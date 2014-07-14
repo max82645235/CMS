@@ -19,4 +19,14 @@ class Util{
             die();
         }
     }
+
+    static function datePicker($date=array()){
+        $format = 'yyyy-mm-dd';
+        $date = date($format);
+        if(isset($date['format']) && isset($date['date'])){
+            $format = $date['format'];
+            $date = date($format);
+        }
+        return CHtml::telField('text','',array('class'=>'datepicker span2','data-date-format'=>$format));
+    }
 }

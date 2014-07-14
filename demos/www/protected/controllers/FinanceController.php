@@ -2,6 +2,7 @@
 
 class FinanceController extends Controller
 {
+    public $layout='cms/content';
 	public function actionIndex()
 	{
         $model = Finance::model();
@@ -17,6 +18,10 @@ class FinanceController extends Controller
             ));
         }
 	}
+
+    public function actionCurd(){
+
+    }
 
 	// Uncomment the following methods and override them if needed
 	/*
