@@ -20,13 +20,13 @@ class Util{
         }
     }
 
-    static function datePicker($date=array()){
-        $format = 'yyyy-mm-dd';
-        $date = date($format);
-        if(isset($date['format']) && isset($date['date'])){
-            $format = $date['format'];
-            $date = date($format);
+    static function datePicker($dateList){
+        $date = date('Y-m-d');
+        if(isset($dateList['format']) && isset($dateList['date'])){
+            $format = $dateList['format'];
+            $date = date('Y-m-d');
         }
-        return CHtml::telField('text','',array('class'=>'datepicker span2','data-date-format'=>$format));
+        $span = (isset($dateList['span']))?$dateList['span']:'span2';
+        return CHtml::textField($dateList['name'],'',array('class'=>'datepicker '.$span,'data-date-format'=>'yyyy-mm-dd','date'=>$date));
     }
 }

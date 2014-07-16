@@ -15,6 +15,9 @@ class Finance extends CActiveRecord
 {
     static $typeList = array(
     );
+
+    public $startTime;
+    public $endTime;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -91,13 +94,15 @@ class Finance extends CActiveRecord
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('content',$this->content,true);
 		$criteria->compare('price',$this->price);
-		$criteria->compare('dayTime',$this->dayTime,true);
+        if($this->startTime)
+            $criteria->addCondition('payTime>=:startTime',array(':startTime'=>$this->startTime));
+        if($this->endTime)
+            $criteria->addCondition('payTime<=:endTime',array(':endTime'=>$this->endTime));
 		$criteria->compare('createTime',$this->createTime,true);
-
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
             'pagination'=>array(
-                'pageSize'=>5
+                'pageSize'=>1
             )
 		));
 	}
