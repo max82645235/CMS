@@ -11,7 +11,8 @@ class SliderbarController extends Controller
      */
     public function actionTableList(){
         $model = new Sliderbar();
-        $listData = $model->getTableList();
+        $recordList = $model->findAll();
+        $listData = Util::getTableList($recordList);
         $this->render('tableList',array('listData'=>$listData));
     }
 

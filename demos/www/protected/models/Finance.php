@@ -14,6 +14,7 @@
 class Finance extends CActiveRecord
 {
     static $typeList = array(
+
     );
 
     public $startTime;
