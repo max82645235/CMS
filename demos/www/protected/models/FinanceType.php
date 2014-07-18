@@ -123,7 +123,7 @@ class FinanceType extends CActiveRecord
 
 
     //获取带层级排列标签样式的数据节点数据
-    public static function getLabelDropDownList($listData,$htmlOptions=array()){
+    public static function getLabelDropDownList($listData,$htmlOptions=array(),$selectId=NULL){
         $tmp = array();
         $retHtml = '';
         $htmlOptionsStr = '';
@@ -142,15 +142,20 @@ class FinanceType extends CActiveRecord
                 }
             }
             $retHtml = '<select '.$htmlOptionsStr.' >';
+            $retHtml.= '<option value="">请选择</option>';
             foreach($tmp as $fid=>$val){
                 if(isset($val['father'])){
                     $fid = $val['father']['id'];
                     $title = $val['father']['title'];
-                    $retHtml.="<option value='".$fid."'>".$title;
-                    foreach($val['son'] as $son){
-                        $sonId = $son['id'];
-                        $sonTitle = $son['title'];
-                        $retHtml.="<option value='".$sonId."'>".$sonTitle;
+                    $selected = ($selectId==$fid)?'selected=selected':'';
+                    $retHtml.="<option value='".$fid."' $selected>".$title;
+                    if(isset($val['son'])){
+                        foreach($val['son'] as $son){
+                            $sonId = $son['id'];
+                            $sonTitle = $son['title'];
+                            $selected = ($selectId==$sonId)?'selected=selected':'';
+                            $retHtml.="<option value='".$sonId."' $selected>".$sonTitle;
+                        }
                     }
                 }
             }
@@ -158,4 +163,5 @@ class FinanceType extends CActiveRecord
         }
         return $retHtml;
     }
+
 }

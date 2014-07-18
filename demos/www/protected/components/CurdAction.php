@@ -76,6 +76,7 @@ class CurdAction{
         if($this->isDel() && $this->model){
             $this->status = self::SUCCESS;
         }elseif($post = self::getRequestValue($this->className)){
+
             $this->model->setAttributes($post);
             if($this->model->save())
                 $this->status = self::SUCCESS;

@@ -1,5 +1,9 @@
 <?php
 class Util{
+    static $titleInfo = array(
+        'add'=>'添加记录',
+        'edit'=>'修改记录'
+    );
     static function alertJs($msg='',$redirectUrl=''){
         if($msg)
             echo '<script>alert("'.$msg.'");</script>';
@@ -60,4 +64,5 @@ class Util{
         }
         return $tableList;
     }
+
 }

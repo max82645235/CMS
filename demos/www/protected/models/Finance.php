@@ -27,6 +27,14 @@ class Finance extends CActiveRecord
 		return '{{finance}}';
 	}
 
+    public function scopes(){
+        return array(
+	      'recently'=>array(
+	            'order'=>'t.createTime DESC',
+	      ),
+	  );
+    }
+
 	/**
 	 * @return array validation rules for model attributes.
 	 */
@@ -35,8 +43,8 @@ class Finance extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, price, dayTime, createTime', 'required'),
-			array('price', 'numerical'),
+			array('title, price, dayTime ,type', 'required'),
+			array('price,type', 'numerical'),
 			array('title', 'length', 'max'=>300),
 			array('content', 'length', 'max'=>1000),
 			// The following rule is used by search().
@@ -53,6 +61,7 @@ class Finance extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+            'financeType'=>array(self::BELONGS_TO,'FinanceType','type')
 		);
 	}
 
@@ -69,7 +78,7 @@ class Finance extends CActiveRecord
 			'dayTime' => '进出帐日期',
 			'createTime' => '记录时间',
             'type' =>'收支类型',
-            'payIncome'=>'收入支出'
+            'payIncome'=>'收入支出',
 		);
 	}
 
@@ -103,7 +112,7 @@ class Finance extends CActiveRecord
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
             'pagination'=>array(
-                'pageSize'=>1
+                'pageSize'=>5
             )
 		));
 	}
@@ -118,4 +127,23 @@ class Finance extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    protected function beforeSave()
+    {
+        if(parent::beforeSave())
+        {
+            $this->payIncome = $this->financeType->payIncome;
+            if($this->isNewRecord)
+                $this->createTime= date('Y-m-d H:i:s');
+            return true;
+        }
+        else
+            return false;
+    }
+
+    public function getCurrentDayRecord(){
+        $model = $this->model()->with('financeType')->recently()->findAll('t.createTime=to_days(now())');
+        if($model)
+            return $model;
+    }
 }
