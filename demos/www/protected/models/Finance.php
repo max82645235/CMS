@@ -99,17 +99,17 @@ class Finance extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
-		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
-		$criteria->compare('content',$this->content,true);
-		$criteria->compare('price',$this->price);
-        $criteria->compare('type',$this->type);
         $criteria->compare('payIncome',$this->payIncome);
-        if(isset($this->startTime))
+        if($this->startTime)
             $criteria->addCondition("dayTime>='{$this->startTime}'");
-        if(isset($this->endTime))
-            $criteria->addCondition("dayTime>='{$this->endTime}'");
+        if($this->endTime)
+            $criteria->addCondition("dayTime<='{$this->endTime}'");
         $criteria->order = 'createTime desc';
+        if($this->type){
+            $criteria->join = 'left join cms_finance_type as b on t.type=b.id';
+            $criteria->addCondition("(b.id={$this->type} OR b.fid={$this->type})");
+        }
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
             'pagination'=>array(

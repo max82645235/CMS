@@ -8,9 +8,9 @@ class FinanceController extends Controller
         $model = Finance::model()->recently();
         if(Yii::app()->request->isAjaxRequest){
             $model->setAttributes($_REQUEST);
-            if(isset($_REQUEST['startTime']))
+            if($_REQUEST['startTime'])
                 $model->startTime = $_REQUEST['startTime'];
-            if(isset($_REQUEST['endTime']))
+            if($_REQUEST['endTime'])
                 $model->endTime = $_REQUEST['endTime'];
             $this->renderPartial('/layouts/listView',array(
                 'dp'=>$model->search(),
@@ -31,7 +31,10 @@ class FinanceController extends Controller
         $actionType = CurdAction::getRequestValue('actionType');
         $recordId = CurdAction::getRequestValue('id');
         $className = 'Finance';
-        $redirectUrl = Yii::app()->request->requestUri;
+        if($actionType=='del')
+            $redirectUrl = '/finance/index';
+        else
+            $redirectUrl = Yii::app()->request->requestUri;
         $curdObj = new CurdAction($actionType,$recordId,$className,$redirectUrl);
         $curdObj->initMod();
         $curdObj->DataHandler();
