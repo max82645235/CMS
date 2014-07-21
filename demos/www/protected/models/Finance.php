@@ -30,7 +30,7 @@ class Finance extends CActiveRecord
     public function scopes(){
         return array(
 	      'recently'=>array(
-	            'order'=>'t.createTime DESC',
+	            'order'=>'t.dayTime DESC,t.id DESC',
 	      ),
 	  );
     }
@@ -43,13 +43,13 @@ class Finance extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, price, dayTime ,type', 'required'),
+			array('title, price, dayTime ,type,payIncome', 'required'),
 			array('price,type', 'numerical'),
 			array('title', 'length', 'max'=>300),
 			array('content', 'length', 'max'=>1000),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, title, content, price, dayTime, createTime', 'safe', 'on'=>'search'),
+			array('id, title, content, price, dayTime,payIncome', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -99,20 +99,21 @@ class Finance extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
-
 		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('content',$this->content,true);
 		$criteria->compare('price',$this->price);
-        if($this->startTime)
-            $criteria->addCondition('payTime>=:startTime',array(':startTime'=>$this->startTime));
-        if($this->endTime)
-            $criteria->addCondition('payTime<=:endTime',array(':endTime'=>$this->endTime));
-		$criteria->compare('createTime',$this->createTime,true);
+        $criteria->compare('type',$this->type);
+        $criteria->compare('payIncome',$this->payIncome);
+        if(isset($this->startTime))
+            $criteria->addCondition("dayTime>='{$this->startTime}'");
+        if(isset($this->endTime))
+            $criteria->addCondition("dayTime>='{$this->endTime}'");
+        $criteria->order = 'createTime desc';
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
             'pagination'=>array(
-                'pageSize'=>5
+                'pageSize'=>10
             )
 		));
 	}
@@ -132,6 +133,7 @@ class Finance extends CActiveRecord
     {
         if(parent::beforeSave())
         {
+            //echo $this->financeType->payIncome;exit;
             $this->payIncome = $this->financeType->payIncome;
             if($this->isNewRecord)
                 $this->createTime= date('Y-m-d H:i:s');
@@ -142,7 +144,7 @@ class Finance extends CActiveRecord
     }
 
     public function getCurrentDayRecord(){
-        $model = $this->model()->with('financeType')->recently()->findAll('t.createTime=to_days(now())');
+        $model = $this->model()->findAll('t.dayTime=CURDATE()');
         if($model)
             return $model;
     }

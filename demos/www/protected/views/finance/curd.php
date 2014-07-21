@@ -1,6 +1,7 @@
 <style>
     #action_btn{text-align: center;}
     .btn_margin {margin: 0 10px;}
+    .table td{text-align: center;}
 </style>
 <div class="span8" style="float: left;">
     <div class="widget-box">
@@ -34,10 +35,8 @@
                 </tbody>
             </table>
         </div>
-        
     </div>
 </div>
-
 <?php
 $financeTypeData = FinanceType::model()->findAll();
 $financeTypeList = FinanceType::getLabelDropDownList($financeTypeData,array('name'=>'Finance[type]','style'=>'width:200px;',''),$model->type);
@@ -83,7 +82,7 @@ $financeTypeList = FinanceType::getLabelDropDownList($financeTypeData,array('nam
                 <?php echo $curdObj->getActionHidden();?>
                 <?php echo $curdObj->getRecordIdHidden();?>
                 <?php echo CHtml::submitButton('Save',array('class'=>'btn btn-success btn_margin')); ?>
-                <?php echo CHtml::button('Back',array('class'=>'btn btn-primary btn_margin','type'=>'reset','onclick'=>'history.go(-1);'))?>
+                <?php echo CHtml::button('Back',array('class'=>'btn btn-primary btn_margin','type'=>'reset','onclick'=>'location.href="/finance/index";'))?>
             </div>
             <?php echo CHtml::errorSummary($model); ?>
         </div>

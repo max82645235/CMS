@@ -3,10 +3,15 @@
 class FinanceController extends Controller
 {
     public $layout='cms/content';
-	public function actionIndex()
-	{
-        $model = Finance::model();
+    public function actionIndex()
+    {
+        $model = Finance::model()->recently();
         if(Yii::app()->request->isAjaxRequest){
+            $model->setAttributes($_REQUEST);
+            if(isset($_REQUEST['startTime']))
+                $model->startTime = $_REQUEST['startTime'];
+            if(isset($_REQUEST['endTime']))
+                $model->endTime = $_REQUEST['endTime'];
             $this->renderPartial('/layouts/listView',array(
                 'dp'=>$model->search(),
                 'itemView'=>'_itemView'
@@ -20,18 +25,18 @@ class FinanceController extends Controller
                 'financeTypeList'=>$financeTypeList
             ));
         }
-	}
+    }
 
     public function actionCurd(){
         $actionType = CurdAction::getRequestValue('actionType');
         $recordId = CurdAction::getRequestValue('id');
         $className = 'Finance';
-        $redirectUrl = '/finance/index';
+        $redirectUrl = Yii::app()->request->requestUri;
         $curdObj = new CurdAction($actionType,$recordId,$className,$redirectUrl);
         $curdObj->initMod();
         $curdObj->DataHandler();
         $model = $curdObj->getMod();
-        //当日累计记录列表
+        //褰撴棩绱璁板綍鍒楄〃
         $currentDayRecord = Finance::model()->getCurrentDayRecord();
         $this->render('curd',
             array('model'=>$model,'curdObj'=>$curdObj,'currentDayRecord'=>$currentDayRecord)
@@ -61,30 +66,30 @@ class FinanceController extends Controller
         );
     }
 
-	// Uncomment the following methods and override them if needed
-	/*
-	public function filters()
-	{
-		// return the filter configuration for this controller, e.g.:
-		return array(
-			'inlineFilterName',
-			array(
-				'class'=>'path.to.FilterClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
+    // Uncomment the following methods and override them if needed
+    /*
+    public function filters()
+    {
+        // return the filter configuration for this controller, e.g.:
+        return array(
+            'inlineFilterName',
+            array(
+                'class'=>'path.to.FilterClass',
+                'propertyName'=>'propertyValue',
+            ),
+        );
+    }
 
-	public function actions()
-	{
-		// return external action classes, e.g.:
-		return array(
-			'action1'=>'path.to.ActionClass',
-			'action2'=>array(
-				'class'=>'path.to.AnotherActionClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-	*/
+    public function actions()
+    {
+        // return external action classes, e.g.:
+        return array(
+            'action1'=>'path.to.ActionClass',
+            'action2'=>array(
+                'class'=>'path.to.AnotherActionClass',
+                'propertyName'=>'propertyValue',
+            ),
+        );
+    }
+    */
 }

@@ -1,7 +1,10 @@
 $(function(){
     $('.pager a').live('click',function(){
+        var url = $(this).attr('href');
+        var fromData = $('.ajaxForm').serialize();
+        url = url+"&"+fromData;
         $.ajax({
-            url:$(this).attr('href'),
+            url:url,
             success:function(html){
                 $('#table_listView').html(html);
             }
@@ -10,14 +13,15 @@ $(function(){
     });
 
     $('.ajaxForm').submit(function(e){
-        var url = $('.keys').attr('title');
+        var url = $(this).attr('action');
         var formDate = $(this).serialize();
-        url=url+'/'+formDate;
         $.ajax({
             url:url,
+            data:formDate,
             success:function(html){
                 $('#table_listView').html(html);
-            }
+            },
+            'type':'post'
         });
         e.preventDefault();
     });
