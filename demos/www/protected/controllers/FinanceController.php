@@ -3,6 +3,8 @@
 class FinanceController extends Controller
 {
     public $layout='cms/content';
+
+    //财务流水
     public function actionIndex()
     {
         $model = Finance::model()->recently();
@@ -46,7 +48,7 @@ class FinanceController extends Controller
         );
     }
 
-    //
+    //收支类型
     public function actionTypeList(){
         $model = new FinanceType();
         $recordList = $model->findAll();
@@ -67,6 +69,11 @@ class FinanceController extends Controller
         $this->render('typeCurd',
             array('model'=>$model,'curdObj'=>$curdObj,'topList'=>$topList)
         );
+    }
+
+    //财务图表
+    public function actionCharts(){
+        $this->render('charts',array());
     }
 
     // Uncomment the following methods and override them if needed
