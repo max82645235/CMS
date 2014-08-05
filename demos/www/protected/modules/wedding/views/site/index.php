@@ -28,7 +28,7 @@
 
             <!-- THE ACTUAL PHOTO SLIDES -->
             <ul class="slides">
-                <li><img src="img/wedding/slider/photo1.jpg" alt="photo 1" /></li>
+                <li><img src="<?=Yii::app()->baseUrl?>/photo/test.jpg" alt="photo 1" /></li>
                 <li><img src="img/wedding/slider/photo2.jpg" alt="photo 2" /></li>
                 <li><img src="img/wedding/slider/photo3.jpg" alt="photo 3" /></li>
                 <li><img src="img/wedding/slider/photo4.jpg" alt="photo 4" /></li>
