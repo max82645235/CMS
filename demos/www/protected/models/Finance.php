@@ -100,7 +100,7 @@ class Finance extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 		$criteria->compare('title',$this->title,true);
-        $criteria->compare('payIncome',$this->payIncome);
+        $criteria->compare('t.payIncome',$this->payIncome);
         if($this->startTime)
             $criteria->addCondition("dayTime>='{$this->startTime}'");
         if($this->endTime)

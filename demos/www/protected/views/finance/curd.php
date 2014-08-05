@@ -52,8 +52,8 @@
             <h5>当日总收支统计</h5>
         </div>
         <div class="widget-content nopadding">
-            <div style="font-weight:800;">当日支出:<span style="color:green;"><?=$total['pay']?>元</span></div></br>
-            <div style="font-weight:800;">当日收入:<span style="color: red;"><?=$total['income']?>元</span></div>
+            <div style="font-weight:800;">当日支出:<span style="color:green;"><?=($currentDayRecord)?$total['pay']:'0'?>元</span></div></br>
+            <div style="font-weight:800;">当日收入:<span style="color: red;"><?=($currentDayRecord)?$total['income']:'0';?>元</span></div>
         </div>
     </div>
 </div>
