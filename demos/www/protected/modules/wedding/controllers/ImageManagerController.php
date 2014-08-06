@@ -2,35 +2,33 @@
 
 class ImageManagerController extends Controller
 {
+    public $layout='application.views.layouts.cms.content';
+    //图片管理列表
 	public function actionIndex()
 	{
+        $this->getCurrentSliderInfo();exit;
 		$this->render('index');
 	}
 
-	// Uncomment the following methods and override them if needed
-	/*
-	public function filters()
-	{
-		// return the filter configuration for this controller, e.g.:
-		return array(
-			'inlineFilterName',
-			array(
-				'class'=>'path.to.FilterClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
+    //图片走廊分类
+    public function actionGalleryClassify(){
+        $model = new GalleryType();
+        $recordList = $model->findAll();
+        $this->render('galleryClassify',array('recordList'=>$recordList));
+    }
 
-	public function actions()
-	{
-		// return external action classes, e.g.:
-		return array(
-			'action1'=>'path.to.ActionClass',
-			'action2'=>array(
-				'class'=>'path.to.AnotherActionClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-	*/
+    //图片走廊curd
+    public function actionGalleryCurd(){
+        $actionType = CurdAction::getRequestValue('actionType');
+        $recordId = CurdAction::getRequestValue('id');
+        $className = 'GalleryType';
+        $redirectUrl = '/wedding/imageManager/galleryClassify';
+        $curdObj = new CurdAction($actionType,$recordId,$className,$redirectUrl);
+        $curdObj->initMod();
+        $curdObj->DataHandler();
+        $model = $curdObj->getMod();
+        $this->render('galleryCurd',
+            array('model'=>$model,'curdObj'=>$curdObj)
+        );
+    }
 }

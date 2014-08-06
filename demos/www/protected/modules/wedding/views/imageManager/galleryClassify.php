@@ -1,0 +1,32 @@
+<div class="widget-box">
+    <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+        <h5>Data table</h5>
+        <div style="float: right;padding:5px 30px 0 0"><a style="margin-left: 20px;" href="/wedding/imageManager/galleryCurd/actionType/add" class="btn btn-success btn-mini">Add</a></div>
+    </div>
+    <div class="widget-content nopadding">
+        <table class="table table-bordered data-table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>名称</th>
+                <th>排序</th>
+                <th style="width:15%">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php foreach($recordList as $record){?>
+                <tr class="grade">
+                    <td><?=$val['id']?></td>
+                    <td><?=$val['title']?></td>
+                    <td><?=$val['orderNum']?></td>
+                    <td >
+                        <a style="margin-left: 20px;" href="/wedding/imageManager/galleryCurd/actionType/del/id/<?=$val['id']?>" class="btn btn-danger btn-mini">Delete</a>
+                        <a style="margin-left: 20px;" href="/wedding/imageManager/galleryCurd/actionType/edit/id/<?=$val['id']?>" class="btn btn-primary btn-mini">Edit</a>
+                    </td>
+                </tr>
+            <?php }?>
+
+            </tbody>
+        </table>
+    </div>
+</div>

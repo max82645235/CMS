@@ -26,8 +26,8 @@ class GalleryType extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, title, orderNum', 'required'),
-			array('id, orderNum', 'numerical', 'integerOnly'=>true),
+			array(' title, orderNum', 'required'),
+			array(' orderNum', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -53,8 +53,8 @@ class GalleryType extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'orderNum' => 'Order Num',
+			'title' => '名称',
+			'orderNum' => '顺序',
 		);
 	}
 

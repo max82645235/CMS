@@ -1,7 +1,12 @@
 <?php
 class WebUser extends CWebUser{
-    //将用户表相关信息SESSION持久化
+    //璁剧疆鐢ㄦ埛淇℃伅鎸佷箙瀛樺偍SESSION鏁版嵁
     public function setUserInfo($info){
         $this->setState('userInfo',$info);
+    }
+
+    //灏嗗乏渚у姛鑳界粨鏋勫仛鎸佷箙瀛樺偍
+    public function setSliderInfo($sliderList){
+        $this->setState('sliderInfo',$sliderList);
     }
 }
