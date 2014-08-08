@@ -46,4 +46,33 @@ class Controller extends CController
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/common.js');
     }
 
+    //获取当前菜单名称
+    public function getCurrentSliderInfo(){
+        $currentUrl = Yii::app()->request->getUrl();
+        $ret = '';
+        if(isset(Yii::app()->user->sliderInfo)){
+            foreach(Yii::app()->user->sliderInfo as $list){
+                foreach($list as $key=>$val){
+                    if($val['url'] == $currentUrl){
+                        $ret = $val['title'];
+                        break 2;
+                    }
+                }
+            }
+        }
+        if(!$ret){
+            if(isset($_GET['actionType'])){
+                switch($_GET['actionType']){
+                    case CurdAction::ADD:
+                              $ret  = '新增';
+                        break;
+
+                    case CurdAction::EDIT:
+                               $ret = '修改';
+                        break;
+                }
+            }
+        }
+        return $ret;
+    }
 }

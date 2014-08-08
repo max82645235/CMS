@@ -76,13 +76,13 @@ class FinanceType extends CActiveRecord
 	public function search()
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
-
+        var_dump($this->getAttributes());exit;
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('fid',$this->fid);
-        $criteria->compare('payIncome',$this->payIncome);
+        $criteria->compare('t.payIncome',$this->payIncome);
 		$criteria->compare('createTime',$this->createTime,true);
 
 		return new CActiveDataProvider($this, array(

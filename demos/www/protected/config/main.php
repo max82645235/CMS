@@ -29,6 +29,7 @@ return array(
             // 'newFileMode'=>0666,
             // 'newDirMode'=>0777,
         ),
+        'wedding'
     ),
 
 	// application components

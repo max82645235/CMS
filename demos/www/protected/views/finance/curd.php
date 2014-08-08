@@ -1,11 +1,12 @@
 <style>
     #action_btn{text-align: center;}
     .btn_margin {margin: 0 10px;}
+    .table td{text-align: center;}
 </style>
 <div class="span8" style="float: left;">
     <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-            <h5>当日收支流水帐单</h5>
+            <h5>当日收支流水帐单 (<?=date('Y-m-d')?>)</h5>
         </div>
         <?php
 
@@ -17,16 +18,24 @@
                     <th>名称</th>
                     <th>金额</th>
                     <th>类型</th>
+                    <th>收支</th>
                     <th>添加时间</th>
                 </tr>
                 </thead>
                 <tbody>
-                <?php if($currentDayRecord){?>
+                <?php if($currentDayRecord){$total = array('income'=>0,'pay'=>0);?>
                         <?php foreach($currentDayRecord as $record){?>
+                            <?php
+                                  if($record->payIncome==2)
+                                      $total['income']+=$record->price;
+                                  else
+                                      $total['pay']+=$record->price;
+                            ?>
                             <tr class="grade">
-                                <td><?=$record['title']?></td>
+                                <td><a href="/finance/curd/actionType/edit/id/<?=$record['id']?>"><?=$record['title']?></a></td>
                                 <td><?=$record['price'];?></td>
                                 <td><?=(isset($record->financeType->title))?$record->financeType->title:'';?></td>
+                                <td><?=($record->payIncome=='1')?'<span style="color:red">收入</span>':'<span style="color: green;">支出</span>';?></td>
                                 <td><?=$record['createTime'];?></td>
                             </tr>
                         <?php }?>
@@ -34,7 +43,18 @@
                 </tbody>
             </table>
         </div>
-        
+    </div>
+</div>
+
+<div class="span2" style="float: left;">
+    <div class="widget-box">
+        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+            <h5>当日总收支统计</h5>
+        </div>
+        <div class="widget-content nopadding">
+            <div style="font-weight:800;">当日支出:<span style="color:green;"><?=($currentDayRecord)?$total['pay']:'0'?>元</span></div></br>
+            <div style="font-weight:800;">当日收入:<span style="color: red;"><?=($currentDayRecord)?$total['income']:'0';?>元</span></div>
+        </div>
     </div>
 </div>
 
@@ -83,12 +103,14 @@ $financeTypeList = FinanceType::getLabelDropDownList($financeTypeData,array('nam
                 <?php echo $curdObj->getActionHidden();?>
                 <?php echo $curdObj->getRecordIdHidden();?>
                 <?php echo CHtml::submitButton('Save',array('class'=>'btn btn-success btn_margin')); ?>
-                <?php echo CHtml::button('Back',array('class'=>'btn btn-primary btn_margin','type'=>'reset','onclick'=>'history.go(-1);'))?>
+                <?php echo CHtml::button('Back',array('class'=>'btn btn-primary btn_margin','type'=>'reset','onclick'=>'location.href="/finance/index";'))?>
             </div>
             <?php echo CHtml::errorSummary($model); ?>
         </div>
     </div>
 </div>
+
+
 
 
 

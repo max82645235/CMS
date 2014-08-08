@@ -163,6 +163,9 @@ class Sliderbar extends CActiveRecord
                 $tmpList[$id][] = $aList;
             }
         }
+        if(!isset(Yii::app()->user->sliderInfo)){
+            Yii::app()->user->setSliderInfo($tmpList);
+        }
         return $tmpList;
     }
 }

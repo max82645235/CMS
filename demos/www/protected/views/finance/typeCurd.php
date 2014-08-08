@@ -19,8 +19,8 @@
                 <?=CHtml::activeLabel($model,'payIncome',array('class'=>'control-label'));?>
                 <div class="controls">
                     <?php
-                    $zcArr = array('value'=>0,'id'=>'radio1');
-                    $srArr = array('value'=>1,'id'=>'radio2');
+                    $zcArr = array('value'=>1,'id'=>'radio1');
+                    $srArr = array('value'=>2,'id'=>'radio2');
                     if($model->payIncome==1){
                         $srArr['checked']='checked';
                     }else{
