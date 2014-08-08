@@ -1138,6 +1138,7 @@ form {
 	margin-left: 200px;
 	padding: 10px 0;
 }
+.form-horizontal .control-group input{height: 30px;}
 .form-horizontal input[type=text], .form-horizontal input[type=password], .form-horizontal textarea {
 }
 .row-fluid .span20 {

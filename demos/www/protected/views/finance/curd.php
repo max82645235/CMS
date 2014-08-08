@@ -62,7 +62,7 @@
 $financeTypeData = FinanceType::model()->findAll();
 $financeTypeList = FinanceType::getLabelDropDownList($financeTypeData,array('name'=>'Finance[type]','style'=>'width:200px;',''),$model->type);
 ?>
-<div class="span6" style="float: right;">
+<div class="span8" style="float: left;clear: both;">
     <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
             <h5><?=Util::$titleInfo[$_GET['actionType']]?></h5>

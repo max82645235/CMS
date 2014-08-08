@@ -38,6 +38,9 @@ class CurdAction{
         $this->className = $className;
     }
 
+    public static $events = array();
+
+
     public function initMod(){
         $className = $this->className;
         switch($this->action){
@@ -73,6 +76,9 @@ class CurdAction{
     }
 
     public function DataHandler(){
+        if(method_exists($this->model,'raiseEvent')){
+            $this->model->raiseEvent();
+        }
         if($this->isDel() && $this->model){
             $this->status = self::SUCCESS;
         }elseif($post = self::getRequestValue($this->className)){

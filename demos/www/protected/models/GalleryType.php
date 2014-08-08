@@ -26,14 +26,23 @@ class GalleryType extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array(' title, orderNum', 'required'),
-			array(' orderNum', 'numerical', 'integerOnly'=>true),
+			array('title, orderNum', 'required'),
+			array('orderNum', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, title, orderNum', 'safe', 'on'=>'search'),
 		);
 	}
+
+    public function scopes()
+    {
+        return array(
+            'orderBy'=>array(
+                'order'=>'orderNum asc',
+            )
+        );
+    }
 
 	/**
 	 * @return array relational rules.

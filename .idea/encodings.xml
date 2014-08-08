@@ -5,6 +5,8 @@
     <file url="file://$PROJECT_DIR$/demos/www/protected/controllers/SliderbarController.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demos/www/protected/models/LoginForm.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demos/www/protected/models/User.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/views/imageManager/imageCurd.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/views/imageManager/index.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demos/www/protected/views/layouts/cms/foot.php" charset="GBK" />
     <file url="file://$PROJECT_DIR$/demos/www/protected/views/layouts/cms/header.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demos/www/protected/views/site/login.php" charset="UTF-8" />

@@ -16,11 +16,6 @@ class WeddingImage extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
-    public static $imageType = array(
-        '1'=>'轮播大图',
-        '2'=>'交叉图',
-        '3'=>'相册走廊'
-    );
 	public function tableName()
 	{
 		return '{{wedding_image}}';
@@ -34,12 +29,12 @@ class WeddingImage extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, src, type, create_time, update_time, picOrder', 'required'),
-			array('id, type, picOrder,galleryType', 'numerical', 'integerOnly'=>true),
+			array('id, src, status, title,create_time, update_time, picOrder', 'required'),
+			array('id, status, picOrder,galleryType', 'numerical', 'integerOnly'=>true),
 			array('src', 'length', 'max'=>200),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, src, type, create_time, update_time, picOrder,galleryType', 'safe', 'on'=>'search'),
+			array('id, src, status,title, create_time, update_time, picOrder,galleryType', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -50,8 +45,9 @@ class WeddingImage extends CActiveRecord
 	{
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
-		return array(
-		);
+        return array(
+            'GalleryType'=>array(self::BELONGS_TO,'GalleryType','galleryType')
+        );
 	}
 
 	/**
@@ -61,11 +57,13 @@ class WeddingImage extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'src' => 'Src',
-			'type' => 'Type',
-			'create_time' => 'Create Time',
-			'update_time' => 'Update Time',
-			'picOrder' => 'Pic Order',
+			'src' => '外链地址',
+			'status' => '状态',
+            'title'=>'名称',
+			'create_time' => '创建时间',
+			'update_time' => '修改时间',
+			'picOrder' => '图片顺序',
+            'galleryType'=>'图片类型'
 		);
 	}
 
@@ -89,7 +87,8 @@ class WeddingImage extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('src',$this->src,true);
-		$criteria->compare('type',$this->type);
+		$criteria->compare('status',$this->status);
+        $criteria->compare('title',$this->title);
 		$criteria->compare('create_time',$this->create_time,true);
 		$criteria->compare('update_time',$this->update_time,true);
 		$criteria->compare('picOrder',$this->picOrder);
@@ -109,4 +108,5 @@ class WeddingImage extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
 }
