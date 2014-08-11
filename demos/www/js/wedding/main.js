@@ -403,30 +403,20 @@ $('#myTab a').click(function (e) {
             /* declare the variables, var error is the variable that we use on the end
             to determine if there was an error or not */
             var error = false;
-            var name = $('#rsvp-name').val();
-            var email = $('#rsvp-email').val();
+            var tel = $('#contact_us_tel').val();
+            var telRes = '';s
+            var message = $('#contact_us_message').val();
             
-            var message = $('#rsvp-message').val();
-            
-            if(name.length == 0){
+            if(tel.length == 0){
                 var error = true;
                 //$('#name_error').fadeIn(500);
                 $('#rsvp-name').addClass('notcompleted');
-                $('#rsvp-name').attr('placeholder', 'Name is required!');
+                $('#rsvp-name').attr('placeholder', '先输入联系方式吧，亲!');
                 $('#rsvp-name').focus (function(){
                     $(this).removeClass('notcompleted');
                 });
             }
-            if(email.length == 0 || email.indexOf('@') == '-1'){
-                var error = true;
-               // $('#email_error').fadeIn(500);
-                $('#rsvp-email').addClass('notcompleted');
-                $('#rsvp-email').attr('placeholder', 'Email is required!');
-                $('#rsvp-email').focus (function(){
-                    $(this).removeClass('notcompleted');
-                });
-            }
-            
+
             if(message.length == 0){
                 var error = true;
                 $('#rsvp-message').addClass('notcompleted');

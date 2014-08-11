@@ -76,9 +76,6 @@ class CurdAction{
     }
 
     public function DataHandler(){
-        if(method_exists($this->model,'raiseEvent')){
-            $this->model->raiseEvent();
-        }
         if($this->isDel() && $this->model){
             $this->status = self::SUCCESS;
         }elseif($post = self::getRequestValue($this->className)){
