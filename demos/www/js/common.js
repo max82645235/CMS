@@ -1,4 +1,9 @@
 $(function(){
+    $('input[type=checkbox],input[type=radio],input[type=file]').uniform();
+    $('select').select2();
+    $('.colorpicker').colorpicker();
+    $('.datepicker').datepicker();
+
     $('.pager a').live('click',function(){
         var url = $(this).attr('href');
         var fromData = $('.ajaxForm').serialize();
