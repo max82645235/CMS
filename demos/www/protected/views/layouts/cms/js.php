@@ -19,7 +19,7 @@ $jsPathPrifix = Yii::app()->baseUrl."/js/cms/";
 <?php  Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'bootstrap-colorpicker.js');?>
 <?php  Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'bootstrap-datepicker.js');?>
 <?php  Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'masked.js');?>
-<?php  Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'matrix.form_common.js');?>
+<?php // Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'matrix.form_common.js');?>
 
 <?php // Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'jquery.flot.min.js');?>
 <?php // Yii::app()->clientScript->registerScriptFile($jsPathPrifix.'jquery.flot.resize.min.js');?>

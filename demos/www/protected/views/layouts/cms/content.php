@@ -2,7 +2,7 @@
 <html lang="en">
 
 <!--CSS文件引入-->
-<?php $this->beginContent('/layouts/cms/css'); ?>
+<?php $this->beginContent('//layouts/cms/css'); ?>
 <?php $this->endContent(); ?>
 <?php $currentUrlName = $this->getCurrentSliderInfo();?>
 <style>
@@ -23,7 +23,7 @@
 </div>
 
 <!--javscript文件引入-->
-<?php $this->beginContent('/layouts/cms/js'); ?>
+<?php $this->beginContent('//layouts/cms/js'); ?>
 <?php $this->endContent(); ?>
 
 </body>
