@@ -47,4 +47,19 @@ class GuestManagerController extends Controller
         }
         echo json_encode($ret);
     }
+
+    public function actionEmailKeyConfirm(){
+        if(Yii::app()->request->getParam('saltKey')){
+            $saltKey = Yii::app()->request->getParam('saltKey');
+            $model = WeddingGuest::model()->find('salt_key=:salt_key',array(':salt_key'=>$saltKey));
+            if($model){
+                $guestInfo = array();
+                $guestInfo = $model->getAttributes();
+                $cookie = new CHttpCookie('guestInfo',$guestInfo);
+                $cookie->expire = time()+60*60*24*30;  //有限期1天
+                Yii::app()->request->cookies['guestInfo']=$cookie;
+            }
+        }
+        Yii::app()->request->redirect(Yii::app()->getBaseUrl(true).'/wedding');
+    }
 }
