@@ -8,7 +8,6 @@
             <div class="row">
                 <header class="col-md-6 col-md-offset-3 hide">
                     Our Love Story
-                    <span>The Good Times We Had Together</span>
                 </header>
             </div><!-- /.row -->
         </div><!-- /.container -->
@@ -27,7 +26,7 @@
 <div class="row">
     <div class="col-md-12">
         <p></p>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+        <p>本章主要讲述了王明察和张婷婷一这一对从高中、大学直至毕业工作后的青葱记忆和甜蜜恋情，依稀记得夕阳下的奔跑，那是我们逝去的青春！</p>
     </div><!-- /.col-md-12 -->
 </div><!-- /.row -->
 
@@ -38,7 +37,7 @@
     <div class="col-md-6 col-xs-6 bride">
         <div class="round-frame-bg alignright hide">
             <div class="round-frame">
-                <img src="img/wedding/thebride.jpg" alt="the bride">
+                <img src="<?=Yii::app()->baseUrl?>/photo/cross_1.jpg" alt="the bride" style="width: 335px;height: 358px;margin-left: 13px;">
             </div><!-- /.round-frame -->
         </div><!-- /.round-frame-bg alignright hide -->
     </div><!-- /.ccol-md-6 col-xs-6 bride-->
@@ -65,7 +64,7 @@
     <div class="theyear">
 
         <!-- THE YEAR -->
-        <div class="year">2010</div>
+        <div class="year">2008</div>
 
         <!--
         ///////////
@@ -79,13 +78,11 @@
                 <div class="post-box">
 
                     <header>
-                        <div class="date">December<span>30</span></div>
-                        <h2>The Day We Meet</h2>
+                        <div class="date">2008<span>July</span></div>
+                        <h2>The Day We Begin the love</h2>
                     </header>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                    <a href="#" class="readmore">Read More</a>
+                    <p>2008年，我们经历了高考，步入了大学，同时也开始了对彼此的羁绊！(好肉麻-_-!)!</p>
 
                     <div class="clear">&nbsp;</div>
                 </div><!-- /.POST-BOX -->
@@ -94,7 +91,7 @@
             <!-- POST EXCERPT-->
             <div class="excerpt">
                 <div class="excerpt-content quote">
-                    <span>&#8220;</span>The Beginning Is Always Fun and Games
+                    <span>&#8220;</span>The Beginning Is Destined And insistent
                 </div><!-- /.excerpt-content-->
             </div><!-- /.excerpt -->
         </div><!-- /.post -->
@@ -111,13 +108,11 @@
                 <div class="post-box">
 
                     <header>
-                        <div class="date">May<span>30</span></div>
+                        <div class="date">2008<span>...</span></div>
                         <h2>Our First Kiss</h2>
                     </header>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                    <a href="#" class="readmore">Read More</a>
+                    <p>依稀记得，萌萌哒..^.^!</p>
 
                     <div class="clear">&nbsp;</div>
 
@@ -127,11 +122,12 @@
         </div><!-- /.post -->
 
 
-        <!--
-        ///////////
-        THIRD POST
-        ///////////
-        -->
+
+    </div><!-- /.theyear-->
+
+
+    <div class="theyear">
+        <div class="year">2009</div>
         <div class="post odd fakeheight">
 
             <!-- ACTUAL POST CONTENT -->
@@ -139,13 +135,12 @@
                 <div class="post-box">
 
                     <header>
-                        <div class="date">May<span>30</span></div>
-                        <h2>Our First Vacation</h2>
+                        <div class="date">2009<span>May</span></div>
+                        <h2>Happy Vacation in Suzhou</h2>
                     </header>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <p>大学时期奢侈的苏州乐园之行，貌似去嗨过之后哥的伙食质量一段时间内很差啊。。！</p>
 
-                    <a href="#" class="readmore">Read More</a>
 
                     <div class="clear">&nbsp;</div>
 
@@ -155,7 +150,7 @@
             <!-- POST EXCERPT - A GALLERY -->
             <div class="excerpt">
                 <div class="excerpt-content gallery">
-                    <h4>Photos From Our First Vacation</h4>
+                    <h4>Photos From Suzhou Vacation</h4>
                     <a href="img/bloggallery1/img-1.jpg" class="fancybox" rel="group" title="Swinging Chairs In The Sunset">
                         <img src="img/bloggallery1/thumbnails/img-1-thumb.jpg" alt="a sunset">
                     </a>
@@ -172,12 +167,13 @@
             </div><!-- /.excerpt -->
 
         </div><!-- /.post -->
-    </div><!-- /.theyear-->
+    </div>
+
 
 
     <!-- THE SECOND YEAR -->
     <div class="theyear">
-        <div class="year">2011</div>
+        <div class="year">2010</div>
 
         <!--
         ///////////
@@ -191,22 +187,32 @@
                 <div class="post-box">
 
                     <header>
-                        <div class="date">May<span>30</span></div>
-                        <h2>Moving In Together</h2>
+                        <div class="date">2010<span>July</span></div>
+                        <h2>Shanghai World Expo</h2>
                     </header>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                    <a href="#" class="readmore">Read More</a>
-
+                    <p>还记得传说中的上海世博会么，我只依稀记得吃到想吐的面包和饼干！</p>
                     <div class="clear">&nbsp;</div>
-
                 </div><!-- /.POST-BOX -->
             </div><!-- /.post-content-->
 
             <!-- POST EXCERPT -->
             <div class="excerpt">
-                <div class="excerpt-content quote"><span>&#8220;</span>But The Best Part Of Our Lifes Is Just Starting...</div><!-- /.excerpt-content-->
+                <div class="excerpt-content gallery">
+                    <h4>Two B Qin Nian </h4>
+                    <a href="img/bloggallery1/img-1.jpg" class="fancybox" rel="group" title="Swinging Chairs In The Sunset">
+                        <img src="img/bloggallery1/thumbnails/img-1-thumb.jpg" alt="a sunset">
+                    </a>
+                    <a href="img/bloggallery1/img-2.jpg" class="fancybox" rel="group" title="A little Cottage We Found">
+                        <img src="img/bloggallery1/thumbnails/img-2-thumb.jpg" alt="a little cottage">
+                    </a>
+                    <a href="img/bloggallery1/img-3.jpg" class="fancybox" rel="group" title="Seaside is So Relaxing!">
+                        <img src="img/bloggallery1/thumbnails/img-3-thumb.jpg" alt="seaside">
+                    </a>
+                    <a href="img/bloggallery1/img-4.jpg" class="fancybox" rel="group" title="Our Old Car">
+                        <img src="img/bloggallery1/thumbnails/img-4-thumb.jpg" alt="our old car">
+                    </a>
+                </div><!-- /.excerpt-content--><!-- /.excerpt-content-->
             </div><!-- /.excerpt -->
 
         </div><!-- /.post -->
@@ -216,28 +222,43 @@
         SECOND POST
         ///////////
         -->
-        <div class="post odd fakeheight">
-
+    </div><!-- /.theyear -->
+    <!-- THE SECOND YEAR -->
+    <div class="theyear">
+        <div class="year">2011</div>
+        <div class="post even fakeheight">
             <!-- ACTUAL POST CONTENT -->
             <div class="post-content hide">
                 <div class="post-box">
 
                     <header>
-                        <div class="date">May<span>30</span></div>
-                        <h2>The Marriage Proposal</h2>
+                        <div class="date">2011<span>October</span></div>
+                        <h2>Kao Yan</h2>
                     </header>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-                    <a href="#" class="readmore">Read More</a>
-
+                    <p>为了弥补我们缺失的同校大学生活，2011年即将步入大四时,哥做了一个艰难的决定，拉着行李在妳学校外租了一间房子，开始了和你的半年的考研同居生活，然而那时的我在你和基友之间，高等数学和DOTA之间始终摇摆不定，最终我们还是落榜了，这一切都是哥的错..-。-！</p>
                     <div class="clear">&nbsp;</div>
                 </div><!-- /.POST-BOX -->
+                <!-- POST EXCERPT -->
+                <div class="excerpt">
+                    <div class="excerpt-content gallery">
+                        <h4>The examination day for postgraduate in NanHang University</h4>
+                        <a href="img/bloggallery1/img-1.jpg" class="fancybox" rel="group" title="Swinging Chairs In The Sunset">
+                            <img src="img/bloggallery1/thumbnails/img-1-thumb.jpg" alt="a sunset">
+                        </a>
+                        <a href="img/bloggallery1/img-2.jpg" class="fancybox" rel="group" title="A little Cottage We Found">
+                            <img src="img/bloggallery1/thumbnails/img-2-thumb.jpg" alt="a little cottage">
+                        </a>
+                        <a href="img/bloggallery1/img-3.jpg" class="fancybox" rel="group" title="Seaside is So Relaxing!">
+                            <img src="img/bloggallery1/thumbnails/img-3-thumb.jpg" alt="seaside">
+                        </a>
+                        <a href="img/bloggallery1/img-4.jpg" class="fancybox" rel="group" title="Our Old Car">
+                            <img src="img/bloggallery1/thumbnails/img-4-thumb.jpg" alt="our old car">
+                        </a>
+                    </div><!-- /.excerpt-content--><!-- /.excerpt-content-->
+                </div><!-- /.excerpt -->
             </div><!-- /.post-content-->
-
         </div><!-- /.post -->
-    </div><!-- /.theyear -->
-
+    </div>
     <!-- "TO BE CONTINUED" BUTTON -->
     <div class="theyear">
         <div class="year">To Be Continued...</div>
