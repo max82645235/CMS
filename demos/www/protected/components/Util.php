@@ -67,9 +67,9 @@ class Util{
 
     static function weddingSendMailer($emailConfig){
         $mailer = Yii::createComponent('application.extensions.email.PHPMailer');
-        $message = 'hi,'.$emailConfig['name'];
         $mailer->Host = 'smtp.126.com';
         $mailer->IsSMTP();
+        $mailer->IsHTML(true);
         $mailer->SMTPAuth = true;
         $mailer->Subject = '王明察&张婷婷-婚庆电子请帖';
         $mailer->From = 'wmcdyx@126.com';
@@ -80,7 +80,7 @@ class Util{
         $mailer->Password = 'Wmc82645235';    //这里输入发件地址的密码
         $mailer->SMTPDebug = false;   //设置SMTPDebug为true，就可以打开Debug功能，根据提示去修改配置
         $mailer->CharSet = 'UTF-8';
-        $mailer->Body = $message;
+        $mailer->Body = $emailConfig['content'];
         return $mailer->Send();
     }
 }

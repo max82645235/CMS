@@ -404,7 +404,7 @@ $('#myTab a').click(function (e) {
             to determine if there was an error or not */
             var error = false;
             var tel = $('#contact_us_tel').val();
-            var telRes = '';s
+            var telRes = '';
             var message = $('#contact_us_message').val();
             
             if(tel.length == 0){
@@ -465,35 +465,27 @@ $('#myTab a').click(function (e) {
         /* declare the variables, var error is the variable that we use on the end
         to determine if there was an error or not */
         var error = false;
-        var name = $('#contactname').val();
-        var email = $('#contactemail').val();
-        
-        var message = $('#contactmessage').val();
-        
-        if(name.length == 0){
+        var tel = $('#contact_us_tel').val();
+
+        var message = $('#contact_us_message').val();
+
+        var reg =/^1[3|4|5|8][0-9]\d{4,8}$/;
+        if(!reg.test(tel)){
             var error = true;
             //$('#name_error').fadeIn(500);
-            $('#contactname').addClass('notcompleted');
-            $('#contactname').attr('placeholder', 'Name is required!');
-            $('#contactname').focus (function(){
+            $('#contact_us_tel').addClass('notcompleted');
+            $('#contact_us_tel').val('');
+            $('#contact_us_tel').attr('placeholder', '亲,留下正确手机号码!');
+            $('#contact_us_tel').focus (function(){
                 $(this).removeClass('notcompleted');
             });
         }
-        if(email.length == 0 || email.indexOf('@') == '-1'){
-            var error = true;
-           // $('#email_error').fadeIn(500);
-            $('#contactemail').addClass('notcompleted');
-            $('#contactemail').attr('placeholder', 'Email is required!');
-            $('#contactemail').focus (function(){
-                $(this).removeClass('notcompleted');
-            });
-        }
-        
+
         if(message.length == 0){
             var error = true;
-            $('#contactmessage').addClass('notcompleted');
-            $('#contactmessage').attr('placeholder', 'Please leave us a message!');
-            $('#contactmessage').focus (function(){
+            $('#contact_us_message').addClass('notcompleted');
+            $('#contact_us_message').attr('placeholder', '亲，不说点什么嘛!');
+            $('#contact_us_message').focus (function(){
                 $(this).removeClass('notcompleted');
             });
         }
@@ -507,13 +499,14 @@ $('#myTab a').click(function (e) {
             /* using the jquery's post(ajax) function and a lifesaver
             function serialize() which gets all the data from the form
             we submit it to send_email.php */
-            $.post("send_mail.php", $("#contactus").serialize(),function(result){
+            $.post("wedding/site/guestForm", $("#contact_form").serialize(),function(result){
                 //and after the ajax request ends we check the text returned
                 if(result == 'sent'){
                     //if the mail is sent remove the submit paragraph
                      $('#cf_submit_m').remove();
                     //and show the mail success div with fadeIn
                     $('#contact_success').fadeIn(500);
+                    setTimeout(closeBtn,3000);
                 }else{
                     //show the mail failed div
                     $('#contact_fail').fadeIn(500);
@@ -522,7 +515,11 @@ $('#myTab a').click(function (e) {
                 }
             });
         }
-    });      
+    });
+
+    function closeBtn(){
+        $('#closeBtn').trigger('click');
+    }
 });
 
 

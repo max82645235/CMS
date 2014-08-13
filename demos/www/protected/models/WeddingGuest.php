@@ -35,7 +35,7 @@ class WeddingGuest extends CActiveRecord
 			array('wedding_status, qq, send_status', 'numerical', 'integerOnly'=>true),
 			array('name, salt_key', 'length', 'max'=>100),
 			// The following rule is used by search().
-            array('wedding_status,salt_key,tel','required','on'=>'web_form'),
+            array('wedding_status,salt_key,tel,message','required','on'=>'web_form'),
 			// @todo Please remove those attributes that should not be searched.
 			array('id, name, wedding_status, salt_key, create_time, update_time, qq, send_status，tel', 'safe', 'on'=>'search'),
 		);
@@ -67,6 +67,7 @@ class WeddingGuest extends CActiveRecord
 			'qq' => 'QQ号码',
             'tel'=>'电话号码',
 			'send_status' => '请帖发送状态',
+            'message'=>'留言'
 		);
 	}
 

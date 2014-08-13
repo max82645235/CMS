@@ -54,7 +54,8 @@ function send_email(record_id){
                 }else{
                     alert('发送失败');
                 }
-            }
+            },
+            'json'
     );
 }
 </script>

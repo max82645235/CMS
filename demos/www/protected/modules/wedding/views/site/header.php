@@ -66,7 +66,7 @@
                 <li><a href="#registry">Registry</a></li>
                 <li><a href="#guestbook">Guest Book</a></li>
                 <li><a href="#rsvp">Events / RSVP</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#myModal">Contact</a></li>
+                <li id="contact_li"><a href="#" data-toggle="modal" data-target="#myModal">Contact</a></li>
             </ul><!-- /.navbar-nav -->
 
         </nav><!--/.navbar-collapse -->

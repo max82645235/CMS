@@ -1,3 +1,4 @@
+<?php $photoPath = Yii::app()->baseUrl.'/photo/';?>
 <section id="ourstory">
 
 <!-- "OUR STORY" HEADER -->
@@ -37,7 +38,7 @@
     <div class="col-md-6 col-xs-6 bride">
         <div class="round-frame-bg alignright hide">
             <div class="round-frame">
-                <img src="<?=Yii::app()->baseUrl?>/photo/cross_1.jpg" alt="the bride" style="width: 335px;height: 358px;margin-left: 13px;">
+                <img src="<?=$photoPath?>cross_1.jpg" alt="the bride" style="width: 335px;height: 358px;margin-left: 13px;">
             </div><!-- /.round-frame -->
         </div><!-- /.round-frame-bg alignright hide -->
     </div><!-- /.ccol-md-6 col-xs-6 bride-->
@@ -45,8 +46,8 @@
     <!-- THE GROOM -->
     <div class="col-md-6 col-xs-6 groom">
         <div class="round-frame-bg alignleft hide">
-            <div class="round-frame">
-                <img src="img/wedding/thegroom.jpg" alt="the groom">
+            <div class="round-frame" style="padding-right: 45px;">
+                <img src="<?=$photoPath?>cross_2.jpg" alt="the groom" style="width: 335px;margin-left: 17px;margin-top: 11px;" >
             </div><!-- /.round-frame -->
         </div><!-- /.round-frame-bg -->
     </div><!-- /.col-md-6 col-xs-6 groom -->
@@ -79,7 +80,7 @@
 
                     <header>
                         <div class="date">2008<span>July</span></div>
-                        <h2>The Day We Begin the love</h2>
+                        <h2 style="width: 70%">The Day We Begin the love</h2>
                     </header>
 
                     <p>2008年，我们经历了高考，步入了大学，同时也开始了对彼此的羁绊！(好肉麻-_-!)!</p>
@@ -151,17 +152,17 @@
             <div class="excerpt">
                 <div class="excerpt-content gallery">
                     <h4>Photos From Suzhou Vacation</h4>
-                    <a href="img/bloggallery1/img-1.jpg" class="fancybox" rel="group" title="Swinging Chairs In The Sunset">
-                        <img src="img/bloggallery1/thumbnails/img-1-thumb.jpg" alt="a sunset">
+                    <a  href="<?=$photoPath?>sz_1.jpg" class="fancybox" rel="group" title="Swinging Chairs In The Sunset" style="width: 250px;">
+                        <img src="<?=$photoPath?>sz_1.jpg" alt="a sunset">
                     </a>
-                    <a href="img/bloggallery1/img-2.jpg" class="fancybox" rel="group" title="A little Cottage We Found">
-                        <img src="img/bloggallery1/thumbnails/img-2-thumb.jpg" alt="a little cottage">
+                    <a href="<?=$photoPath?>sz_2.jpg" class="fancybox" rel="group" title="A little Cottage We Found" style="width: 250px;">
+                        <img src="<?=$photoPath?>sz_2.jpg" alt="a little cottage">
                     </a>
-                    <a href="img/bloggallery1/img-3.jpg" class="fancybox" rel="group" title="Seaside is So Relaxing!">
-                        <img src="img/bloggallery1/thumbnails/img-3-thumb.jpg" alt="seaside">
+                    <a href="<?=$photoPath?>sz_3.jpg" class="fancybox" rel="group" title="Seaside is So Relaxing!" style="width: 250px;">
+                        <img src="<?=$photoPath?>sz_3.jpg" alt="seaside">
                     </a>
-                    <a href="img/bloggallery1/img-4.jpg" class="fancybox" rel="group" title="Our Old Car">
-                        <img src="img/bloggallery1/thumbnails/img-4-thumb.jpg" alt="our old car">
+                    <a href="<?=$photoPath?>sz_4.jpg" class="fancybox" rel="group" title="Our Old Car" style="width: 250px;">
+                        <img src="<?=$photoPath?>sz_4.jpg" alt="our old car">
                     </a>
                 </div><!-- /.excerpt-content-->
             </div><!-- /.excerpt -->
@@ -200,18 +201,7 @@
             <div class="excerpt">
                 <div class="excerpt-content gallery">
                     <h4>Two B Qin Nian </h4>
-                    <a href="img/bloggallery1/img-1.jpg" class="fancybox" rel="group" title="Swinging Chairs In The Sunset">
-                        <img src="img/bloggallery1/thumbnails/img-1-thumb.jpg" alt="a sunset">
-                    </a>
-                    <a href="img/bloggallery1/img-2.jpg" class="fancybox" rel="group" title="A little Cottage We Found">
-                        <img src="img/bloggallery1/thumbnails/img-2-thumb.jpg" alt="a little cottage">
-                    </a>
-                    <a href="img/bloggallery1/img-3.jpg" class="fancybox" rel="group" title="Seaside is So Relaxing!">
-                        <img src="img/bloggallery1/thumbnails/img-3-thumb.jpg" alt="seaside">
-                    </a>
-                    <a href="img/bloggallery1/img-4.jpg" class="fancybox" rel="group" title="Our Old Car">
-                        <img src="img/bloggallery1/thumbnails/img-4-thumb.jpg" alt="our old car">
-                    </a>
+
                 </div><!-- /.excerpt-content--><!-- /.excerpt-content-->
             </div><!-- /.excerpt -->
 
@@ -226,7 +216,7 @@
     <!-- THE SECOND YEAR -->
     <div class="theyear">
         <div class="year">2011</div>
-        <div class="post even fakeheight">
+        <div class="post odd fakeheight">
             <!-- ACTUAL POST CONTENT -->
             <div class="post-content hide">
                 <div class="post-box">
@@ -235,25 +225,14 @@
                         <div class="date">2011<span>October</span></div>
                         <h2>Kao Yan</h2>
                     </header>
-                    <p>为了弥补我们缺失的同校大学生活，2011年即将步入大四时,哥做了一个艰难的决定，拉着行李在妳学校外租了一间房子，开始了和你的半年的考研同居生活，然而那时的我在你和基友之间，高等数学和DOTA之间始终摇摆不定，最终我们还是落榜了，这一切都是哥的错..-。-！</p>
+                    <p>为了弥补我们缺失的同校大学生活，2011年即将步入大四时,哥做了一个艰难的决定，去金城复习考研，然而那时的我在你和基友之间，高等数学和DOTA之间始终摇摆不定，最终我们还是落榜了，这一切都是哥的错..-。-！</p>
                     <div class="clear">&nbsp;</div>
                 </div><!-- /.POST-BOX -->
                 <!-- POST EXCERPT -->
                 <div class="excerpt">
                     <div class="excerpt-content gallery">
                         <h4>The examination day for postgraduate in NanHang University</h4>
-                        <a href="img/bloggallery1/img-1.jpg" class="fancybox" rel="group" title="Swinging Chairs In The Sunset">
-                            <img src="img/bloggallery1/thumbnails/img-1-thumb.jpg" alt="a sunset">
-                        </a>
-                        <a href="img/bloggallery1/img-2.jpg" class="fancybox" rel="group" title="A little Cottage We Found">
-                            <img src="img/bloggallery1/thumbnails/img-2-thumb.jpg" alt="a little cottage">
-                        </a>
-                        <a href="img/bloggallery1/img-3.jpg" class="fancybox" rel="group" title="Seaside is So Relaxing!">
-                            <img src="img/bloggallery1/thumbnails/img-3-thumb.jpg" alt="seaside">
-                        </a>
-                        <a href="img/bloggallery1/img-4.jpg" class="fancybox" rel="group" title="Our Old Car">
-                            <img src="img/bloggallery1/thumbnails/img-4-thumb.jpg" alt="our old car">
-                        </a>
+
                     </div><!-- /.excerpt-content--><!-- /.excerpt-content-->
                 </div><!-- /.excerpt -->
             </div><!-- /.post-content-->

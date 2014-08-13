@@ -37,8 +37,12 @@ class GuestManagerController extends Controller
                     $emailConfig = array();
                     $emailConfig['qq'] = $model->qq;
                     $emailConfig['name'] = $model->name;
+                    $emailConfig['content'] = $this->renderPartial('emailTpl',array('model'=>$model),true);
                     if(Util::weddingSendMailer($emailConfig)){
-                        $ret['status'] = 'success';
+                        $model['send_status'] = 1 ;
+                        if($model->save(false)){
+                            $ret['status'] = 'success';
+                        }
                     }
                 }else{
                     $ret['status'] = 'hasSend';
@@ -55,11 +59,13 @@ class GuestManagerController extends Controller
             if($model){
                 $guestInfo = array();
                 $guestInfo = $model->getAttributes();
-                $cookie = new CHttpCookie('guestInfo',$guestInfo);
+                $cookie = new CHttpCookie('guestInfo',serialize($guestInfo));
                 $cookie->expire = time()+60*60*24*30;  //有限期1天
                 Yii::app()->request->cookies['guestInfo']=$cookie;
             }
         }
         Yii::app()->request->redirect(Yii::app()->getBaseUrl(true).'/wedding');
     }
+
+
 }
