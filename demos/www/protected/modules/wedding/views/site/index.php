@@ -28,7 +28,7 @@
 
             <!-- THE ACTUAL PHOTO SLIDES -->
             <ul class="slides">
-                <embed src="http://www.xiami.com/widget/39943821_359360/singlePlayer.swf" type="application/x-shockwave-flash" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque" style="z-index: 1;"></embed>
+                <embed src="http://www.xiami.com/widget/39943821_359360,1770159571,_235_346_FF8719_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>
                 <li><img src="<?=Yii::app()->baseUrl?>/photo/slider_1.jpg" alt="photo 1" /></li>
                 <li><img src="<?=Yii::app()->baseUrl?>/photo/slider_4.jpg" alt="photo 4" /></li>
                 <li><img src="<?=Yii::app()->baseUrl?>/photo/slider_2.jpg" alt="photo 2" /></li>

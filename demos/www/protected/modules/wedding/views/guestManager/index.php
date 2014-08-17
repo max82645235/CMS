@@ -31,7 +31,7 @@
                     <td style="text-align: center;"><?=$record->update_time?></td>
                     <td >
                         <a style="margin-left: 20px;" href="/wedding/guestManager/guestCurd/actionType/edit/id/<?=$record['id']?>" class="btn btn-primary btn-mini">Edit</a>
-                        <a style="margin-left: 20px;" href="javascript:;" onclick="send_email(<?=$record->id?>)"  target="_blank" class="btn btn-primary btn-mini">发送邮件</a>
+                        <a style="margin-left: 20px;" href="javascript:;" onclick="send_email(<?=$record->id?>)"   class="btn btn-primary btn-mini">发送邮件</a>
                     </td>
                 </tr>
             <?php }?>

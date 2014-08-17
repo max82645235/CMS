@@ -46,7 +46,7 @@ return array(
         // uncomment the following to use a MySQL database
 
         'db'=>array(
-            'connectionString' => 'mysql:host=localhost;dbname=a0815150406',
+            'connectionString' => 'mysql:host=112.213.118.8;dbname=a0815150406',
             'emulatePrepare' => true,
             'username' => 'a0815150406',
             'password' => '47552898',

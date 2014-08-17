@@ -1,4 +1,4 @@
-<?php $keyUrl = Yii::app()->getBaseUrl(true).'/wedding/guestManager/emailKeyConfirm?=saltKey='.urlencode($model->salt_key)?>
+<?php $keyUrl = 'http://www.itaotao.me/wedding/guestManager/emailKeyConfirm?saltKey='.urlencode($model->salt_key)?>
 <html>
 <body>
 <div style="width:700px;margin:0 auto;">

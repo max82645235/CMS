@@ -40,7 +40,7 @@
                     <li>
                         <span class="glyphicon glyphicon-time"></span>
                         <div class="alignleft">
-                            <h5>2014，10 1th </h5>
+                            <h5> 1st 10,2014 </h5>
                             <p>6:00 PM GMT</p>
                         </div>
                     </li>

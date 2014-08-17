@@ -17,7 +17,7 @@
                 </li>
                 <li><a href="#weddinglocation" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">婚礼地址 </a>
                 </li>
-                <li><a href="#weddinglocation" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">照片长廊</a>
+                <li><a href="#gallery1" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">照片长廊</a>
                 </li>
             </ul>
 
