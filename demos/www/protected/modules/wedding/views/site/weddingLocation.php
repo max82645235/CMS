@@ -23,27 +23,25 @@
             <div class="col-md-6">
 
                 <!-- INTERMEDIARY TITLE -->
-                <h3 class="sectionmaintitle">Ceremony Location</h3>
+                <h3 class="sectionmaintitle">婚礼地址</h3>
 
                 <!-- INTERMEDIARY CONTENT -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>婚礼将在我们的家乡泰州兴化举行，请参加的童鞋于当天下午6点之前到达我们婚庆的酒店参加酒宴，衷心期待你的到来！</p>
 
                 <!-- ADDRESS AND CEREMONY TIME -->
                 <ul class="locationdetails">
                     <li>
                         <span class="glyphicon glyphicon-map-marker"></span>
                         <div class="alignleft">
-                            <h5>Gettinsburg Town Hall</h5>
-                            <p>4567 Street name, 012 </p>
-                            <p>City name, Country</p>
+                            <h5>儒学大酒店</h5>
+                            <p>兴化市英武路海德国际8号5楼</p>
                         </div>
                     </li>
                     <li>
                         <span class="glyphicon glyphicon-time"></span>
                         <div class="alignleft">
-                            <h5>25th July, 2014</h5>
-                            <p>4:15 PM GMT</p>
-                            <p>10:15 PM EST</p>
+                            <h5>2014，10 1th </h5>
+                            <p>6:00 PM GMT</p>
                         </div>
                     </li>
                 </ul><!-- /.locationdetails -->
@@ -51,9 +49,10 @@
 
 
             <!-- THE MAP -->
-            <!--  <div class="col-md-6">
-                  <iframe style="width:100%;" height="280" src="https://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=&amp;daddr=E+17th+St&amp;hl=en&amp;geocode=FQsnXwIdo5_d-g&amp;sll=39.778826,-86.135892&amp;sspn=0.008377,0.016512&amp;mra=mr&amp;ie=UTF8&amp;ll=39.790347,-86.138973&amp;spn=0.006295,0.008193&amp;t=m&amp;output=embed"></iframe>
-              </div>--><!-- /.col-md-6-->
+              <div class="col-md-6">
+                  (如地图无法显示请点击此链接<a href="wedding/site/map" target="_blank">地图</a>)
+                  <iframe style="width:700px;height: 550px;"  src="wedding/site/map"  scrolling="no"></iframe>
+              </div>
         </div><!-- /.row -->
     </div><!-- /.container -->
 

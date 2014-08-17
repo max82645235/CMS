@@ -21,8 +21,25 @@ class siteController extends Controller
             $model['wedding_status'] = $_POST['form_select'];
             $model['message'] = $_POST['form_message'];
             if($model->save()){
+                unset(Yii::app()->request->cookies['guestInfo']);
                 echo 'sent';
             }
         }
+    }
+
+    public function actioncontactForm(){
+        if(Yii::app()->request->isAjaxRequest){
+            $model = new Message();
+            $model->name = $_POST['contactname'];
+            $model->email = $_POST['contactemail'];
+            $model->message = $_POST['contactmessage'];
+            if($model->save(false)){
+                echo 'sent';
+            }
+        }
+    }
+
+    public function actionMap(){
+        $this->renderPartial('map');
     }
 }

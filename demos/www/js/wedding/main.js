@@ -396,68 +396,84 @@ $('#myTab a').click(function (e) {
             jquery for the RSVP form:
 ======================================================= */
     $('#send_message').click(function(e){
-            
-            //stop the form from being submitted
-            e.preventDefault();
-            
-            /* declare the variables, var error is the variable that we use on the end
-            to determine if there was an error or not */
-            var error = false;
-            var tel = $('#contact_us_tel').val();
-            var telRes = '';
-            var message = $('#contact_us_message').val();
-            
-            if(tel.length == 0){
-                var error = true;
-                //$('#name_error').fadeIn(500);
-                $('#rsvp-name').addClass('notcompleted');
-                $('#rsvp-name').attr('placeholder', '先输入联系方式吧，亲!');
-                $('#rsvp-name').focus (function(){
-                    $(this).removeClass('notcompleted');
-                });
+        //stop the form from being submitted
+        e.preventDefault();
+
+        /* declare the variables, var error is the variable that we use on the end
+         to determine if there was an error or not */
+        var error = false;
+        var name = $('#contactname').val();
+        var email = $('#contactemail').val();
+
+        var message = $('#contactmessage').val();
+
+        if(name.length == 0){
+            var error = true;
+            //$('#name_error').fadeIn(500);
+            $('#contactname').addClass('notcompleted');
+            $('#contactname').attr('placeholder', 'Name is required!');
+            $('#contactname').focus (function(){
+                $(this).removeClass('notcompleted');
+            });
+        }
+        if(email.length == 0 || email.indexOf('@') == '-1'){
+            var error = true;
+            // $('#email_error').fadeIn(500);
+            $('#contactemail').addClass('notcompleted');
+            $('#contactemail').attr('placeholder', 'Email is required!');
+            $('#contactemail').focus (function(){
+                $(this).removeClass('notcompleted');
+            });
+            alert('请填写正确的邮箱');
+        }
+
+        if(message.length == 0){
+            var error = true;
+            $('#contactmessage').addClass('notcompleted');
+            $('#contactmessage').attr('placeholder', 'Please leave us a message!');
+            $('#contactmessage').focus (function(){
+                $(this).removeClass('notcompleted');
+            });
+        }
+        //now when the validation is done we check if the error variable is false (no errors)
+        if(error == false){
+            //disable the submit button to avoid spamming
+            //and change the button text to Sending...
+            if($('#send_message').attr('value')=='Sending...'){
+                alert('发送中。。请等待!');return false;
             }
+            $('#send_message').attr({'value' : 'Sending...' });
 
-            if(message.length == 0){
-                var error = true;
-                $('#rsvp-message').addClass('notcompleted');
-                $('#rsvp-message').attr('placeholder', 'Please leave us a message!');
-                $('#rsvp-message').focus (function(){
-                    $(this).removeClass('notcompleted');
-                });
-            }
-            
-            //now when the validation is done we check if the error variable is false (no errors)
-            if(error == false){
-                //disable the submit button to avoid spamming
-                //and change the button text to Sending...
-                $('#send_message').attr({'value' : 'Sending...' });
-                
-                /* using the jquery's post(ajax) function and a lifesaver
-                function serialize() which gets all the data from the form
-                we submit it to send_email.php */
-                $.post("send_rsvp.php", $("#rsvpform").serialize(),function(result){
-                    //and after the ajax request ends we check the text returned
-                    if(result == 'sent'){
-                        //if the mail is sent remove the submit paragraph
-                         $('#cf_submit_p').remove();
-                        //and show the mail success div with fadeIn
-                        $('#mail_success').fadeIn(500);
-                    }else{
-                        //show the mail failed div
-                        $('#mail_fail').fadeIn(500);
-                        //reenable the submit button by removing attribute disabled and change the text back to Send The Message
-                        $('#send_message').removeAttr('disabled').attr('value', 'Send The Message');
-                    }
-                });
-            }
-        }); 
+            /* using the jquery's post(ajax) function and a lifesaver
+             function serialize() which gets all the data from the form
+             we submit it to send_email.php */
+            $.post("/wedding/site/contactForm", $("#message_form").serialize(),function(result){
+                //and after the ajax request ends we check the text returned
+                if(result == 'sent'){
+                    //if the mail is sent remove the submit paragraph
+                    $('#send_message').attr('value','Send Message');
+                    $('#contactname').val('');
+                    $('#contactemail').val('');
+                    $('#contactmessage').val('');
+                    //and show the mail success div with fadeIn
+                    $('#contact_success1').fadeIn(500);
+                    setTimeout(closeBtn,3000);
+                }else{
+                    //show the mail failed div
+                    $('#mail_fail').fadeIn(500);
+                    //reenable the submit button by removing attribute disabled and change the text back to Send The Message
+                    $('#send_message').removeAttr('disabled').attr('value', 'Send The Message');
+                }
+            });
+        }
+    });
 
 
-/* ===================================================
-            jquery for the "contact us" form:
-======================================================= */
+    /* ===================================================
+                jquery for the "contact us" form:
+    ======================================================= */
 
-    $('#send_contact_message').click(function(e){
+    $('#send_invite_message').click(function(e){
         
         //stop the form from being submitted
         e.preventDefault();
@@ -494,16 +510,16 @@ $('#myTab a').click(function (e) {
         if(error == false){
             //disable the submit button to avoid spamming
             //and change the button text to Sending...
-            $('#send_contact_message').attr({'value' : 'Sending...' });
+            $('#send_invite_message').attr({'value' : 'Sending...' });
             
             /* using the jquery's post(ajax) function and a lifesaver
             function serialize() which gets all the data from the form
             we submit it to send_email.php */
-            $.post("wedding/site/guestForm", $("#contact_form").serialize(),function(result){
+            $.post("/wedding/site/guestForm", $("#contact_form").serialize(),function(result){
                 //and after the ajax request ends we check the text returned
                 if(result == 'sent'){
                     //if the mail is sent remove the submit paragraph
-                     $('#cf_submit_m').remove();
+                     $('#invite_submit_m').remove();
                     //and show the mail success div with fadeIn
                     $('#contact_success').fadeIn(500);
                     setTimeout(closeBtn,3000);
@@ -511,14 +527,14 @@ $('#myTab a').click(function (e) {
                     //show the mail failed div
                     $('#contact_fail').fadeIn(500);
                     //reenable the submit button by removing attribute disabled and change the text back to Send The Message
-                    $('#send_contact_message').removeAttr('disabled').attr('value', 'Send The Message');
+                    $('#send_invite_message').removeAttr('disabled').attr('value', 'Send The Message');
                 }
             });
         }
     });
 
     function closeBtn(){
-        $('#closeBtn').trigger('click');
+        $('.closeBtn').trigger('click');
     }
 });
 

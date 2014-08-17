@@ -28,7 +28,7 @@
 
             <!-- THE ACTUAL PHOTO SLIDES -->
             <ul class="slides">
-                <!--<embed src="http://www.xiami.com/widget/39943821_1770159571,_235_346_ea827f_bfe5e8_1/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque" style="z-index: 1;"></embed>-->
+                <embed src="http://www.xiami.com/widget/39943821_359360/singlePlayer.swf" type="application/x-shockwave-flash" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque" style="z-index: 1;"></embed>
                 <li><img src="<?=Yii::app()->baseUrl?>/photo/slider_1.jpg" alt="photo 1" /></li>
                 <li><img src="<?=Yii::app()->baseUrl?>/photo/slider_4.jpg" alt="photo 4" /></li>
                 <li><img src="<?=Yii::app()->baseUrl?>/photo/slider_2.jpg" alt="photo 2" /></li>
@@ -120,13 +120,13 @@
 <?php
     $guestInfo = unserialize(Yii::app()->request->cookies['guestInfo']);
 ?>
-<!-- CONTACT US FORM -->
+<!-- invite FORM -->
 <?php if($guestInfo){?>
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="inviteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" style="width: 90%">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="closeBtn">&times;</button>
+                <button type="button" class="close closeBtn" data-dismiss="modal" aria-hidden="true" >&times;</button>
                 <h4 class="modal-title" id="myModalLabel">婚庆请帖</h4>
             </div>
 
@@ -135,7 +135,7 @@
 
                 <div class="modal-body">
 
-                    <p>欢迎你的到来，<span style="color:#dd1144;font-size:16px;font-weight:bold;"><?=$guestInfo['name']?></span>.很高兴你对我们的婚礼邀请函做出及时的回应，果断留下你的联系方式和参与反馈吧，亲！我们2014年10月1日甜蜜大婚，诚邀您共同见证我们的幸福时刻!报名从速，请于当日18点00分(时间)前到达。</p>
+                    <p>欢迎你，<span style="color:#dd1144;font-size:16px;font-weight:bold;"><?=$guestInfo['name']?></span>.很高兴你对我们的婚礼邀请函做出及时的回应，请留下你的联系方式和参与反馈，亲！我们2014年10月1日甜蜜大婚，诚邀您共同见证我们的幸福时刻!报名从速，请于当日18点00分(时间)前到达。</p>
 
                     <!-- NAME -->
                     <div class="form-group">
@@ -164,10 +164,10 @@
 
                 </div><!-- /.modal-body -->
 
-                <div class="modal-footer" id='cf_submit_m'>
+                <div class="modal-footer" id='invite_submit_m'>
 
                     <!-- SUBMIT BUTTON -->
-                    <input type="submit" value="Send Message" id="send_contact_message" class="btn btn-primary">
+                    <input type="submit" value="Send Message" id="send_invite_message" class="btn btn-primary">
                 </div><!-- /.modal-footer -->
                 <div id='contact_success' class='alert alert-success'>你的祝福留言已经传达，感谢你的反馈！</div><!-- /. SUCCESS MESSAGE -->
                 <div id='contact_fail' class='alert alert-danger'> 服务器貌似出现问题，请重新提交试试！</div><!-- /. ERROR MESSAGE -->
@@ -175,9 +175,62 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
+
+
 <script>
         window.onload=function(){
             $('#contact_li a').trigger('click');
         }
 </script>
 <?php }?>
+
+<!-- CONTACT US FORM -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close closeBtn" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Send Us a Message</h4>
+            </div>
+
+            <!-- the actual form begins -->
+            <form id="message_form" method="post" action="send_mail.php" role="form">
+
+                <div class="modal-body">
+
+                    <p>如果有任何问题请联系我们，记得填写有效邮箱以便我们尽快回复您！</p>
+
+                    <!-- NAME -->
+                    <div class="form-group">
+                        <label for="contactname">姓名</label>
+                        <input type="text" class="form-control" id="contactname" name="contactname" placeholder="Your Name">
+                    </div><!-- /.form-group -->
+
+                    <!-- EMAIL -->
+                    <div class="form-group">
+                        <label for="contactemail">邮箱</label>
+                        <input type="email" class="form-control" id="contactemail" name="contactemail" placeholder="Your Email">
+                    </div><!-- /.form-group -->
+
+                    <!-- MESSAGE -->
+                    <div class="form-group">
+                        <label for="contactmessage">内容</label>
+                        <textarea class="form-control" rows="3" placeholder="Please Enter Your Message" id="contactmessage" name="contactmessage"></textarea>
+                    </div><!-- /.form-group -->
+
+                </div><!-- /.modal-body -->
+
+                <div class="modal-footer" id='contact_submit_m'>
+
+                    <!-- SUBMIT BUTTON -->
+                    <input type="submit" value="Send Message" id="send_message" class="btn btn-primary">
+                </div><!-- /.modal-footer -->
+
+                <!-- SUCCESS/ERROR FIELDS -->
+                <div id='contact_success1' class='alert alert-success'>Thank you. Your message has been sent.</div><!-- /. SUCCESS MESSAGE -->
+                <div id='contact_fail1' class='alert alert-danger'> Sorry, don't know what happened. Try later.</div><!-- /. ERROR MESSAGE -->
+            </form><!-- /.contactus -->
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

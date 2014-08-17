@@ -6,8 +6,8 @@
         <div class="container">
             <div class="row">
                 <header class="col-md-6 col-md-offset-3 hide">
-                        �Gallery
-                    <span>Photos from our engadgement and weddding</span>
+                        Gallery
+                    <span>Photos from our life</span>
                 </header>
             </div><!-- /.row -->
         </div><!-- /.container -->
@@ -17,12 +17,12 @@
 
 <!-- "GALLERY 1" ACTUAL CONTENT -->
 <div class="container">
-<h3 class="text-center">Some Of Our Photos From The Engagement and Wedding</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<h3 class="text-center">照片长廊</h3>
+<p></p>
 
 <!-- MEGAFOLIO FILTER LIST -->
 <ul class="filter-list">
-    <li class="filter" data-category="cat-all">All</li>
+    <li class="filter" data-category="cat-all">所有</li>
     <li class="filter" data-category="cat-one">The Ceremony</li>
     <li class="filter" data-category="cat-two">The Party</li>
     <li class="filter" data-category="cat-three">The Guests</li>

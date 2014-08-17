@@ -43,17 +43,22 @@ class CurdAction{
 
     public function initMod(){
         $className = $this->className;
+        $recordId = $this->recordId;
         switch($this->action){
             case self::ADD:
                             $this->model = new $className();
                 break;
 
             case self::EDIT:
-                            $this->model = $className::model()->findByPk($this->recordId);
+                          $model = '';
+                          eval("\$model = $className::model()->findByPk(\"$recordId\");");
+                          $this->model = $model;
                 break;
 
             case self::DEL:
-                            $this->model = $className::model()->deleteByPk($this->recordId);
+                           $model = '';
+                           eval("\$model = $className::model()->deleteByPk(\"$recordId\");");
+                           $this->model = $model;
                 break;
 
             default:

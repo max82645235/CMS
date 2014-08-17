@@ -74,7 +74,7 @@
                         <h2 style="width: 70%">The Day We First Meet</h2>
                     </header>
 
-                    <p>2006年，文理分班后的我们有幸进入同一个班级，从那时开始，她似乎进入了我的视线，从未离开！</p>
+                    <p>2006年，文理分班后的我们有幸进入同一个班级，从那时开始，你似乎进入了我的视线，从未离开！</p>
 
                     <div class="clear">&nbsp;</div>
                 </div><!-- /.POST-BOX -->
