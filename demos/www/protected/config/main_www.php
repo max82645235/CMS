@@ -46,20 +46,18 @@ return array(
         // uncomment the following to use a MySQL database
 
         'db'=>array(
-            'connectionString' => 'mysql:host=112.213.118.8;dbname=a0815150406',
+            'connectionString' => 'mysql:host=121.127.248.152;dbname=a0817200015',
             'emulatePrepare' => true,
-            'username' => 'a0815150406',
-            'password' => '47552898',
+            'username' => 'a0817200015',
+            'password' => '63479743',
             'charset' => 'utf8',
             'tablePrefix' => 'cms_',
         ),
-
         'urlManager'=>array(
             'urlFormat' => 'path',
             'showScriptName'=>false,
             'rules'=>array(
                 '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-
             )
         ),
         'log'=>array(

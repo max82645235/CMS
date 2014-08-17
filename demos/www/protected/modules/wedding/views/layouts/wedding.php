@@ -87,6 +87,9 @@
 <script src="<?php echo Yii::app()->baseUrl;?>/js/wedding/vendor/jquery.queryloader2.js"></script>
 
 <!-- INCLUDE other plugins and scripts AUTHOR MADE -->
+<script src="<?php echo Yii::app()->baseUrl;?>/js/wedding/jquery.lazyload.min.js"></script>
+<script src="<?php echo Yii::app()->baseUrl;?>/js/wedding/jquery.scrollstop.min.js"></script>
+
 <script src="<?php echo Yii::app()->baseUrl;?>/js/wedding/plugins.js"></script>
 <script src="<?php echo Yii::app()->baseUrl;?>/js/wedding/main.js"></script>
 

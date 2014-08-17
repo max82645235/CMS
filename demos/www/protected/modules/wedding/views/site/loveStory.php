@@ -38,7 +38,7 @@
     <div class="col-md-6 col-xs-6 bride">
         <div class="round-frame-bg alignright hide">
             <div class="round-frame">
-                <img src="<?=$photoPath?>cross_1.jpg" alt="the bride" style="width: 335px;height: 358px;margin-left: 13px;">
+                <img  class="lazy"  src="<?=$photoPath?>lazy.gif" data-original="<?=$photoPath?>cross_1.jpg" alt="the bride" style="width: 335px;height: 358px;margin-left: 13px;">
             </div><!-- /.round-frame -->
         </div><!-- /.round-frame-bg alignright hide -->
     </div><!-- /.ccol-md-6 col-xs-6 bride-->
@@ -47,13 +47,13 @@
     <div class="col-md-6 col-xs-6 groom">
         <div class="round-frame-bg alignleft hide">
             <div class="round-frame" style="padding-right: 45px;">
-                <img src="<?=$photoPath?>cross_2.jpg" alt="the groom" style="width: 335px;margin-left: 17px;margin-top: 11px;" >
+                <img  class="lazy"  src="<?=$photoPath?>lazy.gif" data-original="<?=$photoPath?>cross_2.jpg" alt="the groom" style="width: 335px;margin-left: 17px;margin-top: 11px;" >
             </div><!-- /.round-frame -->
         </div><!-- /.round-frame-bg -->
     </div><!-- /.col-md-6 col-xs-6 groom -->
 
     <!-- LITTLE HEART GRAPHIC -->
-    <img src="img/wedding/hearts.png" class="hearts hide" alt="love">
+    <img    src="img/wedding/hearts.png" class="hearts hide" alt="love">
 
 </div><!-- /.couple-photos -->
 
@@ -87,16 +87,16 @@
                 <div class="excerpt-content gallery">
                     <h4>Meet in Chu Shui High School</h4>
                     <a  href="<?=$photoPath?>csxx_1.jpg" class="fancybox" rel="group" title="Swinging Chairs In The Sunset" style="width: 250px;">
-                        <img src="<?=$photoPath?>csxx_1.jpg" alt="a sunset">
+                        <img  class="lazy"  data-original="<?=$photoPath?>csxx_1.jpg" src="<?=$photoPath?>lazy.gif" alt="a sunset">
                     </a>
                     <a  href="<?=$photoPath?>gz_5.jpg" class="fancybox" rel="group" title="Swinging Chairs In The Sunset" style="width: 250px;">
-                        <img src="<?=$photoPath?>gz_5.jpg" alt="a sunset">
+                        <img  class="lazy"  data-original="<?=$photoPath?>gz_5.jpg" src="<?=$photoPath?>lazy.gif" alt="a sunset">
                     </a>
                     <a href="<?=$photoPath?>gz_1.jpg" class="fancybox" rel="group" title="A little Cottage We Found" style="width: 250px;">
-                        <img src="<?=$photoPath?>gz_1.jpg" alt="a little cottage">
+                        <img  class="lazy"  data-original="<?=$photoPath?>gz_1.jpg" src="<?=$photoPath?>lazy.gif" alt="a little cottage">
                     </a>
                     <a href="<?=$photoPath?>gz_3.jpg" class="fancybox" rel="group" title="A little Cottage We Found" style="width: 250px;">
-                        <img src="<?=$photoPath?>gz_3.jpg" alt="a little cottage">
+                        <img  class="lazy"  data-original="<?=$photoPath?>gz_3.jpg" src="<?=$photoPath?>lazy.gif" alt="a little cottage">
                     </a>
                 </div><!-- /.excerpt-content-->
             </div><!-- /.excerpt -->
@@ -134,13 +134,13 @@
                 <div class="excerpt-content gallery">
                     <h4>The Beginning Is Destined And insistent</h4>
                     <a  href="<?=$photoPath?>gz_2.jpg" class="fancybox" rel="group" title="Swinging Chairs In The Sunset" style="width: 250px;">
-                        <img src="<?=$photoPath?>gz_2.jpg" alt="a sunset">
+                        <img  class="lazy"  data-original="<?=$photoPath?>gz_2.jpg" src="<?=$photoPath?>lazy.gif" alt="a sunset">
                     </a>
                     <a  href="<?=$photoPath?>gz_4.jpg" class="fancybox" rel="group" title="Swinging Chairs In The Sunset" style="width: 250px;">
-                        <img src="<?=$photoPath?>gz_4.jpg" alt="a sunset">
+                        <img  class="lazy"  data-original="<?=$photoPath?>gz_4.jpg" src="<?=$photoPath?>lazy.gif" alt="a sunset">
                     </a>
                     <a  href="<?=$photoPath?>gz_6.jpg" class="fancybox" rel="group" title="Swinging Chairs In The Sunset" style="width: 510px;">
-                        <img src="<?=$photoPath?>gz_6.jpg" alt="a sunset">
+                        <img  class="lazy"  data-original="<?=$photoPath?>gz_6.jpg" src="<?=$photoPath?>lazy.gif" alt="a sunset">
                     </a>
                 </div>
             </div><!-- /.excerpt -->
@@ -175,16 +175,16 @@
                 <div class="excerpt-content gallery">
                     <h4>Photos From Suzhou Vacation</h4>
                     <a  href="<?=$photoPath?>sz_1.jpg" class="fancybox" rel="group" title="Swinging Chairs In The Sunset" style="width: 250px;">
-                        <img src="<?=$photoPath?>sz_1.jpg" alt="a sunset">
+                        <img  class="lazy"   src="<?=$photoPath?>lazy.gif" data-original="<?=$photoPath?>sz_1.jpg" alt="a sunset">
                     </a>
                     <a href="<?=$photoPath?>sz_2.jpg" class="fancybox" rel="group" title="A little Cottage We Found" style="width: 250px;">
-                        <img src="<?=$photoPath?>sz_2.jpg" alt="a little cottage">
+                        <img  class="lazy"  src="<?=$photoPath?>lazy.gif" data-original="<?=$photoPath?>sz_2.jpg" alt="a little cottage">
                     </a>
                     <a href="<?=$photoPath?>sz_3.jpg" class="fancybox" rel="group" title="Seaside is So Relaxing!" style="width: 250px;">
-                        <img src="<?=$photoPath?>sz_3.jpg" alt="seaside">
+                        <img  class="lazy"  src="<?=$photoPath?>lazy.gif" data-original="<?=$photoPath?>sz_3.jpg" alt="seaside">
                     </a>
                     <a href="<?=$photoPath?>sz_4.jpg" class="fancybox" rel="group" title="Our Old Car" style="width: 250px;">
-                        <img src="<?=$photoPath?>sz_4.jpg" alt="our old car">
+                        <img  class="lazy"  src="<?=$photoPath?>lazy.gif" data-original="<?=$photoPath?>sz_4.jpg" alt="our old car">
                     </a>
                 </div><!-- /.excerpt-content-->
             </div><!-- /.excerpt -->
@@ -224,26 +224,26 @@
                 <div class="excerpt-content gallery">
                     <h4>Two B Qin Nian </h4>
                     <a  href="<?=$photoPath?>sbh_6.jpg" class="fancybox" rel="group" title="Swinging Chairs In The Sunset" style="width: 500px;">
-                        <img src="<?=$photoPath?>sbh_6.jpg" alt="a sunset">
+                        <img  class="lazy"  src="<?=$photoPath?>lazy.gif" data-original="<?=$photoPath?>sbh_6.jpg" alt="a sunset">
                     </a>
                     <a  href="<?=$photoPath?>sbh_1.jpg" class="fancybox" rel="group" title="Swinging Chairs In The Sunset" style="width: 247px;">
-                        <img src="<?=$photoPath?>sbh_1.jpg" alt="a sunset">
+                        <img  class="lazy"  src="<?=$photoPath?>lazy.gif" data-original="<?=$photoPath?>sbh_1.jpg" alt="a sunset">
                     </a>
-                    <a href="<?=$photoPath?>sbh_7.jpg" class="fancybox" rel="group" title="A little Cottage We Found" style="width: 250px;">
-                        <img src="<?=$photoPath?>sbh_7.jpg" alt="a little cottage">
+                    <a href="<?=$photoPath?>sbh_7.jpg" class="fancybox" rel="group" title="A little Cottage We Found" style="width: 250px;height:190px;">
+                        <img  class="lazy"  src="<?=$photoPath?>lazy.gif" data-original="<?=$photoPath?>sbh_7.jpg" alt="a little cottage">
                     </a>
                     <a href="<?=$photoPath?>sbh_2.jpg" class="fancybox" rel="group" title="Seaside is So Relaxing!" style="width: 250px;">
-                        <img src="<?=$photoPath?>sbh_2.jpg" alt="seaside">
+                        <img  class="lazy"  src="<?=$photoPath?>lazy.gif" data-original="<?=$photoPath?>sbh_2.jpg" alt="seaside">
                     </a>
 
                     <a href="<?=$photoPath?>sbh_5.jpg" class="fancybox" rel="group" title="Seaside is So Relaxing!" style="width: 250px;">
-                        <img src="<?=$photoPath?>sbh_5.jpg" alt="seaside">
+                        <img  class="lazy"  src="<?=$photoPath?>lazy.gif" data-original="<?=$photoPath?>sbh_5.jpg" alt="seaside">
                     </a>
                     <a href="<?=$photoPath?>sbh_4.jpg" class="fancybox" rel="group" title="Our Old Car" style="width: 250px;margin-top: -30px;">
-                        <img src="<?=$photoPath?>sbh_4.jpg" alt="our old car">
+                        <img  class="lazy"  src="<?=$photoPath?>lazy.gif" data-original="<?=$photoPath?>sbh_4.jpg" alt="our old car">
                     </a>
                     <a href="<?=$photoPath?>sbh_3.jpg" class="fancybox" rel="group" title="Our Old Car" style="width: 250px;">
-                        <img src="<?=$photoPath?>sbh_3.jpg" alt="our old car">
+                        <img  class="lazy"  src="<?=$photoPath?>lazy.gif" data-original="<?=$photoPath?>sbh_3.jpg" alt="our old car">
                     </a>
 
 
@@ -278,10 +278,10 @@
                 <div class="excerpt-content gallery">
                     <h4>Hello,NanJin</h4>
                     <a  href="<?=$photoPath?>xwh_1.jpg" class="fancybox" rel="group" title="Swinging Chairs In The Sunset" style="width: 250px;">
-                        <img src="<?=$photoPath?>xwh_1.jpg" alt="a sunset">
+                        <img  class="lazy"  src="<?=$photoPath?>lazy.gif" data-original="<?=$photoPath?>xwh_1.jpg" alt="a sunset">
                     </a>
                     <a href="<?=$photoPath?>xwh_2.jpg" class="fancybox" rel="group" title="A little Cottage We Found" style="width: 250px;">
-                        <img src="<?=$photoPath?>xwh_2.jpg" alt="a little cottage">
+                        <img  class="lazy"  src="<?=$photoPath?>lazy.gif" data-original="<?=$photoPath?>xwh_2.jpg" alt="a little cottage">
                     </a>
                 </div><!-- /.excerpt-content--><!-- /.excerpt-content-->
             </div><!-- /.excerpt -->

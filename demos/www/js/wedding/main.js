@@ -47,6 +47,7 @@ if( device.tablet() && device.mobile() ) {
 
 
 $(document).ready(function() {
+    $("img.lazy").lazyload();
 
 /* ===================================================
           RSVP form
@@ -536,6 +537,8 @@ $('#myTab a').click(function (e) {
     function closeBtn(){
         $('.closeBtn').trigger('click');
     }
+
+
 });
 
 
