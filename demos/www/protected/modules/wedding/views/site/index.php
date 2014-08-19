@@ -1,5 +1,9 @@
 <body class="index">
 <div class="bghide">&nbsp;</div>
+<style>
+ body{font-family:Microsoft Yahei;}
+ .xieti{font-style:italic}
+</style>
 <!--[if lt IE 7]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
@@ -28,7 +32,11 @@
 
             <!-- THE ACTUAL PHOTO SLIDES -->
             <ul class="slides">
-                <embed src="http://www.xiami.com/widget/39943821_359360,1770159571,_235_346_FF8719_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>
+                <?php if(rand(1,2)==1){?>
+                    <embed src="http://www.xiami.com/widget/39943821_359360,_235_346_FF8719_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque" style="z-index: 1;"></embed>
+                <?php }else{?>
+                    <embed src="http://www.xiami.com/widget/39943821_1769573946,_235_346_FF8719_494949_1/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque" style="z-index: 1;"></embed>
+                <?php }?>
                 <li><img src="<?=Yii::app()->baseUrl?>/photo/slider_1.jpg" alt="photo 1" /></li>
                 <li><img src="<?=Yii::app()->baseUrl?>/photo/slider_4.jpg" alt="photo 4" /></li>
                 <li><img src="<?=Yii::app()->baseUrl?>/photo/slider_2.jpg" alt="photo 2" /></li>
@@ -56,13 +64,13 @@
 
             <!-- THE TITLE -->
             <div class="col-md-12">
-                <h2>简述</h2>
+                <h2 style="font-size: 40px;">简述</h2>
             </div><!-- /.col-md-12-->
 
             <div class="col-md-12">
                 <!-- SMALL INTRODUCTORY TEXT -->
                 <div class="col-md-12">
-                    <p>欢迎来到我们的结婚纪念小站，时间见证了我们这六年的成长，一路走来，有妳真好！</p>
+                    <p style="font-size: 26px;">欢迎来到我们的结婚纪念小站，时间见证了我们这六年的成长，一路走来，有妳真好！</p>
                 </div><!-- /.col-md-12-->
 
                 <!-- READMORE BUTTON -->
@@ -96,13 +104,6 @@
 
 
 
-
-<!-- =========================================================================================================
-==============================================================================================================
-                                       "GALLERY" section
-==============================================================================================================
-============================================================================================================== -->
-<?php $this->renderPartial('/site/gallery');?>
 
 
 

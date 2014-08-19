@@ -1,7 +1,6 @@
 <header class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <div class="names"> Sharon &#38; Michael</div><!-- /.names -->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -22,7 +21,7 @@
             </ul>
 
             <!-- THE WEDDING DATE -->
-            <a class="navbar-brand" href="#">2014-10-1</a>
+            <a class="navbar-brand" href="javascript:;" style="font-family: Novelty Fonts; font-style:italic; ">2014-10-1</a>
 
             <!-- THE RIGHT SIDE MENU -->
             <ul class="nav navbar-nav right-nav">

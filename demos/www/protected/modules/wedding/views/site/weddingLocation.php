@@ -7,7 +7,7 @@
         <div class="section-overlay">
             <div class="container">
                 <div class="row">
-                    <header class="col-md-6 col-md-offset-3 hide">
+                    <header class="col-md-6 col-md-offset-3 hide"  style="font-style:italic;">
                         Wedding Location
                         <span>Where's the party?</span>
                     </header>
@@ -26,14 +26,14 @@
                 <h3 class="sectionmaintitle">婚礼地址</h3>
 
                 <!-- INTERMEDIARY CONTENT -->
-                <p>婚礼将在我们的家乡泰州兴化举行，请参加的童鞋于当天下午6点之前到达我们婚庆的酒店参加酒宴，衷心期待你的到来！</p>
+                <p>婚礼将在我们的家乡泰州兴化举行，请参加的童鞋于当天下午6点之前到达婚庆酒店参加酒宴，衷心期待你的到来！</p>
 
                 <!-- ADDRESS AND CEREMONY TIME -->
                 <ul class="locationdetails">
                     <li>
                         <span class="glyphicon glyphicon-map-marker"></span>
                         <div class="alignleft">
-                            <h5>儒学大酒店</h5>
+                            <h5 style="font-size: 22px;">儒学大酒店</h5>
                             <p>兴化市英武路海德国际8号5楼</p>
                         </div>
                     </li>

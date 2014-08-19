@@ -228,6 +228,7 @@ h6 {
 	.navbar-nav > li {
 		background: url(../img/menu-sepp.jpg) no-repeat center right;
 		padding-left: 0px;
+        font-size: 22px;
 	}
 	.navbar-nav > li:last-child {
 		background: none;
@@ -734,7 +735,7 @@ h6 {
 	.post .excerpt-content.gallery h4 {
 		text-align: left;
 		margin-bottom: 20px;
-		font-style: normal;
+	/*	font-style: normal;*/
 	}
 	.post .excerpt-content a {
 		display: block;
