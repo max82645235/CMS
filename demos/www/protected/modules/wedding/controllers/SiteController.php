@@ -20,6 +20,7 @@ class siteController extends Controller
             $model['tel'] = $_POST['form_tel'];
             $model['wedding_status'] = $_POST['form_select'];
             $model['message'] = $_POST['form_message'];
+            $model['update_time'] = date('Y-m-d H:i:s');
             if($model->save()){
                 unset(Yii::app()->request->cookies['guestInfo']);
                 echo 'sent';
