@@ -2,7 +2,7 @@
 // change the following paths if necessary
 header("Content-type: text/html; charset=utf-8");
 ini_set('display_errors','on');
-$config=dirname(__FILE__).'/protected/config/main_www.php';
+$config=dirname(__FILE__).'/protected/config/main.php';
 if(strpos($_SERVER['SERVER_NAME'],'itaotao.me')){
     $yii = dirname(__FILE__).'/framework/yii.php'; //线上
     $config = dirname(__FILE__).'/protected/config/main_www.php';
