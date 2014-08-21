@@ -11,6 +11,7 @@
                 <th><?=$model->getAttributeLabel('title')?></th>
                 <th><?=$model->getAttributeLabel('url')?></th>
                 <th><?=$model->getAttributeLabel('status')?></th>
+                <th><?=$model->getAttributeLabel('keywords')?></th>
                 <th><?=$model->getAttributeLabel('create_time')?></th>
                 <th><?=$model->getAttributeLabel('update_time')?></th>
                 <th>操作</th>
@@ -23,6 +24,7 @@
                     <td style="text-align: center;"><?=$record->title?></td>
                     <td style="text-align: center;"><?=$record->url?></td>
                     <td style="text-align: center;" id="status_<?=$record->id?>"><?=Collector::getStatus($record->status)?></td>
+                    <td style="text-align: center;"><?=$record->keywords?></td>
                     <td style="text-align: center;"><?=$record->create_time?></td>
                     <td style="text-align: center;"><?=$record->update_time?></td>
                     <td >

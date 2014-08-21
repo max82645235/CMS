@@ -6,10 +6,13 @@ class UserController extends Controller
     /**
      * @return array action filters
      */
+    /**
+     * @return array action filters
+     */
     public function filters()
     {
         return array(
-          //  'accessControl', // perform access control for CRUD operations
+            'accessControl', // perform access control for CRUD operations
         );
     }
 
@@ -20,18 +23,14 @@ class UserController extends Controller
      */
     public function accessRules()
     {
-      /*  return array(
-            array('allow',  // allow all users to access 'index' and 'view' actions.
-                'actions'=>array('index','view'),
-                'users'=>array('*'),
-            ),
+        return array(
             array('allow', // allow authenticated users to access all actions
                 'users'=>array('@'),
             ),
             array('deny',  // deny all users
                 'users'=>array('*'),
             ),
-        );*/
+        );
     }
 
     public function scopes()
@@ -56,7 +55,7 @@ class UserController extends Controller
         $recordId = Yii::app()->user->id;
         $className = 'User';
         $redirectUrl = '/user/tableList';
-        $curdObj = new CurdAction($actionType,1,$className,$redirectUrl);
+        $curdObj = new CurdAction($actionType,$recordId,$className,$redirectUrl);
         $curdObj->initMod();
         $curdObj->setScenario();
         $model = $curdObj->getMod();

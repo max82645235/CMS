@@ -2,6 +2,8 @@
 
 class PostController extends Controller
 {
+
+
 	public $layout='column2';
 
 	/**
