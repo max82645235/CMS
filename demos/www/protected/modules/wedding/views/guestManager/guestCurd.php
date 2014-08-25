@@ -39,6 +39,12 @@
                 </div>
             </div>
             <div class="control-group">
+                <?=CHtml::activeLabel($model,'message',array('class'=>'control-label'));?>
+                <div class="controls">
+                    <?=$model->message?>
+                </div>
+            </div>
+            <div class="control-group">
                 <?=CHtml::activeLabel($model,'salt_key',array('class'=>'control-label'));?>
                 <div class="controls">
                     <?=$model->salt_key?>

@@ -13,8 +13,8 @@
                 <th>联系电话</th>
                 <th>参加状态</th>
                 <th>请帖发送状态</th>
-                <th>创建时间</th>
                 <th>回复时间</th>
+                <th>留言</th>
                 <th>操作</th>
             </tr>
             </thead>
@@ -27,8 +27,8 @@
                     <td style="text-align: center;"><?=$record->tel?></td>
                     <td style="text-align: center;"><?=WeddingGuest::getWeddingStatus($record->wedding_status)?></td>
                     <td style="text-align: center;" id="send_status_<?=$record->id?>"><?=WeddingGuest::getSendStatus($record->send_status)?></td>
-                    <td style="text-align: center;"><?=$record->create_time?></td>
                     <td style="text-align: center;"><?=$record->update_time?></td>
+                    <td width="25%"><a href="/wedding/guestManager/guestCurd/actionType/edit/id/<?=$record['id']?>"><?=$record->message?></a></td>
                     <td >
                         <a style="margin-left: 20px;" href="/wedding/guestManager/guestCurd/actionType/edit/id/<?=$record['id']?>" class="btn btn-primary btn-mini">Edit</a>
                         <a style="margin-left: 20px;" href="javascript:;" onclick="send_email(<?=$record->id?>)"   class="btn btn-primary btn-mini">发送邮件</a>
