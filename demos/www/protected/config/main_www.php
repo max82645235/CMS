@@ -46,10 +46,10 @@ return array(
         // uncomment the following to use a MySQL database
 
         'db'=>array(
-            'connectionString' => 'mysql:host=121.127.248.152;dbname=a0817200015',
+            'connectionString' => 'mysql:host=115.126.67.132;dbname=a0825105951',
             'emulatePrepare' => true,
-            'username' => 'a0817200015',
-            'password' => '63479743',
+            'username' => 'a0825105951',
+            'password' => '85731852',
             'charset' => 'utf8',
             'tablePrefix' => 'cms_',
         ),
