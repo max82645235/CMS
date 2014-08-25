@@ -216,4 +216,9 @@ class Collector extends CActiveRecord
         curl_close($ch);
         unset($ch);
     }
+
+    static function getByPk($id){
+        $model = self::model()->findByPk($id);
+        return $model;
+    }
 }

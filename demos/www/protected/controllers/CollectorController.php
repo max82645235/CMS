@@ -75,4 +75,31 @@ class CollectorController extends Controller
     public function actionRemoteCollect(){
         $this->actionMultiCollect();
     }
+
+
+
+    //设置采集规则
+    public function actionSetCollectorRules(){
+        if(Yii::app()->user->id){
+            $actionType = Yii::app()->request->getParam('actionType');
+            $recordId = Yii::app()->request->getParam('id');
+            $collector_id = Yii::app()->request->getParam('collector_id');
+            $className = 'CollectorRules';
+            $redirectUrl = Yii::app()->request->requestUri;
+            $curdObj = new CurdAction($actionType,$recordId,$className,$redirectUrl);
+            $curdObj->initMod();
+            $curdObj->DataHandler();
+            $model = $curdObj->getMod();
+            //当前ID下采集规则列表
+            if(!$model->collector_id && $collector_id)
+                $model->collector_id = $collector_id;
+            $currentRulesRecord = $model->getCurrentRulesRecord();
+            $this->render('setCollectorRules', array(
+                'model'=>$model,'curdObj'=>$curdObj,
+                'currentRulesRecord'=>$currentRulesRecord
+            ));
+        }else{
+            throw new Exception('errors',404);
+        }
+    }
 }
