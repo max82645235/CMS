@@ -110,6 +110,7 @@ class Finance extends CActiveRecord
             $criteria->join = 'left join cms_finance_type as b on t.type=b.id';
             $criteria->addCondition("(b.id={$this->type} OR b.fid={$this->type})");
         }
+        $criteria->order = 't.dayTime desc,t.id desc';
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
             'pagination'=>array(
@@ -144,7 +145,7 @@ class Finance extends CActiveRecord
     }
 
     public function getCurrentDayRecord(){
-        $model = $this->model()->findAll('t.dayTime=CURDATE()');
+        $model = $this->model()->findAll('t.dayTime=:dayTime',array(':dayTime'=>$this->dayTime));
         if($model)
             return $model;
     }

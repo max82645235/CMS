@@ -70,7 +70,7 @@ class FinanceController extends Controller
         $curdObj->DataHandler();
         $model = $curdObj->getMod();
         //当日累计记录列表
-        $currentDayRecord = Finance::model()->getCurrentDayRecord();
+        $currentDayRecord = $model->getCurrentDayRecord();
         $this->render('curd',
             array('model'=>$model,'curdObj'=>$curdObj,'currentDayRecord'=>$currentDayRecord)
         );

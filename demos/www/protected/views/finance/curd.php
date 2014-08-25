@@ -3,10 +3,11 @@
     .btn_margin {margin: 0 10px;}
     .table td{text-align: center;}
 </style>
+<?php $form_date = ($model->dayTime)?$model->dayTime:date("Y-m-d");?>
 <div class="span8" style="float: left;">
     <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-            <h5>当日收支流水帐单 (<?=date('Y-m-d')?>)</h5>
+            <h5>当日收支流水帐单 (<?=$form_date?>)</h5>
         </div>
         <?php
 
@@ -90,7 +91,8 @@ $financeTypeList = FinanceType::getLabelDropDownList($financeTypeData,array('nam
             <div class="control-group">
                 <?=CHtml::activeLabel($model,'dayTime',array('class'=>'control-label'));?>
                 <div class="controls">
-                    <?=CHtml::textField('Finance[dayTime]',date("Y-m-d"),array('class'=>'datepicker ','data-date-format'=>'yyyy-mm-dd','style'=>'width:100px;','name'=>'Finance[dayTime]'))?>
+
+                    <?=CHtml::textField('Finance[dayTime]',$form_date,array('class'=>'datepicker ','data-date-format'=>'yyyy-mm-dd','style'=>'width:100px;','name'=>'Finance[dayTime]'))?>
                 </div>
             </div>
             <div class="control-group dropdown" >
