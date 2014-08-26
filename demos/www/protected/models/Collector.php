@@ -30,11 +30,11 @@ class Collector extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('keywords, title, url', 'required'),
+			array('title, url', 'required'),
 			array('status', 'numerical', 'integerOnly'=>true),
-			array('keywords', 'length', 'max'=>1000),
 			array('title', 'length', 'max'=>100),
 			array('url', 'length', 'max'=>200),
+            array('end_str','safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, keywords, title, status, create_time, update_time, url', 'safe', 'on'=>'search'),
@@ -64,7 +64,8 @@ class Collector extends CActiveRecord
 			'url' => '网址',
             'status'=>'开放状态',
             'create_time'=>'创建时间',
-            'update_time'=>'更新时间'
+            'update_time'=>'更新时间',
+            'end_str'=>'结束字符'
 		);
 	}
 
@@ -143,31 +144,33 @@ class Collector extends CActiveRecord
 
     const SUCCESS = 1;
     const FAIL = 2;
-    const UNKNOW = 3;
+    const UNKNOWN = 3;
     public function collectHandle($id){
         $currentMod = $this->model()->findByPk($id);
-        $keywordArr = explode('|',$currentMod->keywords);
         $webUrl = $currentMod->url;
         if($tmpContent = $this->get_page_content($webUrl)){
             $encode = mb_detect_encoding($tmpContent,array('UTF-8','GBK','GB2312'));
             if($encode!='UTF-8'){
-               $tmpContent = iconv($encode,"UTF-8//IGNORE",$tmpContent);
+                $tmpContent = iconv($encode,"UTF-8//IGNORE",$tmpContent);
             }
-            $status = self::FAIL;
-            foreach($keywordArr as $keyword){
-                if(strpos($tmpContent,$keyword)){
-                    $status = self::SUCCESS;
-                    break;
+
+            if($currentMod->end_str){
+                if(!preg_match('/'.preg_quote($currentMod->end_str,'/').'$/',$tmpContent)){
+                    $status = self::UNKNOWN;
                 }
             }
+            if(!isset($status))
+                $status = CollectorRules::get_collector_status($id,$tmpContent);
+
         }else{
-            $status = self::UNKNOW;
+            $status = self::UNKNOWN;
         }
         $currentMod->status = $status;
         if($currentMod->save()){
             return $currentMod->status;
         }
     }
+
 
 
 
@@ -204,7 +207,7 @@ class Collector extends CActiveRecord
             $content=explode("\r\n\r\n",$content,2);
             $content=$content[1];
         }
-        return $content;
+        return substr($content,0,strrpos($content,'>')+1);
     }
 
     function curlMethod($url){

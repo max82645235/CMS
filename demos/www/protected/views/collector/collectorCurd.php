@@ -21,9 +21,9 @@
                 </div>
             </div>
             <div class="control-group">
-                <?=CHtml::activeLabelEx($model,'keywords',array('class'=>'control-label'));?>
+                <?=CHtml::activeLabel($model,'end_str',array('class'=>'control-label'));?>
                 <div class="controls">
-                    <?=CHtml::activeTextArea($model,'keywords',array('style'=>'width:300px'))?>
+                    <?=CHtml::activeTextArea($model,'end_str')?>
                 </div>
             </div>
             <div class="form-actions" id="action_btn" >

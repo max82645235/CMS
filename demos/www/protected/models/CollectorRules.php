@@ -29,9 +29,10 @@ class CollectorRules extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('rule_type, rule_str, rule_status, create_time, collector_id', 'required'),
+			array('rule_type, rule_str, rule_status, collector_id', 'required'),
 			array('rule_type, rule_status, collector_id', 'numerical', 'integerOnly'=>true),
 			array('rule_str', 'length', 'max'=>200),
+            array('end_str,create_time', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, rule_type, rule_str, rule_status, create_time, collector_id', 'safe', 'on'=>'search'),
@@ -62,6 +63,7 @@ class CollectorRules extends CActiveRecord
 			'rule_status' => '规则状态',
 			'create_time' => '创建时间',
 			'collector_id' => '关联主键',
+            'end_str' => '结束字符',
 		);
 	}
 
@@ -150,5 +152,58 @@ class CollectorRules extends CActiveRecord
         if(array_key_exists($rule_status,self::$rule_status_arr)){
             return self::$rule_status_arr[$rule_status];
         }
+    }
+
+    /**  根据规则获取当前$collector_id的status
+     *   逻辑: 规则中只要有一条未开放注册项匹配上，则判定为未开放，如果
+     *   输入: $collector_id (collector表主键)  $content(抓取的)
+     *   输出: $ret  （collector表中status项）
+     */
+    static function get_collector_status($collector_id,$content){
+        $rev_rule_status_arr = array_flip(self::$rule_status_arr);
+        //未开放项判定
+        $un_open_status = $rev_rule_status_arr['未开放'];
+        $unOpenData = CollectorRules::model()->findAll('collector_id=:collector_id AND rule_status=:rule_status',array(':collector_id'=>$collector_id,':rule_status'=>$un_open_status));
+        if($unOpenData){
+            foreach($unOpenData as $val){
+                if(self::rule_match($val,$content)){
+                    return $un_open_status;
+                }
+            }
+        }
+
+        //开放项判定
+        $open_status = $rev_rule_status_arr['开放注册'];
+        $unknown_status = $rev_rule_status_arr['未知'];
+        $openData = CollectorRules::model()->findAll('collector_id=:collector_id AND rule_status=:rule_status',array(':collector_id'=>$collector_id,':rule_status'=>$open_status));
+        if($openData){
+            foreach($openData as $val){
+                if(!self::rule_match($val,$content)){
+                    return $unknown_status;
+                }
+            }
+            return $open_status;
+        }
+
+        //其余项被判定为未知
+        return $unknown_status;
+    }
+
+    static function rule_match($record,$content){
+        $rule_type = $record['rule_type'];
+        $rule_str = $record['rule_str'];
+        if($rule_type==1){
+            //普通字符串匹配
+            if(strpos($content,$rule_str)!==false){
+                return true;
+            }
+        }elseif($rule_type==2){
+            //正则匹配
+            $pattern = '/'.$rule_str.'/';
+            if(preg_match($pattern,$content)){
+                return true;
+            }
+        }
+        return false;
     }
 }

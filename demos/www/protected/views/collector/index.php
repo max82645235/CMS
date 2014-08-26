@@ -11,7 +11,6 @@
                 <th><?=$model->getAttributeLabel('title')?></th>
                 <th><?=$model->getAttributeLabel('url')?></th>
                 <th><?=$model->getAttributeLabel('status')?></th>
-                <th><?=$model->getAttributeLabel('keywords')?></th>
                 <th><?=$model->getAttributeLabel('create_time')?></th>
                 <th><?=$model->getAttributeLabel('update_time')?></th>
                 <th>操作</th>
@@ -24,14 +23,13 @@
                     <td style="text-align: center;"><?=$record->title?></td>
                     <td style="text-align: center;"><?=$record->url?></td>
                     <td style="text-align: center;" id="status_<?=$record->id?>"><?=Collector::getStatus($record->status)?></td>
-                    <td style="text-align: center;"><?=$record->keywords?></td>
                     <td style="text-align: center;"><?=$record->create_time?></td>
                     <td style="text-align: center;"><?=$record->update_time?></td>
                     <td >
                         <a style="margin-left: 20px;" href="/collector/curd/actionType/del/id/<?=$record->id?>" class="btn btn-danger btn-mini">删除</a>
                         <a style="margin-left: 20px;" href="/collector/curd/actionType/edit/id/<?=$record->id?>" class="btn btn-primary btn-mini">修改</a>
                         <a style="margin-left: 20px;" href="javascript:;" onclick="manual_collect(<?=$record->id?>)"   class="btn btn-primary btn-mini">手动采集</a>
-
+                        <a style="margin-left: 20px;" href="/collector/setCollectorRules/actionType/add/collector_id/<?=$record->id?>" class="btn btn-success btn-mini">规则配置</a>
                     </td>
                 </tr>
             <?php }}?>

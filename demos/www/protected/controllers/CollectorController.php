@@ -102,4 +102,14 @@ class CollectorController extends Controller
             throw new Exception('errors',404);
         }
     }
+
+    public function actionDelRecord(){
+        if(Yii::app()->request->isAjaxRequest){
+            $recordId = Yii::app()->request->getParam('record_id');
+            $ret = CollectorRules::model()->deleteByPk($recordId);
+            if($ret){
+                echo 'success';
+            }
+        }
+    }
 }

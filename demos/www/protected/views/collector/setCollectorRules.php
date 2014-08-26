@@ -6,7 +6,10 @@
 <div class="span10" style="float: left;">
     <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-            <h5>当前网站: (<?=($model->collector->title)?>)</h5>
+            <h5>网站名称: (<?=($model->collector->title)?>)<span style="margin-left: 20px;">网址：<a href="<?=$model->collector->url?>" target="_blank" style="color:mediumvioletred;"><?=$model->collector->url?></a></span></h5>
+            <div style="float: right;padding:5px 30px 0 0">
+                <a style="margin-left: 20px;" href="/collector/setCollectorRules/actionType/add/collector_id/<?=$model->collector_id?>" class="btn btn-success btn-mini" >新增</a>
+            </div>
         </div>
         <?php
 
@@ -20,17 +23,22 @@
                     <th><?=$model->getAttributeLabel('rule_str')?></th>
                     <th><?=$model->getAttributeLabel('rule_status')?></th>
                     <th><?=$model->getAttributeLabel('create_time')?></th>
+                    <th>操作</th>
                 </tr>
                 </thead>
                 <tbody>
                 <?php if($currentRulesRecord){?>
                     <?php foreach($currentRulesRecord as $record){?>
-                        <tr class="grade">
+                        <tr class="grade" id="tr_<?=$record['id']?>">
                             <td><?=$record['id']?></td>
                             <td><?=CollectorRules::getRuleType($record['rule_type']);?></td>
-                            <td><a href="/collector/setCollectorRules/actionType/edit/id/<?=$record['id']?>"><?=CollectorRules::getRuleType($record['rule_str']);?></a></td>
+                            <td><a href="/collector/setCollectorRules/actionType/edit/id/<?=$record['id']?>"><?=htmlspecialchars($record['rule_str']);?></a></td>
                             <td><?=CollectorRules::getRuleStatus($record['rule_status']);?></td>
-                            <td><?=$record['createTime'];?></td>
+                            <td><?=$record['create_time'];?></td>
+                            <td>
+                                <a style="margin-left: 20px;" href="javascript:;" onclick="del_record(<?=$record['id']?>)" class="btn btn-danger btn-mini">删除</a>
+                                <a style="margin-left: 20px;" href="/collector/setCollectorRules/actionType/edit/id/<?=$record['id']?>" class="btn btn-primary btn-mini">修改</a>
+                            </td>
                         </tr>
                     <?php }?>
                 <?php }?>
@@ -51,19 +59,19 @@
             <div class="control-group dropdown">
                 <?=CHtml::activeLabel($model,'rule_type',array('class'=>'control-label'));?>
                 <div class="controls">
-                    <?=CHtml::activeDropDownList($model,'rule_type',CollectorRules::$rule_type_arr,array('empty'=>'请选择'))?>
+                    <?=CHtml::activeDropDownList($model,'rule_type',CollectorRules::$rule_type_arr,array('empty'=>'请选择','style'=>'width:200px;'))?>
                 </div>
             </div>
             <div class="control-group">
                 <?=CHtml::activeLabel($model,'rule_str',array('class'=>'control-label'));?>
                 <div class="controls">
-                    <?=CHtml::activeTextArea($model,'rule_str')?>
+                    <?=CHtml::activeTextArea($model,'rule_str',array('style'=>'width:500px;height:100px;'))?>
                 </div>
             </div>
             <div class="control-group dropdown">
                 <?=CHtml::activeLabel($model,'rule_status',array('class'=>'control-label'));?>
                 <div class="controls">
-                    <?=CHtml::activeDropDownList($model,'rule_type',CollectorRules::$rule_type_status,array('empty'=>'请选择'))?>
+                    <?=CHtml::activeDropDownList($model,'rule_status',CollectorRules::$rule_status_arr,array('empty'=>'请选择','style'=>'width:200px;'))?>
                 </div>
             </div>
             <div class="form-actions" id="action_btn" >
@@ -77,7 +85,24 @@
         </div>
     </div>
 </div>
-
+<script>
+    function del_record(id){
+        var record_id = id;
+        $.post(
+            '/collector/delRecord',
+            {'record_id':record_id},
+            function(ret){
+                if(ret == 'success'){
+                    alert('删除成功');
+                    $('#tr_'+record_id).hide();
+                }else{
+                    alert('删除失败');
+                }
+            },
+            'text'
+        );
+    }
+</script>
 
 
 
