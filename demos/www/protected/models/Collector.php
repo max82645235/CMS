@@ -151,7 +151,7 @@ class Collector extends CActiveRecord
     public function collectHandle($id){
         $currentMod = $this->model()->findByPk($id);
         $webUrl = $currentMod->url;
-        if($tmpContent = $this->get_page_content($webUrl)){
+        if($tmpContent = $this->get_page_content($webUrl,$currentMod->user_agent)){
             $encode = mb_detect_encoding($tmpContent,array('UTF-8','GBK','GB2312'));
             if($encode!='UTF-8'){
                 $tmpContent = iconv($encode,"UTF-8//IGNORE",$tmpContent);
@@ -164,7 +164,6 @@ class Collector extends CActiveRecord
             }
             if(!isset($status))
                 $status = CollectorRules::get_collector_status($id,$tmpContent);
-
         }else{
             $status = self::UNKNOWN;
         }
@@ -177,7 +176,7 @@ class Collector extends CActiveRecord
 
 
 
-    protected function get_page_content($url){
+    public  function get_page_content($url,$user_agent){
         $url=str_replace('http://', '', $url);
         $temp=explode("/", $url);
 
@@ -187,9 +186,8 @@ class Collector extends CActiveRecord
         $temp=explode(":",$host);
         $host=$temp[0];
         $port=isset($temp[1])?$temp[1]:80;
-
         if($fp=@fsockopen($host,$port,$errno,$errstr,5)){
-            @fputs($fp,"GET $path HTTP/1.1\r\nHost: $host\r\nAccept: */*\r\nReferer:$url\r\nUser-Agent: ".$this->user_agent."\r\nConnection: Close\r\n\r\n");
+            @fputs($fp,"GET $path HTTP/1.1\r\nHost: $host\r\nAccept: */*\r\nReferer:$url\r\nUser-Agent:".trim($user_agent)."\r\nConnection: Close\r\n\r\n");
         }
 
         $content="";
@@ -199,7 +197,7 @@ class Collector extends CActiveRecord
         // 重定向
         if(preg_match("/^HTTP\/\d.\d 301 Moved Permanently/is",$content)){
             if(preg_match("/Location:(.*?)\r\n/is",$content,$murl)){
-                return get_page_content($murl[1]);
+                return get_page_content($murl[1],$user_agent);
             }
         }
 
