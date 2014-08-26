@@ -39,37 +39,34 @@ class CollectorController extends Controller
     }
 
     public function actionSingleCollect(){
-        if(Yii::app()->user->id){
-            $ret = array();
-            $id = Yii::app()->request->getParam('record_id');
-            $model = new Collector();
-            $status = $model->collectHandle($id);
-            $ret['html'] = $model::getStatus($status);
-            $ret['status'] = 'success';
-            if(Yii::app()->request->isAjaxRequest){
-                echo json_encode($ret);
-            }
-        }else{
-            throw new Exception(404);
+        $ret = array();
+        $id = Yii::app()->request->getParam('record_id');
+        $model = new Collector();
+        $status = $model->collectHandle($id);
+        $ret['html'] = $model::getStatus($status);
+        $ret['status'] = 'success';
+        if(Yii::app()->request->isAjaxRequest){
+            echo json_encode($ret);
         }
     }
 
     public function actionMultiCollect(){
-        if(Yii::app()->request->isAjaxRequest && Yii::app()->user->id || !Yii::app()->user->id){
-            $model = Collector::model();
-            $recordList = $model->findAll();
-            if($recordList){
-                foreach($recordList as $val){
-                    $url = Yii::app()->request->hostInfo.'/collector/SingleCollect/record_id/'.$val->id;
-                    $model->curlMethod($url);
-                }
-            }
-            if(Yii::app()->request->isAjaxRequest){
-                echo 1;
-            }elseif(!Yii::app()->user->id){
-                echo 'success';
+        $model = Collector::model();
+        $recordList = $model->findAll();
+
+        if($recordList){
+            foreach($recordList as $val){
+                $url = Yii::app()->request->hostInfo.'/collector/SingleCollect/record_id/'.$val->id;
+                $model->curlMethod($url);
             }
         }
+
+        if(Yii::app()->request->isAjaxRequest){
+            echo 1;
+        }else{
+            echo 'success';
+        }
+
     }
 
     public function actionRemoteCollect(){
@@ -111,5 +108,26 @@ class CollectorController extends Controller
                 echo 'success';
             }
         }
+    }
+
+    //对外提供api接口
+    public function actionRemoteCollectorApi(){
+        $apiJson = array();
+        $model = Collector::model()->findAll();
+        if($model){
+            $ret = array();
+            foreach($model as $key=>$val){
+                $ret[$key]['web_name'] = $val['title'];
+                $ret[$key]['web_url'] = $val['url'];
+                $ret[$key]['web_status'] = $val['status'];
+                $ret[$key]['update_time'] = $val['update_time'];
+                $ret[$key]['status_name'] = CollectorRules::$rule_status_arr[$val['status']];
+            }
+            $apiJson['result'] = $ret;
+            $apiJson['status'] = 'success';
+        }else{
+            $apiJson['status'] = 'empty';
+        }
+        echo json_encode($apiJson);
     }
 }

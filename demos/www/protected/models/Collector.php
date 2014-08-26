@@ -34,7 +34,7 @@ class Collector extends CActiveRecord
 			array('status', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>100),
 			array('url', 'length', 'max'=>200),
-            array('end_str','safe'),
+            array('end_str,user_agent','safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, keywords, title, status, create_time, update_time, url', 'safe', 'on'=>'search'),
@@ -65,7 +65,8 @@ class Collector extends CActiveRecord
             'status'=>'开放状态',
             'create_time'=>'创建时间',
             'update_time'=>'更新时间',
-            'end_str'=>'结束字符'
+            'end_str'=>'结束字符',
+            'user_agent'=>'浏览器'
 		);
 	}
 
@@ -129,6 +130,8 @@ class Collector extends CActiveRecord
 		return parent::model($className);
 	}
 
+    const DEFAULT_USER_AGENT = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)';
+
     static $statusArr = array(
         '0'=>'新建',
         '1'=>'开放中',
@@ -186,7 +189,7 @@ class Collector extends CActiveRecord
         $port=isset($temp[1])?$temp[1]:80;
 
         if($fp=@fsockopen($host,$port,$errno,$errstr,5)){
-            @fputs($fp,"GET $path HTTP/1.1\r\nHost: $host\r\nAccept: */*\r\nReferer:$url\r\nUser-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)\r\nConnection: Close\r\n\r\n");
+            @fputs($fp,"GET $path HTTP/1.1\r\nHost: $host\r\nAccept: */*\r\nReferer:$url\r\nUser-Agent: ".$this->user_agent."\r\nConnection: Close\r\n\r\n");
         }
 
         $content="";
