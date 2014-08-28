@@ -53,14 +53,12 @@ class CollectorController extends Controller
     public function actionMultiCollect(){
         $model = Collector::model();
         $recordList = $model->findAll();
-
         if($recordList){
             foreach($recordList as $val){
                 $url = Yii::app()->request->hostInfo.'/collector/SingleCollect/record_id/'.$val->id;
-                $model->curlMethod($url);
+                $model->get_page_content($url,'',false);
             }
         }
-
         if(Yii::app()->request->isAjaxRequest){
             echo 1;
         }else{

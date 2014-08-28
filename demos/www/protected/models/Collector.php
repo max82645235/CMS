@@ -176,7 +176,17 @@ class Collector extends CActiveRecord
 
 
 
-    public  function get_page_content($url,$user_agent){
+    public  function get_page_content($url,$user_agent='',$res=true){
+        if(!$user_agent){
+            $user_agent = self::DEFAULT_USER_AGENT;
+        }
+        if(strpos($url,'https')!==false){
+            $ssl='ssl://';
+            $url=str_replace('https://', '', $url);
+        }else{
+            $ssl='';
+            $url=str_replace('http://', '', $url);
+        }
         $url=str_replace('http://', '', $url);
         $temp=explode("/", $url);
 
@@ -185,36 +195,43 @@ class Collector extends CActiveRecord
 
         $temp=explode(":",$host);
         $host=$temp[0];
-        $port=isset($temp[1])?$temp[1]:80;
-        if($fp=@fsockopen($host,$port,$errno,$errstr,5)){
+        if(isset($temp[1])){
+            $port = $temp[1];
+        }else{
+            $port = ($ssl)?443:80;
+        }
+        if($fp=@fsockopen($ssl.$host,$port,$errno,$errstr,5)){
             @fputs($fp,"GET $path HTTP/1.1\r\nHost: $host\r\nAccept: */*\r\nReferer:$url\r\nUser-Agent:".trim($user_agent)."\r\nConnection: Close\r\n\r\n");
         }
+        if($res){
+            $content="";
+            while($str=@fread($fp,4096)) $content.=$str;
+            @fclose($fp);
 
-        $content="";
-        while($str=@fread($fp,4096)) $content.=$str;
-        @fclose($fp);
-
-        // 重定向
-        if(preg_match("/^HTTP\/\d.\d 301 Moved Permanently/is",$content)){
-            if(preg_match("/Location:(.*?)\r\n/is",$content,$murl)){
-                return get_page_content($murl[1],$user_agent);
+            // 重定向
+            if(preg_match("/^HTTP\/\d.\d 301 Moved Permanently/is",$content)){
+                if(preg_match("/Location:(.*?)\r\n/is",$content,$murl)){
+                    return get_page_content($murl[1],$user_agent);
+                }
             }
-        }
 
-        // 读取内容
-        if(preg_match("/^HTTP\/\d.\d 200 OK/is",$content)){
-            preg_match("/Content-Type:(.*?)\r\n/is",$content,$murl);
-            $contentType=trim($murl[1]);
-            $content=explode("\r\n\r\n",$content,2);
-            $content=$content[1];
+            // 读取内容
+            if(preg_match("/^HTTP\/\d.\d 200 OK/is",$content)){
+                preg_match("/Content-Type:(.*?)\r\n/is",$content,$murl);
+                $contentType=trim($murl[1]);
+                $content=explode("\r\n\r\n",$content,2);
+                $content=$content[1];
+            }
+            return substr($content,0,strrpos($content,'>')+1);
+        }else{
+            @fclose($fp);
         }
-        return substr($content,0,strrpos($content,'>')+1);
     }
 
     function curlMethod($url){
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 0);
         curl_setopt($ch, CURLOPT_HEADER, 0);
         $output = curl_exec($ch);
         curl_close($ch);
