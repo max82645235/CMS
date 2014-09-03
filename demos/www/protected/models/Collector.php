@@ -34,7 +34,7 @@ class Collector extends CActiveRecord
 			array('status', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>100),
 			array('url', 'length', 'max'=>200),
-            array('end_str,user_agent','safe'),
+            array('end_str,user_agent,web_fname,web_icon','safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, keywords, title, status, create_time, update_time, url', 'safe', 'on'=>'search'),
@@ -66,7 +66,9 @@ class Collector extends CActiveRecord
             'create_time'=>'创建时间',
             'update_time'=>'更新时间',
             'end_str'=>'结束字符',
-            'user_agent'=>'浏览器'
+            'user_agent'=>'浏览器',
+            'web_fname'=>'友善站名',
+            'web_icon'=>'网站图标'
 		);
 	}
 

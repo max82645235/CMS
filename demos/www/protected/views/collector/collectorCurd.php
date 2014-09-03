@@ -37,6 +37,18 @@
                     <?=CHtml::activeTextArea($model,'user_agent',array('style'=>'width:300px;'))?>
                 </div>
             </div>
+            <div class="control-group">
+                <?=CHtml::activeLabel($model,'web_fname',array('class'=>'control-label'));?>
+                <div class="controls">
+                    <?=CHtml::activeTextArea($model,'web_fname')?>
+                </div>
+            </div>
+            <div class="control-group">
+                <?=CHtml::activeLabel($model,'web_icon',array('class'=>'control-label'));?>
+                <div class="controls">
+                    <?=CHtml::activeTextArea($model,'web_icon')?>
+                </div>
+            </div>
             <div class="form-actions" id="action_btn" >
                 <?php echo $curdObj->getActionHidden();?>
                 <?php echo $curdObj->getRecordIdHidden();?>

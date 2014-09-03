@@ -114,14 +114,20 @@ class CollectorController extends Controller
         $model = Collector::model()->findAll();
         if($model){
             $ret = array();
+            $count = 0;
             foreach($model as $key=>$val){
                 $ret[$key]['web_name'] = $val['title'];
                 $ret[$key]['web_url'] = $val['url'];
                 $ret[$key]['web_status'] = $val['status'];
                 $ret[$key]['update_time'] = $val['update_time'];
+                $ret[$key]['update_time'] = $val['update_time'];
+                $ret[$key]['web_fname'] = $val['web_fname'];
+                $ret[$key]['web_icon'] = $val['web_icon'];
                 $ret[$key]['status_name'] = CollectorRules::$rule_status_arr[$val['status']];
+                $count++;
             }
             $apiJson['result'] = $ret;
+            $apiJson['count'] = $count;
             $apiJson['status'] = 'success';
         }else{
             $apiJson['status'] = 'empty';
