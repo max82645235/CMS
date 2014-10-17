@@ -1,4 +1,4 @@
 /demos/www/assets/
-/demos/www/protected/runtime
-/framework
-/.idea/workspace.xml
+/demos/www/protected/runtime/*
+/framework/*
+/.idea/*
