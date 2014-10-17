@@ -5,136 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64bf80b3-4d72-496e-a2e9-0903a0306558" name="Default" comment="婚庆后台&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/treeview/images/ajax-loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/3bd162b3/gridview/bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/rating/delete.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/3bd162b3/gridview/delete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/3bd162b3/gridview/down.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/3bd162b3/listview/down.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/fancy_close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/fancy_loading.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/fancy_nav_left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/fancy_nav_right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/fancy_shadow_e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/fancy_shadow_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/fancy_shadow_ne.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/fancy_shadow_nw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/fancy_shadow_s.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/fancy_shadow_se.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/fancy_shadow_sw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/fancy_shadow_w.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/fancy_title_left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/fancy_title_main.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/fancy_title_over.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/fancy_title_right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/fancybox-x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/fancybox-y.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/fancybox.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/treeview/images/file.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/treeview/images/folder-closed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/treeview/images/folder.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/autocomplete/indicator.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/photo/lazy.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/3bd162b3/gridview/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/3bd162b3/listview/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/treeview/images/minus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/treeview/images/plus.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/rating/star.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/treeview/images/treeview-black-line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/treeview/images/treeview-black.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/treeview/images/treeview-default-line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/treeview/images/treeview-default.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/treeview/images/treeview-famfamfam-line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/treeview/images/treeview-famfamfam.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/treeview/images/treeview-gray-line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/treeview/images/treeview-gray.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/treeview/images/treeview-red-line.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/treeview/images/treeview-red.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/images/ui-bg_flat_0_aaaaaa_40x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/images/ui-bg_flat_75_ffffff_40x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/images/ui-bg_glass_55_fbf9ee_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/images/ui-bg_glass_65_ffffff_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/images/ui-bg_glass_75_dadada_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/images/ui-bg_glass_75_e6e6e6_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/images/ui-bg_glass_95_fef1ec_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/images/ui-icons_222222_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/images/ui-icons_2e83ff_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/images/ui-icons_454545_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/images/ui-icons_888888_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/images/ui-icons_cd0a0a_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/3bd162b3/gridview/up.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/3bd162b3/listview/up.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/3bd162b3/gridview/update.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/3bd162b3/gridview/view.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/protected/runtime/gii-1.1.16-dev/ModuleCode.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/css/ie.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/js/jquery-ui-i18n.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/jquery-ui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/js/jquery-ui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.ajaxqueue.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/autocomplete/jquery.autocomplete.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.autocomplete.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.ba-bbq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.ba-bbq.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.bgiframe.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.cookie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/jquery.fancybox-1.3.1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/fancybox/jquery.fancybox-1.3.1.pack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.history.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/js/wedding/jquery.lazyload.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.maskedinput.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.maskedinput.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.metadata.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.multifile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/rating/jquery.rating.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.rating.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/js/wedding/jquery.scrollstop.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.treeview.async.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/treeview/jquery.treeview.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.treeview.edit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.treeview.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/jquery.ui.accordion.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/jquery.ui.autocomplete.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/jquery.ui.button.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/jquery.ui.core.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/jquery.ui.datepicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/jquery.ui.dialog.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/jquery.ui.menu.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/jquery.ui.progressbar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/jquery.ui.resizable.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/jquery.ui.selectable.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/jquery.ui.slider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/jquery.ui.spinner.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/jquery.ui.tabs.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/jquery.ui.theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jui/css/base/jquery.ui.tooltip.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.yii.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.yiiactiveform.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/3bd162b3/gridview/jquery.yiigridview.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/3bd162b3/listview/jquery.yiilistview.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/yiitab/jquery.yiitab.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.yiitab.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/ae85ae12/pager.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/css/print.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/punycode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/7990bab9/punycode.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/css/screen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/3bd162b3/detailview/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/3bd162b3/gridview/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/3bd162b3/listview/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demos/www/assets/4cd5bd5/js/tooltip.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demos/www/protected/runtime/application.log" afterPath="$PROJECT_DIR$/demos/www/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demos/www/protected/modules/wedding/views/site/loveStory.php" afterPath="$PROJECT_DIR$/demos/www/protected/modules/wedding/views/site/loveStory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demos/www/js/wedding/main.js" afterPath="$PROJECT_DIR$/demos/www/js/wedding/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demos/www/protected/config/main_www.php" afterPath="$PROJECT_DIR$/demos/www/protected/config/main_www.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demos/www/protected/modules/wedding/views/layouts/wedding.php" afterPath="$PROJECT_DIR$/demos/www/protected/modules/wedding/views/layouts/wedding.php" />
+    </list>
+    <list id="36685135-d496-48fe-b1e5-098feecd8733" name="New changelist" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mertric_cms.iws" />
@@ -158,120 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/views/site/index.php">
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="30" selection-start="2304" selection-end="2304" vertical-scroll-proportion="-0.7" vertical-offset="798" max-vertical-offset="5082">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loveStory.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/views/site/loveStory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="231" column="151" selection-start="10130" selection-end="10130" vertical-scroll-proportion="-6.5263157" vertical-offset="4479" max-vertical-offset="6342">
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#header#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#3;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#header#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#2;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#0;n#div#1;n#div#1;n#div#2;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#2;n#div#0;n#div#1;n#div#1;n#div#2;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#3;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#0;n#div#1;n#div#1;n#div#3;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#2;n#div#0;n#div#1;n#div#1;n#div#3;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#3;n#div#0;n#div#1;n#div#1;n#div#3;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#4;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#0;n#div#1;n#div#1;n#div#4;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#2;n#div#0;n#div#1;n#div#1;n#div#4;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#3;n#div#0;n#div#1;n#div#1;n#div#4;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#4;n#div#0;n#div#1;n#div#1;n#div#4;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#5;n#div#0;n#div#1;n#div#1;n#div#4;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#6;n#div#0;n#div#1;n#div#1;n#div#4;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#5;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#0;n#div#1;n#div#1;n#div#5;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wedding.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/views/layouts/wedding.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="82" selection-start="4602" selection-end="4602" vertical-scroll-proportion="-23.1" vertical-offset="1197" max-vertical-offset="2142">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.lazyload.min.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demos/www/js/wedding/jquery.lazyload.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="3202" selection-end="3202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="168">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".htaccess" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demos/helloworld/protected/.htaccess">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="147">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demos/www/js/wedding/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="15" selection-start="1473" selection-end="1473" vertical-scroll-proportion="0.0" vertical-offset="606" max-vertical-offset="11592">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.scrollstop.min.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demos/www/js/wedding/jquery.scrollstop.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="802" selection-end="802" vertical-scroll-proportion="0.07650273" vertical-offset="0" max-vertical-offset="549">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/views/guestManager/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="10" selection-start="2083" selection-end="2083" vertical-scroll-proportion="-22.4" vertical-offset="147" max-vertical-offset="1386">
-              <folding>
-                <marker date="1408272804018" expanded="false" signature="2358:2371" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GuestManagerController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/controllers/GuestManagerController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="38" selection-start="891" selection-end="891" vertical-scroll-proportion="-19.6" vertical-offset="0" max-vertical-offset="1596">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SiteController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/controllers/SiteController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="9" selection-start="840" selection-end="840" vertical-scroll-proportion="-18.2" vertical-offset="0" max-vertical-offset="1050">
+            <state line="3" column="8" selection-start="71" selection-end="71" vertical-scroll-proportion="0.10072993" vertical-offset="0" max-vertical-offset="685">
               <folding />
             </state>
           </provider>
@@ -292,59 +56,62 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/demos/www/protected/controllers/SiteController.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/controllers/SliderbarController.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/views/sliderbar/tableList.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/views/layouts/cms/slider.php" />
-        <option value="$PROJECT_DIR$/../framework/zii/widgets/CListView.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/views/layouts/itemView.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/config/main.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/components/Controller.php" />
-        <option value="$PROJECT_DIR$/demos/www/assets/3bd162b3/listview/jquery.yiilistview.js" />
-        <option value="$PROJECT_DIR$/demos/www/protected/views/layouts/listView.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/views/finance/_itemView.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/views/user/tableList.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/models/Finance.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/views/layouts/cms/css.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/views/layouts/cms/js.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/views/site/home.php" />
-        <option value="$PROJECT_DIR$/demos/www/js/cms/matrix.form_common.js" />
-        <option value="$PROJECT_DIR$/demos/www/protected/controllers/FinanceController.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/views/finance/index.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/demos/www/protected/modules/wedding/views/imageManager/galleryClassify.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/views/finance/curd.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/models/GalleryType.php" />
         <option value="$PROJECT_DIR$/demos/www/protected/modules/wedding/views/imageManager/index.php" />
         <option value="$PROJECT_DIR$/demos/www/protected/models/WeddingImage.php" />
         <option value="$PROJECT_DIR$/demos/www/css/cms/css/matrix-style.css" />
         <option value="$PROJECT_DIR$/demos/www/protected/modules/wedding/views/imageManager/imageCurd.php" />
         <option value="$PROJECT_DIR$/demos/www/protected/modules/wedding/controllers/ImageManagerController.php" />
         <option value="$PROJECT_DIR$/demos/www/protected/components/Util.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/models/WeddingGuest.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/demos/www/protected/components/CurdAction.php" />
         <option value="$PROJECT_DIR$/../framework/utils/CPasswordHelper.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/models/User.php" />
         <option value="$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.js" />
         <option value="$PROJECT_DIR$/demos/www/protected/modules/wedding/views/site/map.php" />
         <option value="$PROJECT_DIR$/demos/www/protected/modules/wedding/views/site/gallery.php" />
         <option value="$PROJECT_DIR$/demos/www/protected/models/Message.php" />
         <option value="$PROJECT_DIR$/demos/www/protected/modules/wedding/views/site/index.php" />
         <option value="$PROJECT_DIR$/demos/www/protected/modules/wedding/views/site/weddingLocation.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/modules/wedding/views/guestManager/index.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/modules/wedding/controllers/GuestManagerController.php" />
         <option value="$PROJECT_DIR$/demos/www/protected/modules/wedding/views/guestManager/emailTpl.php" />
         <option value="$PROJECT_DIR$/demos/www/protected/modules/wedding/views/site/header.php" />
-        <option value="$PROJECT_DIR$/demos/www/index.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/config/main_www.php" />
-        <option value="$PROJECT_DIR$/demos/www/protected/modules/wedding/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/demos/www/.htaccess" />
         <option value="$PROJECT_DIR$/demos/www/protected/modules/wedding/views/layouts/wedding.php" />
         <option value="$PROJECT_DIR$/demos/www/js/wedding/main.js" />
         <option value="$PROJECT_DIR$/demos/www/protected/modules/wedding/views/site/loveStory.php" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/demos/www/protected/modules/wedding/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/demos/www/protected/models/WeddingGuest.php" />
+        <option value="$PROJECT_DIR$/demos/www/protected/controllers/PostController.php" />
+        <option value="$PROJECT_DIR$/demos/www/protected/modules/wedding/controllers/GuestManagerController.php" />
+        <option value="$PROJECT_DIR$/demos/www/protected/controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/demos/www/protected/models/User.php" />
+        <option value="$PROJECT_DIR$/demos/www/protected/behaviors/ApplicationBehavior.php" />
+        <option value="$PROJECT_DIR$/demos/www/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/demos/www/protected/config/main_www.php" />
+        <option value="$PROJECT_DIR$/framework/base/CComponent.php" />
+        <option value="$PROJECT_DIR$/demos/www/protected/modules/wedding/views/guestManager/index.php" />
+        <option value="$PROJECT_DIR$/demos/www/protected/modules/wedding/views/guestManager/guestCurd.php" />
+        <option value="$PROJECT_DIR$/demos/www/index.php" />
+        <option value="$PROJECT_DIR$/demos/www/protected/views/finance/curd.php" />
+        <option value="$PROJECT_DIR$/demos/www/protected/views/collector/index.php" />
+        <option value="$PROJECT_DIR$/demos/www/protected/views/collector/setCollectorRules.php" />
+        <option value="$PROJECT_DIR$/framework/collections/CAttributeCollection.php" />
+        <option value="$PROJECT_DIR$/demos/www/protected/views/collector/collectorCurd.php" />
+        <option value="$PROJECT_DIR$/demos/www/protected/models/Collector.php" />
+        <option value="$PROJECT_DIR$/demos/www/protected/models/CollectorRules.php" />
+        <option value="$PROJECT_DIR$/demos/www/protected/controllers/CollectorController.php" />
+        <option value="$PROJECT_DIR$/framework/web/CWebApplication.php" />
+        <option value="$PROJECT_DIR$/framework/base/CApplication.php" />
+        <option value="$PROJECT_DIR$/framework/base/CModule.php" />
+        <option value="$PROJECT_DIR$/framework/web/CBaseController.php" />
+        <option value="$PROJECT_DIR$/demos/www/protected/controllers/SliderbarController.php" />
+        <option value="$PROJECT_DIR$/demos/www/protected/controllers/FinanceController.php" />
+        <option value="$PROJECT_DIR$/demos/www/protected/models/Finance.php" />
+        <option value="$PROJECT_DIR$/framework/db/CDbCommand.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
+  </component>
+  <component name="PerforceDirect.Settings">
+    <option name="ENABLED" value="false" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
     <include_path>
@@ -352,9 +119,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="1932" />
-    <option name="height" value="1040" />
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1448" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -416,6 +184,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -423,13 +192,15 @@
               <option name="myItemId" value="mertric_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <option name="myItemId" value="mertric_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PHP" />
-              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <option name="myItemId" value="mertric_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -438,42 +209,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CMS" />
+              <option name="myItemId" value="mertric_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wrz" />
-    <property name="options.lastSelected" value="File.Encoding" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="options.lastSelected" value="appearance" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="286" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="117" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="299" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="123" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="309" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="127" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="950" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="993" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="341" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="253" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="334" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="248" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="344" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="256" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="825" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="603" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FullScreen" value="false" />
     <property name="SearchEverywhereHistory" value="" />
     <property name="dynamic.classpath" value="false" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -530,6 +309,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="64bf80b3-4d72-496e-a2e9-0903a0306558" name="Default" comment="" />
+      <changelist id="36685135-d496-48fe-b1e5-098feecd8733" name="New changelist" comment="" />
       <created>1404372786250</created>
       <updated>1404372786250</updated>
     </task>
@@ -597,33 +377,99 @@
       <created>1408274636286</created>
       <updated>1408274636286</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="婚庆表单增加提交时间">
+      <created>1408512187296</created>
+      <updated>1408512187296</updated>
+    </task>
+    <task id="LOCAL-00018" summary="gitignore&#10;">
+      <created>1408590319265</created>
+      <updated>1408590319265</updated>
+    </task>
+    <task id="LOCAL-00019" summary="小屎采集站&#10;">
+      <created>1408613469203</created>
+      <updated>1408613469203</updated>
+    </task>
+    <task id="LOCAL-00020" summary="小屎采集">
+      <created>1408616100609</created>
+      <updated>1408616100609</updated>
+    </task>
+    <task id="LOCAL-00021" summary="采集权限&#10;">
+      <created>1408671776218</created>
+      <updated>1408671776218</updated>
+    </task>
+    <task id="LOCAL-00022" summary="婚庆后台&#10;">
+      <created>1408672449968</created>
+      <updated>1408672449968</updated>
+    </task>
+    <task id="LOCAL-00023" summary="移植空间&#10;">
+      <created>1408944563234</created>
+      <updated>1408944563234</updated>
+    </task>
+    <task id="LOCAL-00024" summary="后台加留言&#10;">
+      <created>1408956768093</created>
+      <updated>1408956768093</updated>
+    </task>
+    <task id="LOCAL-00025" summary="finance&#10;">
+      <created>1408960604984</created>
+      <updated>1408960604984</updated>
+    </task>
+    <task id="LOCAL-00026" summary="采集规则开发">
+      <created>1409032853437</created>
+      <updated>1409032853437</updated>
+    </task>
+    <task id="LOCAL-00027" summary="采集业务 sql文件 &#10;">
+      <created>1409033333656</created>
+      <updated>1409033333656</updated>
+    </task>
+    <task id="LOCAL-00028" summary="采集浏览器模拟&#10;">
+      <created>1409037600656</created>
+      <updated>1409037600656</updated>
+    </task>
+    <task id="LOCAL-00029" summary="采集&#10;">
+      <created>1409046397375</created>
+      <updated>1409046397375</updated>
+    </task>
+    <task id="LOCAL-00030" summary="异步采集">
+      <created>1409201826718</created>
+      <updated>1409201826718</updated>
+    </task>
+    <task id="LOCAL-00031" summary="婚庆后台&#10;">
+      <created>1409710974015</created>
+      <updated>1409710974015</updated>
+    </task>
+    <task id="LOCAL-00032" summary="婚庆后台&#10;">
+      <created>1413526334765</created>
+      <updated>1413526334765</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1932" height="1040" extended-state="0" />
+    <frame x="-4" y="-4" width="1448" height="878" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32821077" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23323824" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32601535" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13500534" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12166489" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18417266" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24892086" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23323824" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32802126" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6603774" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="96" y="96" width="1248" height="678" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32749325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964029" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -638,24 +484,32 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="fisrt commit" />
-    <MESSAGE value="cms layout  1&#10;" />
-    <MESSAGE value="功能栏点击 右侧frame跳转 &#10;" />
-    <MESSAGE value="form &#10;" />
-    <MESSAGE value="Save firstMenu and  CHTML  test &#10;" />
     <MESSAGE value="Sliderbar menu&#10;" />
     <MESSAGE value="7.10 登录fix" />
     <MESSAGE value="财务 分页" />
     <MESSAGE value="财务 搜索项&#10;" />
     <MESSAGE value="收支种类&#10;" />
     <MESSAGE value="婚庆模板&#10;" />
-    <MESSAGE value="婚庆后台&#10;" />
     <MESSAGE value="婚庆前台&#10;" />
     <MESSAGE value="婚庆前台Love Story 图片集&#10;" />
     <MESSAGE value="上线 第一版&#10;" />
     <MESSAGE value="婚庆线上V2&#10;" />
     <MESSAGE value="婚庆前台图片延迟加载&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="婚庆前台图片延迟加载&#10;" />
+    <MESSAGE value="婚庆表单增加提交时间" />
+    <MESSAGE value="gitignore&#10;" />
+    <MESSAGE value="小屎采集站&#10;" />
+    <MESSAGE value="小屎采集" />
+    <MESSAGE value="采集权限&#10;" />
+    <MESSAGE value="移植空间&#10;" />
+    <MESSAGE value="后台加留言&#10;" />
+    <MESSAGE value="finance&#10;" />
+    <MESSAGE value="采集规则开发" />
+    <MESSAGE value="采集业务 sql文件 &#10;" />
+    <MESSAGE value="采集浏览器模拟&#10;" />
+    <MESSAGE value="采集&#10;" />
+    <MESSAGE value="异步采集" />
+    <MESSAGE value="婚庆后台&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="婚庆后台&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -663,356 +517,297 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/models/WeddingImage.php">
+    <entry file="file://$PROJECT_DIR$/demos/www/protected/models/CollectorRules.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="55" selection-start="2163" selection-end="2804" vertical-scroll-proportion="0.6885246" vertical-offset="1365" max-vertical-offset="2478" />
+        <state line="147" column="17" selection-start="4180" selection-end="4183" vertical-scroll-proportion="0.033923306" vertical-offset="3358" max-vertical-offset="4991" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/models/Finance.php">
+    <entry file="file://$PROJECT_DIR$/framework/web/auth/CAuthManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="5" selection-start="4186" selection-end="4186" vertical-scroll-proportion="1.6721312" vertical-offset="1701" max-vertical-offset="3297" />
+        <state line="40" column="45" selection-start="1753" selection-end="1753" vertical-scroll-proportion="0.0" vertical-offset="920" max-vertical-offset="3933" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/controllers/FinanceController.php">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Core.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="2020" selection-end="2020" vertical-scroll-proportion="0.0" vertical-offset="1197" max-vertical-offset="2310" />
+        <state line="18" column="9" selection-start="500" selection-end="500" vertical-scroll-proportion="0.34869432" vertical-offset="187" max-vertical-offset="23368" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/views/imageManager/imageCurd.php">
+    <entry file="file://$PROJECT_DIR$/framework/collections/CList.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="63" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.58196723" vertical-offset="322" max-vertical-offset="1176" />
+        <state line="26" column="27" selection-start="994" selection-end="994" vertical-scroll-proportion="0.033923306" vertical-offset="414" max-vertical-offset="7912" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/controllers/ImageManagerController.php">
+    <entry file="file://$PROJECT_DIR$/framework/yii.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="567" max-vertical-offset="1155" />
+        <state line="24" column="6" selection-start="614" selection-end="614" vertical-scroll-proportion="0.50884956" vertical-offset="0" max-vertical-offset="678" />
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/SPL_f.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="9" selection-start="1177" selection-end="1177" vertical-scroll-proportion="0.5973558" vertical-offset="427" max-vertical-offset="23646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../framework/yiic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="31" selection-start="442" selection-end="442" vertical-scroll-proportion="0.14754099" vertical-offset="0" max-vertical-offset="854">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/models/LoginForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="35" selection-start="1186" selection-end="1186" vertical-scroll-proportion="-13.033334" vertical-offset="617" max-vertical-offset="1701" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/components/UserIdentity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="28" selection-start="556" selection-end="556" vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="1029" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_defines.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="719" column="18" selection-start="17634" selection-end="17643" vertical-scroll-proportion="-10.964912" vertical-offset="14474" max-vertical-offset="28665">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/components/WebUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="1" selection-start="279" selection-end="279" vertical-scroll-proportion="0.27764422" vertical-offset="0" max-vertical-offset="832" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/components/CurdAction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="20" selection-start="1777" selection-end="1777" vertical-scroll-proportion="-20.3" vertical-offset="714" max-vertical-offset="2940">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="35" selection-start="1657" selection-end="1657" vertical-scroll-proportion="-20.733334" vertical-offset="680" max-vertical-offset="1512" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="1838" selection-end="1838" vertical-scroll-proportion="-22.4" vertical-offset="735" max-vertical-offset="1953" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../framework/base/CSecurityManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="338" column="5" selection-start="11944" selection-end="11944" vertical-scroll-proportion="0.14041515" vertical-offset="6836" max-vertical-offset="10311" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../framework/utils/CPasswordHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="26" selection-start="6626" selection-end="6626" vertical-scroll-proportion="0.8770492" vertical-offset="2611" max-vertical-offset="4158" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="0" selection-start="3039" selection-end="3039" vertical-scroll-proportion="0.8278689" vertical-offset="1960" max-vertical-offset="2877" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/assets/7990bab9/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1402" column="12" selection-start="37895" selection-end="37895" vertical-scroll-proportion="-12.740741" vertical-offset="28846" max-vertical-offset="198786">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/js/wedding/megafolio/fancybox/jquery.fancybox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1593" column="38" selection-start="38309" selection-end="38309" vertical-scroll-proportion="268.03705" vertical-offset="40480" max-vertical-offset="41538" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/views/site/map.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="38" selection-start="1493" selection-end="1493" vertical-scroll-proportion="-23.8" vertical-offset="0" max-vertical-offset="2520" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../framework/web/CHttpRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1342" column="42" selection-start="47873" selection-end="47873" vertical-scroll-proportion="0.41287878" vertical-offset="27708" max-vertical-offset="30912">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/views/site/gallery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="382" column="27" selection-start="13621" selection-end="13621" vertical-scroll-proportion="-13.77193" vertical-offset="7237" max-vertical-offset="8148">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/models/Sliderbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="4" selection-start="1682" selection-end="2009" vertical-scroll-proportion="-7.7" vertical-offset="1365" max-vertical-offset="3696" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/models/Message.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="5" selection-start="1490" selection-end="1490" vertical-scroll-proportion="-13.766666" vertical-offset="889" max-vertical-offset="2562">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/components/Util.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="58" selection-start="2492" selection-end="2492" vertical-scroll-proportion="-28.733334" vertical-offset="734" max-vertical-offset="1911" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/views/site/weddingLocation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="30" selection-start="2156" selection-end="2156" vertical-scroll-proportion="0.0" vertical-offset="511" max-vertical-offset="1365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/views/guestManager/emailTpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="7" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="630">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="31" selection-start="130" selection-end="130" vertical-scroll-proportion="-2.1" vertical-offset="0" max-vertical-offset="546">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="25" selection-start="930" selection-end="930" vertical-scroll-proportion="-25.9" vertical-offset="0" max-vertical-offset="1890">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/views/site/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1782" selection-end="1782" vertical-scroll-proportion="-21.7" vertical-offset="84" max-vertical-offset="903">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/config/main_www.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="29" selection-start="921" selection-end="921" vertical-scroll-proportion="-21.7" vertical-offset="63" max-vertical-offset="1848">
-          <folding />
-        </state>
+        <state line="57" column="41" selection-start="2040" selection-end="2040" vertical-scroll-proportion="0.5855457" vertical-offset="914" max-vertical-offset="4554" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demos/www/protected/controllers/CommentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2856">
+        <state line="19" column="5" selection-start="336" selection-end="336" vertical-scroll-proportion="-0.71875" vertical-offset="414" max-vertical-offset="3128" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/www/protected/models/Collector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="209" column="56" selection-start="6197" selection-end="6197" vertical-scroll-proportion="0.66076696" vertical-offset="4382" max-vertical-offset="5842" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/www/protected/controllers/CollectorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="23" selection-start="1512" selection-end="1512" vertical-scroll-proportion="0.6784661" vertical-offset="759" max-vertical-offset="3266" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/base/interfaces.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="20" selection-start="742" selection-end="742" vertical-scroll-proportion="0.34869432" vertical-offset="210" max-vertical-offset="14490" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/web/CController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="535" column="5" selection-start="18653" selection-end="18653" vertical-scroll-proportion="0.7880184" vertical-offset="11654" max-vertical-offset="28313" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/base/CModule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="510" column="59" selection-start="16484" selection-end="16484" vertical-scroll-proportion="-0.6897081" vertical-offset="12041" max-vertical-offset="12719" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/web/CUrlManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="359" column="20" selection-start="13324" selection-end="13324" vertical-scroll-proportion="0.33333334" vertical-offset="7870" max-vertical-offset="19550" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/www/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="22" selection-start="673" selection-end="673" vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="598" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/web/CWebApplication.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="33" selection-start="3134" selection-end="3134" vertical-scroll-proportion="0.83037156" vertical-offset="797" max-vertical-offset="12719" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/www/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="40" selection-start="1468" selection-end="1468" vertical-scroll-proportion="0.0" vertical-offset="1288" max-vertical-offset="2070" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/base/CApplicationComponent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="57" selection-start="1776" selection-end="1776" vertical-scroll-proportion="0.58064514" vertical-offset="588" max-vertical-offset="1288" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/db/schema/mssql/CMssqlPdoAdapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="5" selection-start="853" selection-end="853" vertical-scroll-proportion="0.7419355" vertical-offset="0" max-vertical-offset="1633" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/db/schema/CDbCommandBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="529" column="0" selection-start="17106" selection-end="17106" vertical-scroll-proportion="-1.4375" vertical-offset="11960" max-vertical-offset="20102" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/db/schema/mysql/CMysqlSchema.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="256" column="7" selection-start="7419" selection-end="7419" vertical-scroll-proportion="-3.0276499" vertical-offset="7698" max-vertical-offset="8349" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/db/schema/mysql/CMysqlCommandBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="938" selection-end="938" vertical-scroll-proportion="0.7419355" vertical-offset="69" max-vertical-offset="1311" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/YiiBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="189" column="36" selection-start="6687" selection-end="6687" vertical-scroll-proportion="-0.14592934" vertical-offset="4235" max-vertical-offset="20263">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/models/WeddingGuest.php">
+    <entry file="file://$PROJECT_DIR$/framework/base/CApplication.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="21" selection-start="1495" selection-end="1495" vertical-scroll-proportion="-35.0" vertical-offset="0" max-vertical-offset="3591">
+        <state line="970" column="39" selection-start="31521" selection-end="31534" vertical-scroll-proportion="0.0" vertical-offset="22310" max-vertical-offset="23092" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/www/protected/config/main_www.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="30" selection-start="1098" selection-end="1269" vertical-scroll-proportion="0.3579109" vertical-offset="802" max-vertical-offset="2024" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/www/protected/models/FinanceType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="45" selection-start="2298" selection-end="2298" vertical-scroll-proportion="0.9185868" vertical-offset="1311" max-vertical-offset="3979">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/controllers/GuestManagerController.php">
+    <entry file="file://$PROJECT_DIR$/framework/db/CDbCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="38" selection-start="891" selection-end="891" vertical-scroll-proportion="-19.6" vertical-offset="0" max-vertical-offset="1596">
+        <state line="608" column="9" selection-start="25429" selection-end="25429" vertical-scroll-proportion="0.7802908" vertical-offset="13386" max-vertical-offset="37904" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/www/protected/models/Finance.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="9" selection-start="3138" selection-end="3138" vertical-scroll-proportion="0.7880184" vertical-offset="2040" max-vertical-offset="3634">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/controllers/SiteController.php">
+    <entry file="file://$PROJECT_DIR$/demos/www/protected/controllers/FinanceController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="9" selection-start="840" selection-end="840" vertical-scroll-proportion="-18.2" vertical-offset="0" max-vertical-offset="1050">
+        <state line="37" column="23" selection-start="831" selection-end="831" vertical-scroll-proportion="0.2523511" vertical-offset="690" max-vertical-offset="3174" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/www/protected/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1005" max-vertical-offset="1656" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/www/protected/controllers/SliderbarController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="32" selection-start="1466" selection-end="1466" vertical-scroll-proportion="0.7123894" vertical-offset="782" max-vertical-offset="1587" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Core_c.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="6" selection-start="4537" selection-end="4537" vertical-scroll-proportion="0.3480826" vertical-offset="3697" max-vertical-offset="8004">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/.htaccess">
+    <entry file="file://$PROJECT_DIR$/framework/base/CException.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="862">
+        <state line="20" column="0" selection-start="409" selection-end="409" vertical-scroll-proportion="0.44100294" vertical-offset="0" max-vertical-offset="678">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../framework/.htaccess">
+    <entry file="file://$PROJECT_DIR$/framework/db/CDbException.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="14" selection-end="14" vertical-scroll-proportion="-0.7777778" vertical-offset="0" max-vertical-offset="147">
+        <state line="32" column="31" selection-start="819" selection-end="830" vertical-scroll-proportion="0.62684363" vertical-offset="150" max-vertical-offset="828">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/blog/protected/.htaccess">
+    <entry file="file://$PROJECT_DIR$/framework/db/schema/mysql/CMysqlColumnSchema.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="862">
-          <folding />
-        </state>
+        <state line="21" column="26" selection-start="522" selection-end="522" vertical-scroll-proportion="-1.0353982" vertical-offset="1024" max-vertical-offset="1702" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/.htaccess">
+    <entry file="file://$PROJECT_DIR$/framework/db/CDbDataReader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="294">
-          <folding />
-        </state>
+        <state line="45" column="35" selection-start="1443" selection-end="1443" vertical-scroll-proportion="-5.9882007" vertical-offset="4934" max-vertical-offset="5612" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/js/wedding/jquery.lazyload.min.js">
+    <entry file="file://$PROJECT_DIR$/framework/web/CBaseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="3202" selection-end="3202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="168">
-          <folding />
-        </state>
+        <state line="22" column="2" selection-start="826" selection-end="826" vertical-scroll-proportion="0.033923306" vertical-offset="322" max-vertical-offset="7130" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/views/guestManager/index.php">
+    <entry file="file://$PROJECT_DIR$/framework/db/CDbMigration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="10" selection-start="2083" selection-end="2083" vertical-scroll-proportion="-22.4" vertical-offset="147" max-vertical-offset="1386">
+        <state line="411" column="7" selection-start="17738" selection-end="17995" vertical-scroll-proportion="-0.6622419" vertical-offset="9925" max-vertical-offset="10603" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/db/schema/mysql/CMysqlTableSchema.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="683" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/db/ar/CActiveFinder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="317" column="7" selection-start="9265" selection-end="9265" vertical-scroll-proportion="0.0" vertical-offset="7291" max-vertical-offset="38341">
           <folding>
-            <marker date="1408272804018" expanded="false" signature="2358:2371" placeholder="..." />
+            <marker date="1404367154625" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/js/wedding/vendor/jquery.queryloader2.js">
+    <entry file="file://$PROJECT_DIR$/framework/db/ar/CActiveRecordBehavior.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="18" selection-start="2241" selection-end="2241" vertical-scroll-proportion="-29.275618" vertical-offset="26661" max-vertical-offset="27510">
+        <state line="51" column="0" selection-start="1675" selection-end="1675" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="2760">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/js/wedding/plugins.js">
+    <entry file="file://$PROJECT_DIR$/framework/db/ar/CActiveRecord.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="733" selection-end="733" vertical-scroll-proportion="0.58468676" vertical-offset="0" max-vertical-offset="862">
+        <state line="323" column="5" selection-start="11760" selection-end="11760" vertical-scroll-proportion="0.32153392" vertical-offset="7165" max-vertical-offset="56948">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/helloworld/protected/.htaccess">
+    <entry file="file://$PROJECT_DIR$/framework/base/CComponent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="862">
+        <state line="294" column="20" selection-start="10425" selection-end="10425" vertical-scroll-proportion="0.033923306" vertical-offset="6601" max-vertical-offset="15847">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/js/wedding/vendor/jpreloader.min.js">
+    <entry file="file://$PROJECT_DIR$/framework/base/CModelEvent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="31" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="871">
+        <state line="20" column="6" selection-start="423" selection-end="423" vertical-scroll-proportion="0.44100294" vertical-offset="0" max-vertical-offset="690">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/js/wedding/vendor/jquery.easing.js">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/PDO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4410">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/views/layouts/wedding.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="82" selection-start="4602" selection-end="4602" vertical-scroll-proportion="-23.1" vertical-offset="1197" max-vertical-offset="2142">
+        <state line="706" column="20" selection-start="20971" selection-end="20971" vertical-scroll-proportion="-7.0625" vertical-offset="16012" max-vertical-offset="30981">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/views/site/index.php">
+    <entry file="file://$PROJECT_DIR$/framework/db/CDbConnection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="30" selection-start="2304" selection-end="2304" vertical-scroll-proportion="-0.7" vertical-offset="798" max-vertical-offset="5082">
+        <state line="524" column="0" selection-start="18760" selection-end="18760" vertical-scroll-proportion="-12.09375" vertical-offset="11504" max-vertical-offset="19619">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/js/wedding/main.js">
+    <entry file="file://$PROJECT_DIR$/framework/db/schema/CDbColumnSchema.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="15" selection-start="1473" selection-end="1473" vertical-scroll-proportion="0.0" vertical-offset="606" max-vertical-offset="11592">
+        <state line="21" column="7" selection-start="500" selection-end="500" vertical-scroll-proportion="-3.681416" vertical-offset="2818" max-vertical-offset="3496">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/protected/modules/wedding/views/site/loveStory.php">
+    <entry file="file://$PROJECT_DIR$/framework/db/schema/CDbSchema.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="231" column="151" selection-start="10130" selection-end="10130" vertical-scroll-proportion="-6.5263157" vertical-offset="4479" max-vertical-offset="6342">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#header#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#2;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#3;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#header#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#2;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#0;n#div#1;n#div#1;n#div#2;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#2;n#div#0;n#div#1;n#div#1;n#div#2;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#3;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#0;n#div#1;n#div#1;n#div#3;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#2;n#div#0;n#div#1;n#div#1;n#div#3;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#3;n#div#0;n#div#1;n#div#1;n#div#3;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#4;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#0;n#div#1;n#div#1;n#div#4;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#2;n#div#0;n#div#1;n#div#1;n#div#4;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#3;n#div#0;n#div#1;n#div#1;n#div#4;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#4;n#div#0;n#div#1;n#div#1;n#div#4;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#5;n#div#0;n#div#1;n#div#1;n#div#4;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#6;n#div#0;n#div#1;n#div#1;n#div#4;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#5;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#0;n#div#1;n#div#1;n#div#5;n#div#2;n#div#1;n#section#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="59" column="20" selection-start="1701" selection-end="1701" vertical-scroll-proportion="0.033923306" vertical-offset="1173" max-vertical-offset="14030">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demos/www/js/wedding/jquery.scrollstop.min.js">
+    <entry file="file://$PROJECT_DIR$/framework/db/schema/CDbCriteria.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="802" selection-end="802" vertical-scroll-proportion="0.07650273" vertical-offset="0" max-vertical-offset="549">
+        <state line="608" column="46" selection-start="22039" selection-end="22039" vertical-scroll-proportion="0.38938054" vertical-offset="13559" max-vertical-offset="14812">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/db/CDbTransaction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="0" selection-start="2580" selection-end="2580" vertical-scroll-proportion="3.1887906" vertical-offset="0" max-vertical-offset="2507">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/base/CModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="5" selection-start="4619" selection-end="4619" vertical-scroll-proportion="0.780236" vertical-offset="1909" max-vertical-offset="14260">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="8" selection-start="71" selection-end="71" vertical-scroll-proportion="0.10072993" vertical-offset="0" max-vertical-offset="685">
           <folding />
         </state>
       </provider>
